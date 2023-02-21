@@ -5,7 +5,13 @@ using TMPro;
 
 public class NewsManager : Singleton<NewsManager>
 {
-    [SerializeField] private GameObject expandedStory;
+    [SerializeField] private int maxSavedArticles = 3;
+    [SerializeField] private List<GameObject> levels;
+
+    [SerializeField] private GameObject levelParent;
+    [SerializeField] private GameObject savedArticlesParent;
+
+    [SerializeField] private GameObject expandedArticle;
     [SerializeField] private TextMeshPro articleHeadline;
     [SerializeField] private TextMeshPro articleText;
     [SerializeField] private SpriteRenderer articlePhoto;
@@ -14,9 +20,18 @@ public class NewsManager : Singleton<NewsManager>
 
     private NewsArticle[] savedArticles;
 
+    private GameObject currentLevel;
+    private int levelIndex;
+
     void Start()
     {
-        
+        savedArticles = new NewsArticle[maxSavedArticles];
+
+        levelIndex = 0;
+        if (levels.Count > 0)
+        {
+            currentLevel = GameObject.Instantiate(levels[0], levelParent.transform);
+        }
     }
 
     public void SetCurrentArticle(NewsArticle article)
@@ -30,6 +45,64 @@ public class NewsManager : Singleton<NewsManager>
 
     public void Show()
     {
-        expandedStory.SetActive(true);
+        expandedArticle.SetActive(true);
+        SavedArticleCounter.Instance.gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        expandedArticle.SetActive(false);
+        SavedArticleCounter.Instance.gameObject.SetActive(false);
+    }
+
+    public void SaveCurrentArticle()
+    {
+        int articleCount = SavedArticleCounter.Instance.GetSavedArticlesCount();
+        if (articleCount < maxSavedArticles)
+        {
+            bool alreadySaved = false;
+            int emptyIndex = -1;
+            for (int i = 0; i < maxSavedArticles; i++)
+            {
+                if (savedArticles[i] == null)
+                {
+                    if (!alreadySaved)
+                    {
+                        emptyIndex = i;
+                    }
+                } 
+                else if (savedArticles[i] == currentArticle)
+                {
+                    alreadySaved = true;
+                }
+            }
+
+            if (!alreadySaved)
+            {
+                savedArticles[emptyIndex] = currentArticle;
+                SavedArticleCounter.Instance.SetSavedArticlesCount(articleCount + 1);
+            }
+        }
+    }
+
+    public void NextLevel()
+    {
+        levelIndex++;
+        MoveSavedArticles();
+        if (levelIndex < levels.Count)
+        {
+            GameObject.Destroy(currentLevel);
+            currentLevel = GameObject.Instantiate(levels[levelIndex], levelParent.transform);
+        }
+    }
+
+    private void MoveSavedArticles()
+    {
+        for (int i = 0; i < savedArticles.Length; i++)
+        {
+            savedArticles[i].transform.parent = savedArticlesParent.transform;
+            savedArticles[i] = null;
+        }
+        SavedArticleCounter.Instance.SetSavedArticlesCount(0);
     }
 }
