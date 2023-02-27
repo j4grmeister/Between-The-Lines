@@ -9,16 +9,24 @@ public class NewsArticle : MonoBehaviour
     [SerializeField] private string text;
     [SerializeField] private Sprite photo;
     [SerializeField] private TextMeshPro headlineText;
+    [SerializeField] private GameObject expandedVersion;
 
     public void Start()
     {
-        headlineText.text = headline;
+        //headlineText.text = headline;
     }
 
     public void Expand()
     {
-        NewsManager.Instance.SetCurrentArticle(this);
+        NewsManager.Instance.SetCurrentArticle(this); // TODO: Deprecate this?
         NewsManager.Instance.Show();
+        expandedVersion.transform.position = NewsManager.Instance.expandedArticle.transform.position;
+        expandedVersion.SetActive(true);
+    }
+
+    public void Shrink()
+    {
+        expandedVersion.SetActive(false);
     }
 
     public string GetHeadline()

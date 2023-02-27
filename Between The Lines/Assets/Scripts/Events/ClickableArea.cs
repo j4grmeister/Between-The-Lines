@@ -6,18 +6,13 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider2D))]
 public class ClickableArea : MonoBehaviour
 {
-    [SerializeField] private UnityEvent onClick;
+    public UnityEvent onClick;
 
     private Collider2D clickableArea;
 
     void Awake()
     {
         clickableArea = GetComponent<Collider2D>();
-    }
-
-    void Start()
-    {
-
     }
 
     public void Invoke()

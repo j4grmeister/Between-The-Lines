@@ -11,7 +11,7 @@ public class NewsManager : Singleton<NewsManager>
     [SerializeField] private GameObject levelParent;
     [SerializeField] private GameObject savedArticlesParent;
 
-    [SerializeField] private GameObject expandedArticle;
+    public GameObject expandedArticle;
     [SerializeField] private TextMeshPro articleHeadline;
     [SerializeField] private TextMeshPro articleText;
     [SerializeField] private SpriteRenderer articlePhoto;
@@ -34,6 +34,7 @@ public class NewsManager : Singleton<NewsManager>
         }
     }
 
+    // TODO: Deprecate this?
     public void SetCurrentArticle(NewsArticle article)
     {
         currentArticle = article;
@@ -46,13 +47,14 @@ public class NewsManager : Singleton<NewsManager>
     public void Show()
     {
         expandedArticle.SetActive(true);
-        SavedArticleCounter.Instance.gameObject.SetActive(true);
+        //SavedArticleCounter.Instance.gameObject.SetActive(true);
     }
 
     public void Hide()
     {
         expandedArticle.SetActive(false);
-        SavedArticleCounter.Instance.gameObject.SetActive(false);
+        //SavedArticleCounter.Instance.gameObject.SetActive(false);
+        currentArticle.Shrink();
     }
 
     public void SaveCurrentArticle()
