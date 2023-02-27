@@ -5,15 +5,18 @@ using TMPro;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
+    [SerializeField] private TextMeshPro prompt;
     [SerializeField] private GameObject responsePrefab;
     [SerializeField] private Vector2 topResponsePosition;
     [SerializeField] private Vector2 responseOffset;
 
-    private List<ClickableArea> responseAreas;
+    private List<ClickableArea> responseAreas = new List<ClickableArea>();
 
     public void TriggerDialogue(DialogueStage dialogueStage)
     {
         ResetResponses();
+        prompt.text = dialogueStage.prompt;
+
         for(int i = 0; i < dialogueStage.responses.Length; i++)
         {
             if (dialogueStage.responses[i].requiredClue != "" && !Notebook.Instance.IsClueDiscovered(dialogueStage.responses[i].requiredClue))
@@ -21,7 +24,7 @@ public class DialogueManager : Singleton<DialogueManager>
             int j = i;
 
             GameObject responseObject = GameObject.Instantiate(responsePrefab, transform) as GameObject;
-            responseObject.transform.position = topResponsePosition + responseOffset * j;
+            responseObject.transform.localPosition = topResponsePosition + responseOffset * j;
             ClickableArea responseArea = responseObject.GetComponentInChildren<ClickableArea>();
             TextMeshPro textMesh = responseObject.GetComponentInChildren<TextMeshPro>();
             textMesh.text = dialogueStage.responses[j].response;
@@ -45,6 +48,10 @@ public class DialogueManager : Singleton<DialogueManager>
 
     void ResetResponses()
     {
-
+        while(responseAreas.Count > 0)
+        {
+            GameObject.Destroy(responseAreas[0].transform.parent.gameObject);
+            responseAreas.RemoveAt(0);
+        }
     }
 }
