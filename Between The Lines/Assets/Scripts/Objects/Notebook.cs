@@ -27,12 +27,13 @@ public class Notebook : Singleton<Notebook>
     // IMPORTANT: These do not handle non-existent names!!!
 
     public void DiscoverPhoneNumber(string phoneName)
-    {
+    {   
         ((PhoneNumber)allPhones[phoneName]).gameObject.SetActive(true);
     }
 
     public void Call(string phoneName)
     {
+        DiscoverPhoneNumber(phoneName);
         ((PhoneNumber)allPhones[phoneName]).Call();
     }
 

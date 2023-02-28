@@ -7,25 +7,18 @@ using UnityEngine;
 
 public class NotebookMethods : MonoBehaviour
 {
-    [System.NonSerialized] public Notebook Notebook;
-
-    void Awake()
-    {
-        Notebook = Notebook.Instance;
-    }
-
     public void Call(string phoneName)
     {
-        Notebook.Call(phoneName);
+        Notebook.Instance.Call(phoneName);
     }
 
     public void DiscoverPhoneNumber(string phoneName)
     {
-        Notebook.DiscoverClue(phoneName);
+        Notebook.Instance.DiscoverPhoneNumber(phoneName);
     }
 
     public void DiscoverClue(string clueName)
     {
-        Notebook.DiscoverClue(clueName);
+        Notebook.Instance.DiscoverClue(clueName);
     }
 }

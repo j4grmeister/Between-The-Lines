@@ -20,7 +20,8 @@ public class NewsArticle : MonoBehaviour
     {
         NewsManager.Instance.SetCurrentArticle(this); // TODO: Deprecate this?
         NewsManager.Instance.Show();
-        expandedVersion.transform.position = NewsManager.Instance.expandedArticle.transform.position;
+        Vector3 pos = NewsManager.Instance.expandedArticle.transform.position;
+        expandedVersion.transform.position = new Vector3(pos.x, pos.y, expandedVersion.transform.position.z);
         expandedVersion.SetActive(true);
     }
 
