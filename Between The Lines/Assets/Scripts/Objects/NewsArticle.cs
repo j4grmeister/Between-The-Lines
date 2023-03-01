@@ -11,6 +11,10 @@ public class NewsArticle : MonoBehaviour
     [SerializeField] private TextMeshPro headlineText;
     [SerializeField] private GameObject expandedVersion;
 
+    [SerializeField] private string[] discoveredClues;
+
+    private bool openedAlready = false;
+
     public void Start()
     {
         //headlineText.text = headline;
@@ -23,6 +27,15 @@ public class NewsArticle : MonoBehaviour
         Vector3 pos = NewsManager.Instance.expandedArticle.transform.position;
         expandedVersion.transform.position = new Vector3(pos.x, pos.y, expandedVersion.transform.position.z);
         expandedVersion.SetActive(true);
+        if (!openedAlready)
+        {
+            foreach(string clue in discoveredClues)
+            {
+                Notebook.Instance.DiscoverClue(clue);
+            }
+
+            openedAlready = true;
+        }
     }
 
     public void Shrink()

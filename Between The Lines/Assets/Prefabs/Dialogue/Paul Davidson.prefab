@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &240670820842452794
+--- !u!1 &661828471718251724
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7822970082795131422}
-  - component: {fileID: 1308768760374521688}
+  - component: {fileID: 6380661304215333827}
+  - component: {fileID: 1603882511864609613}
   m_Layer: 0
-  m_Name: Bad Description
+  m_Name: And what did the inspection reveal?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7822970082795131422
+--- !u!4 &6380661304215333827
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240670820842452794}
+  m_GameObject: {fileID: 661828471718251724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7676017823167563966}
+  m_Father: {fileID: 7347367128136822216}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1308768760374521688
+--- !u!114 &1603882511864609613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240670820842452794}
+  m_GameObject: {fileID: 661828471718251724}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: There is no wallet matching that description, sorry, Thank you for your
-    call. *click*
+  prompt: That it was a big fish.... anyway I have $500 to spend... WAIT, WHERE IS
+    MY MONEY, THOSE GREEDY LITTLE *click*
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -53,7 +53,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1099857580826807345
+--- !u!1 &747817793512053938
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,61 +61,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3753114228669084169}
-  - component: {fileID: 381166454277323266}
+  - component: {fileID: 589974163128648845}
+  - component: {fileID: 3449611049858078396}
   m_Layer: 0
-  m_Name: $500
+  m_Name: You assume?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3753114228669084169
+--- !u!4 &589974163128648845
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099857580826807345}
+  m_GameObject: {fileID: 747817793512053938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7349886469051148058}
-  - {fileID: 7368529243885362515}
-  m_Father: {fileID: 8261334890417182288}
+  - {fileID: 7999697073283297584}
+  m_Father: {fileID: 1475512028517183883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &381166454277323266
+--- !u!114 &3449611049858078396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099857580826807345}
+  m_GameObject: {fileID: 747817793512053938}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Yes sir, there is $500 cash in here, this must be yours. We have a rusty
-    key, a picture of a hand holding a fish.. And this business card, 554-280-2423.
-    This is yours too?
+  prompt: Well yeah, I wasn't down there, I don't know what happened, I'm not some
+    genie.
   responses:
-  - response: Uhhh, yes!
+  - response: We will see.
     requiredClue: 
-    nextStage: {fileID: 378916073228960921}
+    nextStage: {fileID: 4498303119967864690}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Uhhh, no?
-    requiredClue: 
-    nextStage: {fileID: 74380099144497751}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1219148020494639368
+--- !u!1 &1110482197643561088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,85 +115,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8261334890417182288}
-  - component: {fileID: 3728980327187653831}
-  - component: {fileID: 698034360007947930}
+  - component: {fileID: 53048528335748328}
+  - component: {fileID: 4156223174617003465}
   m_Layer: 0
-  m_Name: A compass
+  m_Name: Or you could have taken the fish out there with you!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8261334890417182288
+--- !u!4 &53048528335748328
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219148020494639368}
+  m_GameObject: {fileID: 1110482197643561088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3753114228669084169}
-  - {fileID: 8676292614369081740}
-  m_Father: {fileID: 7676017823167563966}
+  - {fileID: 6290143369149498895}
+  - {fileID: 5074962037766151707}
+  m_Father: {fileID: 1475512028517183883}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3728980327187653831
+--- !u!114 &4156223174617003465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219148020494639368}
+  m_GameObject: {fileID: 1110482197643561088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Here, Let me check... *Shuffle ....*Shuffle ... Ahh, here we go. I don't
-    know about compass, but there is an 8 pointed star. What is in the wallet?
+  prompt: No, they checked for fish before the boats were launched.... You accusing
+    me of something?
   responses:
-  - response: $500
+  - response: Yes!
     requiredClue: 
-    nextStage: {fileID: 381166454277323266}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 698034360007947930}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverPhoneNumber
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Paul Davidson
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: Tom Forger's Driver Liscense
-    requiredClue: EMPTY CLUE
-    nextStage: {fileID: 7138498074008413225}
+    nextStage: {fileID: 4487924313679433516}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &698034360007947930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219148020494639368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1592504349416123882
+  - response: No?
+    requiredClue: 
+    nextStage: {fileID: 7675990476260482159}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1177668589598185580
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,153 +176,303 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5891391597515341371}
-  - component: {fileID: 8209876004474666064}
+  - component: {fileID: 5074962037766151707}
+  - component: {fileID: 7675990476260482159}
   m_Layer: 0
-  m_Name: Wait, shouldn't you have a receptionist or something?
+  m_Name: No?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5891391597515341371
+--- !u!4 &5074962037766151707
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592504349416123882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7508169445386126526}
-  m_Father: {fileID: 5500095845181244344}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8209876004474666064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592504349416123882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: A good leader keeps the concerns of their community close to heart. How
-    can I cultivate trust without speaking directly to the people I work for. That
-    aside, How can I help you.
-  responses:
-  - response: I am looking for a wallet.
-    requiredClue: 
-    nextStage: {fileID: 2025841081827534409}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: You stole a wallet!
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1820483407195263321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4060203400427311906}
-  - component: {fileID: 1317903604610690641}
-  m_Layer: 0
-  m_Name: What is his reputation?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4060203400427311906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820483407195263321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5583842457545064633}
-  m_Father: {fileID: 1932463679510842119}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1317903604610690641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820483407195263321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: 'He''s not very well liked. Typically arrogant and conceited, but he is,
-    at the very least, efficient. He is not well respected, but I can''t exactly
-    disagree. '
-  responses:
-  - response: Do you think he would cheat?
-    requiredClue: 
-    nextStage: {fileID: 5080373678132738222}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2731751795785546438
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6721528725411840021}
-  - component: {fileID: 1570148254967583473}
-  m_Layer: 0
-  m_Name: I think I have something.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6721528725411840021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2731751795785546438}
+  m_GameObject: {fileID: 1177668589598185580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 692683194711439742}
+  m_Father: {fileID: 53048528335748328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1570148254967583473
+--- !u!114 &7675990476260482159
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2731751795785546438}
+  m_GameObject: {fileID: 1177668589598185580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Well figure it out and call me back. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1199845221615542058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7999697073283297584}
+  - component: {fileID: 4498303119967864690}
+  m_Layer: 0
+  m_Name: We will see.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7999697073283297584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199845221615542058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589974163128648845}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4498303119967864690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199845221615542058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Wierdo. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1354517019162469915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7347367128136822216}
+  - component: {fileID: 7599011575260379471}
+  m_Layer: 0
+  m_Name: What does the inspection look like?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7347367128136822216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354517019162469915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6380661304215333827}
+  m_Father: {fileID: 6009954351128328624}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7599011575260379471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354517019162469915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: 'Just the judges inspecting, weighing, and measuring the fish for their
+    records. '
+  responses:
+  - response: And what did the inspection reveal?
+    requiredClue: 
+    nextStage: {fileID: 1603882511864609613}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1519044192039947514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7276827644642295886}
+  - component: {fileID: 8274470568043519768}
+  m_Layer: 0
+  m_Name: Like you?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7276827644642295886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519044192039947514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4993227631802234060}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8274470568043519768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519044192039947514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Heh, If I cheated, the town would never know. But I didn't. Everyone else
+    is just angry at their lack of luck, while I am drowning in it. If you have an
+    issue, take it up with City Hall. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1574247545639452715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5331579738295894419}
+  - component: {fileID: 8865797620022541092}
+  m_Layer: 0
+  m_Name: Was it fake?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5331579738295894419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574247545639452715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 332957415168903149}
+  m_Father: {fileID: 3730228602822802613}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8865797620022541092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574247545639452715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Of course it wasn't fake. It was weighed on the shoreline by the judges...
+    Hard to fake fish scales and guts.
+  responses:
+  - response: What if you caught it earlier?
+    requiredClue: 
+    nextStage: {fileID: 547158042685805306}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1814413220845013515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6036614818557418541}
+  - component: {fileID: 6379202102971862666}
+  m_Layer: 0
+  m_Name: Do you think the contest was fair?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6036614818557418541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814413220845013515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7024004332261606639}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6379202102971862666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814413220845013515}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -363,7 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prompt: 
   responses: []
---- !u!1 &3398519305636616214
+--- !u!1 &1915747321391710705
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,279 +488,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8031879139349857359}
-  - component: {fileID: 2567774061480065837}
+  - component: {fileID: 4993227631802234060}
+  - component: {fileID: 5066739865038378530}
   m_Layer: 0
-  m_Name: I dont have any evidence.
+  m_Name: Has anyone ever been caught?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8031879139349857359
+--- !u!4 &4993227631802234060
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3398519305636616214}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 692683194711439742}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2567774061480065837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3398519305636616214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Then please call back when you do. *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3628914841829486596
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7508169445386126526}
-  - component: {fileID: 8130638584971045177}
-  m_Layer: 0
-  m_Name: You stole a wallet!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7508169445386126526
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3628914841829486596}
+  m_GameObject: {fileID: 1915747321391710705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9111804448995925576}
-  - {fileID: 7069730760823918601}
-  m_Father: {fileID: 5891391597515341371}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8130638584971045177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3628914841829486596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: I did no such thing... You must have spoken to Mr. Forger. The city is
-    not liable for any lost property on the premises. I will keep my eye open though.
-  responses:
-  - response: Eye?
-    requiredClue: 
-    nextStage: {fileID: 6527669638926346230}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I'll call again.
-    requiredClue: 
-    nextStage: {fileID: 8098393046055165923}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4973069860609538738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7349886469051148058}
-  - component: {fileID: 378916073228960921}
-  m_Layer: 0
-  m_Name: Uhhh, yes!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7349886469051148058
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973069860609538738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3753114228669084169}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &378916073228960921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973069860609538738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: That didn't sound very sure. Attempted theft is taken very seriously, what
-    is your name for our records
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5057451283648482993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2361301246543708228}
-  - component: {fileID: 3211349216219382204}
-  m_Layer: 0
-  m_Name: Uhh, no
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2361301246543708228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5057451283648482993}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7368529243885362515}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3211349216219382204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5057451283648482993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Thank you for coming clean. However, I would ask that you refrain from
-    prank calls at this time. *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5688224241697091165
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 692683194711439742}
-  - component: {fileID: 6421390064520478021}
-  m_Layer: 0
-  m_Name: I think he cheated!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &692683194711439742
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688224241697091165}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8031879139349857359}
-  - {fileID: 6721528725411840021}
-  m_Father: {fileID: 1932463679510842119}
+  - {fileID: 7276827644642295886}
+  - {fileID: 9034944818521215642}
+  m_Father: {fileID: 4137685203381186943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6421390064520478021
+--- !u!114 &5066739865038378530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5688224241697091165}
+  m_GameObject: {fileID: 1915747321391710705}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Well, there is not much I can do about that unless you have some significant
-    evidence. Otherwise, the city can not dip their toes in private business.
+  prompt: Yeah, a couple of people throughout the years. Idiots that got caught in
+    an obvious lie. If you have the guts to cheat, you should have the brains to
+    not get caught.
   responses:
-  - response: I dont have any evidence.
+  - response: Like you?
     requiredClue: 
-    nextStage: {fileID: 2567774061480065837}
+    nextStage: {fileID: 8274470568043519768}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: I think I have something.
+  - response: I would never get caught.
     requiredClue: 
-    nextStage: {fileID: 1570148254967583473}
+    nextStage: {fileID: 3307584977983611991}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &6367896529061077405
+--- !u!1 &2019607331520740015
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -651,119 +550,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6595523152785923915}
-  - component: {fileID: 5176876440824174815}
+  - component: {fileID: 194068954567580084}
+  - component: {fileID: 4538637237614459895}
   m_Layer: 0
-  m_Name: I will get some for you!
+  m_Name: Paul Davidson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6595523152785923915
+--- !u!4 &194068954567580084
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6367896529061077405}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5583842457545064633}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5176876440824174815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6367896529061077405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Remember, Innocent until proven guilty. Call again if you find anything.
-    *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6495178009553128441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5500095845181244344}
-  - component: {fileID: 921856325760126226}
-  m_Layer: 0
-  m_Name: City Hall
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5500095845181244344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6495178009553128441}
+  m_GameObject: {fileID: 2019607331520740015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5891391597515341371}
-  - {fileID: 7676017823167563966}
-  - {fileID: 1932463679510842119}
+  - {fileID: 8713795878524765637}
+  - {fileID: 3730228602822802613}
+  - {fileID: 7024004332261606639}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &921856325760126226
+--- !u!114 &4538637237614459895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6495178009553128441}
+  m_GameObject: {fileID: 2019607331520740015}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Mayor Moore, how can I help you.
+  prompt: What do you need?
   responses:
-  - response: Wait, shouldn't you have a receptionist or something?
+  - response: I think you cheated!
     requiredClue: 
-    nextStage: {fileID: 8209876004474666064}
+    nextStage: {fileID: 7874714202104705290}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: I am looking for a wallet.
+  - response: Pretty impressive catch you had!
     requiredClue: 
-    nextStage: {fileID: 2025841081827534409}
+    nextStage: {fileID: 2309681166593976907}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: I wanted to inquire about Paul Davidson.
-    requiredClue: Paul Davidson Wins Bass Competition
-    nextStage: {fileID: 7650177767410835485}
+  - response: How did you like the competition?
+    requiredClue: 
+    nextStage: {fileID: 2169841834021992041}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &6515808802609320926
+--- !u!1 &3357462290754587930
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -771,60 +617,115 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1932463679510842119}
-  - component: {fileID: 7650177767410835485}
+  - component: {fileID: 6290143369149498895}
+  - component: {fileID: 4487924313679433516}
   m_Layer: 0
-  m_Name: I wanted to inquire about Paul Davidson.
+  m_Name: Yes!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1932463679510842119
+--- !u!4 &6290143369149498895
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6515808802609320926}
+  m_GameObject: {fileID: 3357462290754587930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 53048528335748328}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4487924313679433516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357462290754587930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Ahh. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3574823866165296236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998403620243179342}
+  - component: {fileID: 6114386674989760802}
+  m_Layer: 0
+  m_Name: How did you catch it?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998403620243179342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3574823866165296236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4060203400427311906}
-  - {fileID: 692683194711439742}
-  m_Father: {fileID: 5500095845181244344}
+  - {fileID: 1475512028517183883}
+  - {fileID: 6009954351128328624}
+  m_Father: {fileID: 3730228602822802613}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7650177767410835485
+--- !u!114 &6114386674989760802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6515808802609320926}
+  m_GameObject: {fileID: 3574823866165296236}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: 'Ahh yes, the fishing competition last week. He has won for the last four
-    years, what can I let you know. '
+  prompt: It was swimming right near the bottom in the weeds. Get the right lure
+    and it will skim right through without snagging the weeds. Looks like a fish
+    to the bass. Give it enough time and you might even find a whole patch of 'em.
+    That's where the big ones come from. Not mine though, the monster was alone,
+    only fish I caught out there.
   responses:
-  - response: What is his reputation?
+  - response: Isn't it strange that it was alone?
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 8750804027109104891}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: I think he cheated!
+  - response: How long did it take you?
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 8639114669419537454}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &6831880617104579917
+--- !u!1 &3968688138174114326
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -832,52 +733,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7368529243885362515}
-  - component: {fileID: 74380099144497751}
+  - component: {fileID: 7024004332261606639}
+  - component: {fileID: 2169841834021992041}
   m_Layer: 0
-  m_Name: Uhhh, no?
+  m_Name: How did you like the competition?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7368529243885362515
+--- !u!4 &7024004332261606639
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6831880617104579917}
+  m_GameObject: {fileID: 3968688138174114326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2361301246543708228}
-  m_Father: {fileID: 3753114228669084169}
-  m_RootOrder: 1
+  - {fileID: 4137685203381186943}
+  - {fileID: 6036614818557418541}
+  m_Father: {fileID: 194068954567580084}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &74380099144497751
+--- !u!114 &2169841834021992041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6831880617104579917}
+  m_GameObject: {fileID: 3968688138174114326}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: This isn't your wallet is it.
+  prompt: The competion has always been run well. The security measures at the beginning
+    are a little annoying, but I guess they are necessary to keep the contest fair.
   responses:
-  - response: Uhh, no
+  - response: What kind of security measures?
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 7789952594136358341}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8381367752704709324
+  - response: Do you think the contest was fair?
+    requiredClue: 
+    nextStage: {fileID: 6379202102971862666}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4630323068355105916
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -885,43 +794,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7069730760823918601}
-  - component: {fileID: 8098393046055165923}
+  - component: {fileID: 9176836795958420103}
+  - component: {fileID: 4176061194044167025}
   m_Layer: 0
-  m_Name: I'll call again.
+  m_Name: Can I see a picture of it?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7069730760823918601
+--- !u!4 &9176836795958420103
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381367752704709324}
+  m_GameObject: {fileID: 4630323068355105916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7508169445386126526}
-  m_RootOrder: 1
+  m_Father: {fileID: 3730228602822802613}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8098393046055165923
+--- !u!114 &4176061194044167025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381367752704709324}
+  m_GameObject: {fileID: 4630323068355105916}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Alright, we are open until 5:00 PM *click*
+  prompt: Absolutely! I even think there is a picture on the back of the 2nd edition
+    of the paper! Took it just after catching the beauty. You'll see. It's great.
+    In fact, I should call them now! *click*
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -929,7 +840,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8415021462848954455
+--- !u!1 &5151526647861344538
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -937,53 +848,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5583842457545064633}
-  - component: {fileID: 5080373678132738222}
+  - component: {fileID: 1475512028517183883}
+  - component: {fileID: 8750804027109104891}
   m_Layer: 0
-  m_Name: Do you think he would cheat?
+  m_Name: Isn't it strange that it was alone?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5583842457545064633
+--- !u!4 &1475512028517183883
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8415021462848954455}
+  m_GameObject: {fileID: 5151526647861344538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6595523152785923915}
-  m_Father: {fileID: 4060203400427311906}
+  - {fileID: 589974163128648845}
+  - {fileID: 53048528335748328}
+  m_Father: {fileID: 998403620243179342}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5080373678132738222
+--- !u!114 &8750804027109104891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8415021462848954455}
+  m_GameObject: {fileID: 5151526647861344538}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: He may, especially now that his reputation is on the line. He is also known
-    as greedy, so the money may also play a part, but we don't have any proof.
+  prompt: A little, but I assume that monster scared everything away from it.
   responses:
-  - response: I will get some for you!
+  - response: You assume?
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 3449611049858078396}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8467708911458040094
+  - response: Or you could have taken the fish out there with you!
+    requiredClue: 
+    nextStage: {fileID: 4156223174617003465}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5166322294544083337
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -991,45 +908,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9111804448995925576}
-  - component: {fileID: 6527669638926346230}
+  - component: {fileID: 9034944818521215642}
+  - component: {fileID: 3307584977983611991}
   m_Layer: 0
-  m_Name: Eye?
+  m_Name: I would never get caught.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9111804448995925576
+--- !u!4 &9034944818521215642
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8467708911458040094}
+  m_GameObject: {fileID: 5166322294544083337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7508169445386126526}
-  m_RootOrder: 0
+  m_Father: {fileID: 4993227631802234060}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6527669638926346230
+--- !u!114 &3307584977983611991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8467708911458040094}
+  m_GameObject: {fileID: 5166322294544083337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: I lost the other one some time ago, but that is irrelevant. I assure you,
-    the city was not repsonsible for the wallet in question. Now, if you are done
-    berating me, I have some work to do. Good day. *click*
+  prompt: You joining the competition? Don't bother, I would crush you like everyone
+    else. *click*
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -1037,7 +953,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8799728392788281257
+--- !u!1 &5813102888283777274
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1045,114 +961,395 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8676292614369081740}
-  - component: {fileID: 7138498074008413225}
+  - component: {fileID: 3730228602822802613}
+  - component: {fileID: 2309681166593976907}
   m_Layer: 0
-  m_Name: Tom Forger's Driver Liscense
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &8676292614369081740
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8799728392788281257}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8261334890417182288}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7138498074008413225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8799728392788281257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: 
-  responses: []
---- !u!1 &9138572859694855122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7676017823167563966}
-  - component: {fileID: 2025841081827534409}
-  m_Layer: 0
-  m_Name: I am looking for a wallet.
+  m_Name: Pretty impressive catch you had!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7676017823167563966
+--- !u!4 &3730228602822802613
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9138572859694855122}
+  m_GameObject: {fileID: 5813102888283777274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7822970082795131422}
-  - {fileID: 8261334890417182288}
-  m_Father: {fileID: 5500095845181244344}
+  - {fileID: 9176836795958420103}
+  - {fileID: 5331579738295894419}
+  - {fileID: 998403620243179342}
+  m_Father: {fileID: 194068954567580084}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2025841081827534409
+--- !u!114 &2309681166593976907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9138572859694855122}
+  m_GameObject: {fileID: 5813102888283777274}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Alright, would you like me to check the lost and found? If so, what is
-    the description of the wallet?  It's leather with an engraving of
+  prompt: Thanks, one of the biggest I have ever seen. A beauty, truly.
   responses:
-  - response: A map
+  - response: Can I see a picture of it?
     requiredClue: 
-    nextStage: {fileID: 1308768760374521688}
+    nextStage: {fileID: 4176061194044167025}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: A fish
+  - response: Was it fake?
     requiredClue: 
-    nextStage: {fileID: 1308768760374521688}
+    nextStage: {fileID: 8865797620022541092}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: A dragon
+  - response: How did you catch it?
     requiredClue: 
-    nextStage: {fileID: 1308768760374521688}
+    nextStage: {fileID: 6114386674989760802}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: A compass
+--- !u!1 &6505834021088929337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6009954351128328624}
+  - component: {fileID: 8639114669419537454}
+  m_Layer: 0
+  m_Name: How long did it take you?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6009954351128328624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6505834021088929337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4724575164938580828}
+  - {fileID: 7347367128136822216}
+  m_Father: {fileID: 998403620243179342}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8639114669419537454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6505834021088929337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Not long, the monster was the first thing I brought in, only about an hour
+    and a half to get out there, get the fish and get back for the inspection.
+  responses:
+  - response: Well, thank you for the info.
     requiredClue: 
-    nextStage: {fileID: 3728980327187653831}
+    nextStage: {fileID: 599147728866680011}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: What does the inspection look like?
+    requiredClue: 
+    nextStage: {fileID: 7599011575260379471}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6846067360770652264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3191147816572031793}
+  - component: {fileID: 8009677447234240646}
+  m_Layer: 0
+  m_Name: Did you use any illegal fishing gear?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3191147816572031793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846067360770652264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4137685203381186943}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8009677447234240646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846067360770652264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: '''Course I didn''t. If you''re good enough, you don''t have to cheat.
+    I never lose in anything, much less a fishing competition. I went through the
+    security measures same as everyone else. Take it up with City Hall. *click*'
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7265834156130920610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4137685203381186943}
+  - component: {fileID: 7789952594136358341}
+  m_Layer: 0
+  m_Name: What kind of security measures?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4137685203381186943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7265834156130920610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3191147816572031793}
+  - {fileID: 4993227631802234060}
+  m_Father: {fileID: 7024004332261606639}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7789952594136358341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7265834156130920610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Just people looking for Illegal fishing gear... nets, cages, the like.
+    The competition is hook, pole, and bait only.
+  responses:
+  - response: Did you use any illegal fishing gear?
+    requiredClue: 
+    nextStage: {fileID: 8009677447234240646}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Has anyone ever been caught?
+    requiredClue: 
+    nextStage: {fileID: 5066739865038378530}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8807582521782496237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4724575164938580828}
+  - component: {fileID: 599147728866680011}
+  m_Layer: 0
+  m_Name: Well, thank you for the info.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4724575164938580828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807582521782496237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6009954351128328624}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &599147728866680011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807582521782496237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: You wanting to join next year? Don't bother, the prize money will always
+    be mine. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8842451727517934755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332957415168903149}
+  - component: {fileID: 547158042685805306}
+  m_Layer: 0
+  m_Name: What if you caught it earlier?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &332957415168903149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842451727517934755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5331579738295894419}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547158042685805306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842451727517934755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: It was still twitching.... Take it up with City Hall. *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &9065776669357374336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8713795878524765637}
+  - component: {fileID: 7874714202104705290}
+  m_Layer: 0
+  m_Name: I think you cheated!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8713795878524765637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065776669357374336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194068954567580084}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7874714202104705290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065776669357374336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Take it up with City Hall. *click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
