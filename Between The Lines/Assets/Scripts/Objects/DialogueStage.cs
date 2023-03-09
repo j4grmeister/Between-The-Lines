@@ -19,4 +19,6 @@ public class DialogueStage : MonoBehaviour
 
     public string prompt;
     public DialogueResponse[] responses;
+
+    [System.NonSerialized] public string linkedFilename;
 }

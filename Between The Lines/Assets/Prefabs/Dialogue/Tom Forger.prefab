@@ -1375,13 +1375,13 @@ MonoBehaviour:
   responses:
   - response: I'll make sure to do that.
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 2196248560776094631}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
   - response: It seems like you don't like the police.
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 6263981520344164689}
     onContinue:
       m_PersistentCalls:
         m_Calls: []

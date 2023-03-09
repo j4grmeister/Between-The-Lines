@@ -5,15 +5,30 @@ using TMPro;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
+    [SerializeField] private SpriteRenderer background;
     [SerializeField] private TextMeshPro prompt;
     [SerializeField] private GameObject responsePrefab;
     [SerializeField] private Vector2 topResponsePosition;
     [SerializeField] private Vector2 responseOffset;
 
+    [SerializeField] private GameObject paperFromNotebookButton;
+    [SerializeField] private GameObject phoneFromNotebookButton;
+
     private List<ClickableArea> responseAreas = new List<ClickableArea>();
+
+    public void SetBackground(Sprite backgroundSprite)
+    {
+        background.sprite = backgroundSprite;
+    }
 
     public void TriggerDialogue(DialogueStage dialogueStage)
     {
+        if (!phoneFromNotebookButton.activeSelf)
+        {
+            paperFromNotebookButton.SetActive(false);
+            phoneFromNotebookButton.SetActive(true);
+        }
+
         ResetResponses();
         prompt.text = dialogueStage.prompt;
 
@@ -32,7 +47,11 @@ public class DialogueManager : Singleton<DialogueManager>
             
             if (dialogueStage.responses[j].nextStage == null)
             {
-                responseArea.onClick.AddListener(() => {CameraManager.Instance.GoToPaper();});
+                responseArea.onClick.AddListener(() => {
+                    CameraManager.Instance.GoToLast();
+                    paperFromNotebookButton.SetActive(true);
+                    phoneFromNotebookButton.SetActive(false);
+                });
             }
             else
             {

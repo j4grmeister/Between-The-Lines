@@ -9,13 +9,17 @@ public class CameraManager : Singleton<CameraManager>
 
     private Vector2 paperPosition;
 
+    private Vector2 lastPosition;
+
     void Start()
     {
         paperPosition = new Vector2(transform.position.x, transform.position.y);
+        lastPosition = paperPosition;
     }
 
     public void MoveCamera(Vector2 targetPosition)
     {
+        lastPosition = transform.position;
         transform.position = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
     }
 
@@ -32,5 +36,10 @@ public class CameraManager : Singleton<CameraManager>
     public void GoToPhone()
     {
         MoveCamera(phonePosition);
+    }
+
+    public void GoToLast()
+    {
+        MoveCamera(lastPosition);
     }
 }

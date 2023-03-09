@@ -21,4 +21,9 @@ public class NotebookMethods : MonoBehaviour
     {
         Notebook.Instance.DiscoverClue(clueName);
     }
+
+    public void RevealPhoneName(string phoneName)
+    {
+        Notebook.Instance.RevealPhoneName(phoneName);
+    }
 }

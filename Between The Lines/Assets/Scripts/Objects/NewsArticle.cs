@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class NewsArticle : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class NewsArticle : MonoBehaviour
     [SerializeField] private TextMeshPro headlineText;
     [SerializeField] private GameObject expandedVersion;
 
-    [SerializeField] private string[] discoveredClues;
+    [SerializeField] private UnityEvent onFirstExpand;
 
     private bool openedAlready = false;
 
@@ -29,10 +30,7 @@ public class NewsArticle : MonoBehaviour
         expandedVersion.SetActive(true);
         if (!openedAlready)
         {
-            foreach(string clue in discoveredClues)
-            {
-                Notebook.Instance.DiscoverClue(clue);
-            }
+            onFirstExpand.Invoke();
 
             openedAlready = true;
         }

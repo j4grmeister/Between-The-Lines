@@ -638,7 +638,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - response: I think I have something.
-    requiredClue: 
+    requiredClue: EMPTY CLUE
     nextStage: {fileID: 1570148254967583473}
     onContinue:
       m_PersistentCalls:

@@ -9,10 +9,20 @@ public class Notebook : Singleton<Notebook>
     [SerializeField] private GameObject cluesParent;
     [SerializeField] private GameObject phonebookParent;
 
+    [SerializeField] private GameObject nextPageButton;
+    [SerializeField] private GameObject previousPageButton;
+
     [SerializeField] private GameObject phonePrefab;
     [SerializeField] private Vector2 topPhonePosition;
     [SerializeField] private Vector2 phoneOffset;
     [SerializeField] private int maxPhonesPerPage;
+
+    [SerializeField] private Vector2 topCluePosition;
+    [SerializeField] private Vector2 clueOffset;
+    [SerializeField] private int maxCluesPerPage;
+    [SerializeField] private GameObject expandedClueObject;
+    [SerializeField] private TextMeshPro expandedClueTitle;
+    [SerializeField] private TextMeshPro expandedClueDescription;
 
     private Hashtable clueTable = new Hashtable();
     private Hashtable phoneTable = new Hashtable();
@@ -21,6 +31,7 @@ public class Notebook : Singleton<Notebook>
     private PhoneNumber[] allPhones;
 
     private List<GameObject> phonePages = new List<GameObject>();
+    private List<GameObject> cluePages = new List<GameObject>();
     private int pageIndex;
 
     void Start()
@@ -44,6 +55,12 @@ public class Notebook : Singleton<Notebook>
         firstPhonePage.transform.localPosition = Vector3.zero;
         firstPhonePage.SetActive(false);
         phonePages.Add(firstPhonePage);
+
+        GameObject firstCluePage = new GameObject("Page 1");
+        firstCluePage.transform.parent = cluesParent.transform;
+        firstCluePage.transform.localPosition = Vector3.zero;
+        firstCluePage.SetActive(false);
+        cluePages.Add(firstCluePage);
     }
 
     // IMPORTANT: These do not handle non-existent names!!!
@@ -67,7 +84,20 @@ public class Notebook : Singleton<Notebook>
             }
             phone.transform.parent = phonePages[phonePages.Count-1].transform;
             phone.transform.localPosition = (Vector3)(topPhonePosition + phoneOffset * pageLength) + Vector3.back * 3;
+
+            NotificationManager.Instance.NotifyPhoneNumber(phone);
         }
+    }
+
+    public void RevealPhoneName(string phoneName)
+    {
+        PhoneNumber phone = (PhoneNumber)phoneTable[phoneName];
+        phone.SetName(phone.gameObject.name);
+    }
+
+    public string GetVisiblePhoneName(string phoneName)
+    {
+        return ((PhoneNumber)phoneTable[phoneName]).GetVisibleName();
     }
 
     public void Call(string phoneName)
@@ -78,7 +108,26 @@ public class Notebook : Singleton<Notebook>
 
     public void DiscoverClue(string clueName)
     {
-        ((Clue)clueTable[clueName]).gameObject.SetActive(true);
+        Clue clue = (Clue)clueTable[clueName];
+        if (!clue.gameObject.activeSelf)
+        {
+            clue.gameObject.SetActive(true);
+
+            int pageLength = cluePages[cluePages.Count-1].GetComponentsInChildren<Clue>().Length;
+            if (pageLength >= maxCluesPerPage)
+            {
+                GameObject nextCluePage = new GameObject("Page " + cluePages.Count.ToString());
+                nextCluePage.transform.parent = cluesParent.transform;
+                nextCluePage.transform.localPosition = Vector3.zero;
+                nextCluePage.SetActive(false);
+                cluePages.Add(nextCluePage);
+                pageLength = 0;
+            }
+            clue.transform.parent = cluePages[cluePages.Count-1].transform;
+            clue.transform.localPosition = (Vector3)(topCluePosition + clueOffset * pageLength) + Vector3.back * 3;
+
+            NotificationManager.Instance.NotifyClue(clue);
+        }
     }
 
     public bool IsClueDiscovered(string clueName)
@@ -91,6 +140,9 @@ public class Notebook : Singleton<Notebook>
         tableOfContentsParent.SetActive(true);
         cluesParent.SetActive(false);
         phonebookParent.SetActive(false);
+
+        nextPageButton.SetActive(false);
+        previousPageButton.SetActive(false);
 
         SetPage(0);
     }
@@ -119,11 +171,82 @@ public class Notebook : Singleton<Notebook>
         {
             phonePages[this.pageIndex].SetActive(false);
             phonePages[pageIndex].SetActive(true);
+
+            if (pageIndex == 0)
+            {
+                previousPageButton.SetActive(false);
+                if (phonePages.Count > 1)
+                {
+                    nextPageButton.SetActive(true);
+                }
+                else
+                {
+                    nextPageButton.SetActive(false);
+                }
+            }
+            else if (pageIndex == phonePages.Count - 1)
+            {
+                previousPageButton.SetActive(true);
+                nextPageButton.SetActive(false);
+            }
+            else
+            {
+                previousPageButton.SetActive(true);
+                nextPageButton.SetActive(true);
+            }
+        }
+        else if (cluesParent.activeSelf)
+        {
+            cluePages[this.pageIndex].SetActive(false);
+            cluePages[pageIndex].SetActive(true);
+
+            if (pageIndex == 0)
+            {
+                previousPageButton.SetActive(false);
+                if (cluePages.Count > 1)
+                {
+                    nextPageButton.SetActive(true);
+                }
+                else
+                {
+                    nextPageButton.SetActive(false);
+                }
+            }
+            else if (pageIndex == cluePages.Count - 1)
+            {
+                previousPageButton.SetActive(true);
+                nextPageButton.SetActive(false);
+            }
+            else
+            {
+                previousPageButton.SetActive(true);
+                nextPageButton.SetActive(true);
+            }
         }
         this.pageIndex = pageIndex;
     }
 
+    public void NextPage()
+    {
+        SetPage(pageIndex + 1);
+    }
 
+    public void PreviousPage()
+    {
+        SetPage(pageIndex - 1);
+    }
+
+    public void ExpandClue(Clue clue)
+    {
+        expandedClueTitle.text = clue.GetName();
+        expandedClueDescription.text = clue.GetDescription();
+        expandedClueObject.SetActive(true);
+    }
+
+    public void ShrinkClue()
+    {
+        expandedClueObject.SetActive(false);
+    }
 
     // Deprecated
     void initPhones()

@@ -293,6 +293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70921ba58fc0a424a8afc08755fabe62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterBackground: {fileID: 21300000, guid: adcc2c0237113ca46871554e0f61b5ad, type: 3}
+  nameText: {fileID: 2645358157471425779}
   dialogueEntries: []
 --- !u!1 &2645358157471425781
 GameObject:
