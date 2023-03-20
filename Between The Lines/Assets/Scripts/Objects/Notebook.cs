@@ -89,6 +89,11 @@ public class Notebook : Singleton<Notebook>
         }
     }
 
+    public void UndiscoverPhoneNumber(string phoneName)
+    {
+        // TODO:
+    }
+
     public void RevealPhoneName(string phoneName)
     {
         PhoneNumber phone = (PhoneNumber)phoneTable[phoneName];
@@ -128,6 +133,16 @@ public class Notebook : Singleton<Notebook>
 
             NotificationManager.Instance.NotifyClue(clue);
         }
+    }
+
+    public void UndiscoverClue(string clueName)
+    {
+        // TODO
+    }
+
+    public void ChangeDialogueTree(string phoneName, string treeName)
+    {
+        // TODO
     }
 
     public bool IsClueDiscovered(string clueName)

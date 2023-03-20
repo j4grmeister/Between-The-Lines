@@ -5603,7 +5603,7 @@ PrefabInstance:
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.data[0]
       value: 
-      objectReference: {fileID: 8105062971427951588, guid: 37bcf7bda7a6ea846acd468297ec2314, type: 3}
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
     - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: m_RootOrder
       value: 1

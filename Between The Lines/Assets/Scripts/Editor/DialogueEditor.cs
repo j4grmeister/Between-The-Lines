@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.Events;
+using UnityEngine.Events;
 using SoftCircuits.HtmlMonkey;
 
 [CustomEditor(typeof(DialogueStage))]
@@ -44,6 +46,15 @@ public class DialogueEditor : Editor
     private void UpdateTarget()
     {
         DialogueStage dialogueEntry = (DialogueStage)target;
+
+        string oldAssetName = dialogueEntry.gameObject.name;
+
+        NotebookMethods notebookWrapper = dialogueEntry.gameObject.GetComponent<NotebookMethods>();
+        if (notebookWrapper == null)
+        {
+            notebookWrapper = dialogueEntry.gameObject.AddComponent<NotebookMethods>();
+        }
+
         HtmlDocument document = HtmlDocument.FromFile(dialogueEntry.linkedFilename);
 
         // Extract filename from filepath
@@ -116,24 +127,41 @@ public class DialogueEditor : Editor
 
             if (!firstDone)
             {
+                //AssetDatabase.RenameAsset("Assets/Prefabs/Dialogue/" + thisNode.dialogueStage.gameObject.name + ".prefab", filename);
+                //string[] assets = AssetDatabase.FindAssets("Assets/Prefabs/Dialogue/" + thisNode.dialogueStage.gameObject.name);
                 thisNode.dialogueStage.gameObject.name = filename;
                 firstDone = true;
             }
             else
             {
+                // TODO: Moved this down. Do I need this here anymore?
                 if(thisNode.dialogueStage == null)
                 {
-                    thisNode.dialogueStage = new DialogueStage();
+                    //thisNode.dialogueStage = new DialogueStage();
+                    GameObject go = new GameObject();
+                    thisNode.dialogueStage = go.AddComponent<DialogueStage>();
                 }
+                //Debug.Log(thisNode.dialogueStage);
                 thisNode.dialogueStage.gameObject.name = thisNode.name;
                 //thisNode.dialogueStage.transform.parent = lastNode.dialogueStage.transform;
-                thisNode.dialogueStage.transform.parent = thisNode.parent.transform.parent;
+                //Debug.Log(thisNode.parent.gameObject.name);
+                //thisNode.dialogueStage.transform.parent = thisNode.parent.transform.parent;
+                GameObjectUtility.SetParentAndAlign(thisNode.dialogueStage.gameObject, thisNode.parent.gameObject);
             }
 
             // Parse text
             int responseIndex = thisNode.text.IndexOf('[');
-            thisNode.dialogueStage.prompt = thisNode.text.Substring(0, responseIndex);
-            string[] responseStrings = thisNode.text.Substring(responseIndex).Split('\n');
+            string[] responseStrings;
+            if (responseIndex != -1)
+            {
+                thisNode.dialogueStage.prompt = thisNode.text.Substring(0, responseIndex);
+                responseStrings = thisNode.text.Substring(responseIndex).Split('\n');
+            }
+            else
+            {
+                thisNode.dialogueStage.prompt = thisNode.text;
+                responseStrings = new string[0];
+            }
             if (responseStrings.Length == 0)
             {
                 DialogueStage.DialogueResponse response = new DialogueStage.DialogueResponse();
@@ -149,12 +177,18 @@ public class DialogueEditor : Editor
                     DialogueStage.DialogueResponse response = new DialogueStage.DialogueResponse();
                     string[] split = r.Split("]]");
                     string text = split[0].Replace("[", "");
+                    if (text.Length == 0)
+                    {
+                        continue;
+                    }
                     response.response = text;
+                    response.onContinue = new UnityEvent();
 
                     if (split.Length > 1)
                     {
                         string flags = split[1];
                         while (flags.Length > 0)
+                        //while (false)
                         {
                             if (flags[0] == ' ')
                             {
@@ -164,6 +198,7 @@ public class DialogueEditor : Editor
 
                             string f = flags.Substring(0, 2);
                             string[] splitData = flags.Split('(', ')');
+                            flags = flags.Substring(flags.IndexOf(')')+1);
                             string data = "";
                             if (splitData.Length > 1)
                             {
@@ -181,43 +216,68 @@ public class DialogueEditor : Editor
                             }
                             else if (f == "c+")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.DiscoverClue, data);
                             }
                             else if (f == "c-")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.UndiscoverClue, data);
                             }
                             else if (f == "p+")
                             {
-                                response.onContinue.AddListener(() => Notebook.Instance.DiscoverPhoneNumber(data));
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.DiscoverPhoneNumber, data);
                             }
                             else if (f == "p-")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.UndiscoverPhoneNumber, data);
                             }
                             else if (f == "pr")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.RevealPhoneName, data);
+                                Debug.Log("This dialogue can reveal " + data + "'s phone number. Please make sure that the name is hidden in the scene to begin with.");
                             }
                             else if (f == "pc")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.Call, data);
                             }
                             else if (f == "tc")
                             {
-                                
+                                UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.ChangeDialogueTree, data);
                             }
                         }
                     }
-                    Debug.Log(text);
+                    // Had some errors but the tree was correct
+                    // I believe this guards against extra newlines
+                    /*
+                    if (text.Length == 0)
+                    {
+                        continue;
+                    }
+                    */
+                    //Debug.Log(text);
                     DialogueTreeNode nextNode = (DialogueTreeNode)nodeTable[text];
-                    Debug.Log(nextNode);
+                    /*
+                    if (nextNode == null)
+                    {
+                        continue;
+                    }
+                    */
+                    //Debug.Log(nextNode);
+                    //if (nextNode != null)
+                    //{
+
+                    if(nextNode.dialogueStage == null)
+                    {
+                        //thisNode.dialogueStage = new DialogueStage();
+                        GameObject go = new GameObject();
+                        nextNode.dialogueStage = go.AddComponent<DialogueStage>();
+                    }
                     response.nextStage = nextNode.dialogueStage;
                     if (!nextNode.passed)
                     {
                         nextNode.parent = thisNode.dialogueStage;
                         nodeQueue.Add(nextNode);
                     }
+                    //}
                     
                     responseList.Add(response);
                 }
@@ -227,5 +287,9 @@ public class DialogueEditor : Editor
             thisNode.passed = true;
             //lastNode = thisNode;
         }
+
+
+        // TODO: need to do this but it breaks everything else somehow
+        //AssetDatabase.RenameAsset("Assets/Prefabs/Dialogue/" + oldAssetName + ".prefab", filename);
     }
 }
