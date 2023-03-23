@@ -7,6 +7,41 @@ using UnityEngine;
 public class ClickListener : Singleton<ClickListener>
 {
 
+    private ClickableArea hoveredArea;
+    private ClickableArea clickedArea;
+
+    void Update()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+
+        if (hit.collider != null)
+        {
+            ClickableArea thisArea;
+            if (hit.transform.TryGetComponent<ClickableArea>(out thisArea))
+            {
+                if (hoveredArea != thisArea)
+                {
+                    if (hoveredArea != null)
+                    {
+                        hoveredArea.onMouseExit.Invoke();
+                    }
+                    thisArea.onMouseEnter.Invoke();
+                    hoveredArea = thisArea;
+                }
+                if (clickedArea == thisArea && Input.GetMouseButtonUp(0))
+                {
+                    clickedArea.onClick.Invoke();
+                }
+                else if (Input.GetMouseButtonDown(0))
+                {
+                    clickedArea = thisArea;
+                }
+            }
+        }
+    }
+
+    /*
     private ClickableArea clickedArea;
 
     void Update()
@@ -35,4 +70,5 @@ public class ClickListener : Singleton<ClickListener>
             }
         }
     }
+    */
 }

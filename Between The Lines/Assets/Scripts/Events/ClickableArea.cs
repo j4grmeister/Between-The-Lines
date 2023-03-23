@@ -7,6 +7,8 @@ using UnityEngine.Events;
 public class ClickableArea : MonoBehaviour
 {
     public UnityEvent onClick;
+    public UnityEvent onMouseEnter;
+    public UnityEvent onMouseExit;
 
     private Collider2D clickableArea;
 

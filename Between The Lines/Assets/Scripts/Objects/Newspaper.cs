@@ -21,8 +21,10 @@ public class Newspaper : MonoBehaviour
     }
 
 
-    [SerializeField] private GameObject nextPageButton;
-    [SerializeField] private GameObject previousPageButton;
+    [SerializeField] private GameObject nextPageButtonOnePage;
+    [SerializeField] private GameObject previousPageButtonOnePage;
+    [SerializeField] private GameObject nextPageButtonTwoPage;
+    [SerializeField] private GameObject previousPageButtonTwoPage;
     [SerializeField] private NewspaperPage[] pages;
     [SerializeField] private SpriteRenderer onePageBackground;
     [SerializeField] private SpriteRenderer twoPageBackground;
@@ -36,7 +38,8 @@ public class Newspaper : MonoBehaviour
         pagesViewed = new bool[pages.Length];
 
         pageIndex = 0;
-        previousPageButton.SetActive(false);
+        previousPageButtonOnePage.SetActive(false);
+        previousPageButtonTwoPage.SetActive(false);
         if (pages.Length > 0)
         {
             pages[0].pageObject.SetActive(true);
@@ -47,11 +50,13 @@ public class Newspaper : MonoBehaviour
         }
         if (pages.Length > 1)
         {
-            nextPageButton.SetActive(true);
+            nextPageButtonOnePage.SetActive(true);
+            nextPageButtonTwoPage.SetActive(true);
         }
         else
         {
-            nextPageButton.SetActive(false);
+            nextPageButtonOnePage.SetActive(false);
+            nextPageButtonTwoPage.SetActive(false);
         }
 
         SetBackground(pages[0].pageType);
@@ -78,7 +83,8 @@ public class Newspaper : MonoBehaviour
 
         if (pageIndex == 0)
         {
-            previousPageButton.SetActive(true);
+            previousPageButtonOnePage.SetActive(true);
+            previousPageButtonTwoPage.SetActive(true);
         }
 
         pageIndex++;
@@ -86,7 +92,8 @@ public class Newspaper : MonoBehaviour
 
         if (pageIndex == pages.Length - 1)
         {
-            nextPageButton.SetActive(false);
+            nextPageButtonOnePage.SetActive(false);
+            nextPageButtonTwoPage.SetActive(false);
         }
 
         SetBackground(pages[pageIndex].pageType);
@@ -104,7 +111,8 @@ public class Newspaper : MonoBehaviour
 
         if (pageIndex == pages.Length - 1)
         {
-            nextPageButton.SetActive(true);
+            nextPageButtonOnePage.SetActive(true);
+            nextPageButtonTwoPage.SetActive(true);
         }
 
         pageIndex--;
@@ -112,7 +120,8 @@ public class Newspaper : MonoBehaviour
 
         if (pageIndex == 0)
         {
-            previousPageButton.SetActive(false);
+            previousPageButtonOnePage.SetActive(false);
+            previousPageButtonTwoPage.SetActive(false);
         }
 
         SetBackground(pages[pageIndex].pageType);
