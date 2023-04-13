@@ -124,6 +124,8 @@ public class DialogueEditor : Editor
             DialogueTreeNode thisNode = nodeQueue[0];
             nodeQueue.RemoveAt(0);
 
+            thisNode.dialogueStage.treeName = filename;
+
 
             if (!firstDone)
             {

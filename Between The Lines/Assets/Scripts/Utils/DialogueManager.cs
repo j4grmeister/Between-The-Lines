@@ -48,6 +48,9 @@ public class DialogueManager : Singleton<DialogueManager>
             if (dialogueStage.responses[j].nextStage == null)
             {
                 responseArea.onClick.AddListener(() => {
+                    // Analytics
+                    AnalyticsManager.Instance.LogDialogueEvent(dialogueStage.treeName, dialogueStage.prompt, dialogueStage.responses[j].response);
+
                     CameraManager.Instance.GoToLast();
                     paperFromNotebookButton.SetActive(true);
                     phoneFromNotebookButton.SetActive(false);
@@ -55,10 +58,17 @@ public class DialogueManager : Singleton<DialogueManager>
             }
             else
             {
-                responseArea.onClick.AddListener(() => {TriggerDialogue(dialogueStage.responses[j].nextStage);});
+                responseArea.onClick.AddListener(() => {
+                    // Analytics
+                    AnalyticsManager.Instance.LogDialogueEvent(dialogueStage.treeName, dialogueStage.prompt, dialogueStage.responses[j].response);
+
+                    TriggerDialogue(dialogueStage.responses[j].nextStage);
+                });
             }
             
-            responseArea.onClick.AddListener(() => {dialogueStage.responses[j].onContinue.Invoke();});
+            responseArea.onClick.AddListener(() => {
+                dialogueStage.responses[j].onContinue.Invoke();
+            });
             //responseArea.onClick.AddListener(ResetResponses);
 
             responseAreas.Add(responseArea);

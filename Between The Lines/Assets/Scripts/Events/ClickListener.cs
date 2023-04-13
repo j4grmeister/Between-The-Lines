@@ -39,6 +39,11 @@ public class ClickListener : Singleton<ClickListener>
                 }
             }
         }
+        else if (hoveredArea != null)
+        {
+            hoveredArea.onMouseExit.Invoke();
+            hoveredArea = null;
+        }
     }
 
     /*

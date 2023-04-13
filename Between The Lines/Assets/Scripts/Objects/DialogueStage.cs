@@ -17,6 +17,7 @@ public class DialogueStage : MonoBehaviour
         public UnityEvent onContinue;
     }
 
+    public string treeName;
     public string prompt;
     public DialogueResponse[] responses;
 

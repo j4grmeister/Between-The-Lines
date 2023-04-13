@@ -814,13 +814,13 @@ MonoBehaviour:
   responses:
   - response: What is his reputation?
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 1317903604610690641}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
   - response: I think he cheated!
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 6421390064520478021}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
@@ -979,7 +979,7 @@ MonoBehaviour:
   responses:
   - response: I will get some for you!
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 5176876440824174815}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
