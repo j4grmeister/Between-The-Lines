@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5670823877521940709}
   - component: {fileID: 7171896665210059542}
   m_Layer: 0
-  m_Name: Week 1
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
