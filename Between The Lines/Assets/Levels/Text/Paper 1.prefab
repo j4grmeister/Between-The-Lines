@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7153288814979225588
 Transform:
   m_ObjectHideFlags: 0
@@ -180,19 +180,7 @@ MonoBehaviour:
     pageType: 0
     onFirstView:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 7171896665210059542}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverPhoneNumber
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: City Hall
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   onePageBackground: {fileID: 337549460433414132}
   twoPageBackground: {fileID: 3729924433055158260}
 --- !u!114 &7171896665210059542
@@ -555,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6517488287614261793
 Transform:
   m_ObjectHideFlags: 0
@@ -1746,7 +1734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Pizza Place
+      value: Pizza Store
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2260,7 +2248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1839130071992161039, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2525146852275122452, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: m_SizeDelta.y

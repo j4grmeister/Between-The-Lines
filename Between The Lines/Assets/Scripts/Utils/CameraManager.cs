@@ -7,6 +7,8 @@ public class CameraManager : Singleton<CameraManager>
     [SerializeField] private Vector2 notebookPosition;
     [SerializeField] private Vector2 phonePosition;
 
+    [SerializeField] private GameObject animationsParent;
+
     private Vector2 paperPosition;
 
     private Vector2 lastPosition;
@@ -26,20 +28,27 @@ public class CameraManager : Singleton<CameraManager>
     public void GoToPaper()
     {
         MoveCamera(paperPosition);
+        animationsParent.SetActive(true);
     }
 
     public void GoToNotebook()
     {
         MoveCamera(notebookPosition);
+        animationsParent.SetActive(false);
     }
 
     public void GoToPhone()
     {
         MoveCamera(phonePosition);
+        animationsParent.SetActive(false);
     }
 
     public void GoToLast()
     {
+        if (lastPosition == paperPosition)
+        {
+            animationsParent.SetActive(true);
+        }
         MoveCamera(lastPosition);
     }
 }

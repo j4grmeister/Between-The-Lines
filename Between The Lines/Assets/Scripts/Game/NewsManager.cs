@@ -16,6 +16,8 @@ public class NewsManager : Singleton<NewsManager>
     [SerializeField] private TextMeshPro articleText;
     [SerializeField] private SpriteRenderer articlePhoto;
 
+    [SerializeField] private FrameAnimator[] animations;
+
     private NewsArticle currentArticle;
 
     private NewsArticle[] savedArticles;
@@ -90,6 +92,7 @@ public class NewsManager : Singleton<NewsManager>
     public void NextLevel()
     {
         levelIndex++;
+        animations[levelIndex-1].Play();
         MoveSavedArticles();
         if (levelIndex < levels.Count)
         {
