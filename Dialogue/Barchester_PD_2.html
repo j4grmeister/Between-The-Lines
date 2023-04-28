@@ -9,7 +9,30 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Barchester PD 2.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Barchester PD 2" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="8E834D38-5A40-4D08-B978-B85AF454494B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="575,200" size="100,100">No one picked up... Maybe everyone is out on the case?</tw-passagedata></tw-storydata>
+<tw-storydata name="Barchester PD 2" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="8E834D38-5A40-4D08-B978-B85AF454494B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="575,200" size="100,100">Hello, this is Barchester Police Department, how can we help you?
+
+[[I know where my mom is.]]cr(endgame)
+[[Do you know where my mom is yet?]]
+[[Did you find Anne Forger?]]cr(anne_forger_is_missing)
+[[I know where Anne Forger is.]]cr(found_anne)
+[[Nevermind]]</tw-passagedata><tw-passagedata pid="2" name="Do you know where my mom is yet?" tags="" position="700,100" size="100,100">Sorry, we can&#39;t give any information about ongoing investigations. Is there anything else I can help with?
+
+[[I know where my mom is.]]cr(endgame)
+[[Did you find Anne Forger?]]cr(anne_forger_is_missing)
+[[I know where Anne Forger is.]]cr(found_anne)
+[[Nevermind]]</tw-passagedata><tw-passagedata pid="3" name="Did you find Anne Forger?" tags="" position="875,300" size="100,100">No, but we can&#39;t give any more information. Is there anything else I can help you with?
+[[I know where my mom is.]]cr(endgame)
+[[Do you know where my mom is yet?]]
+[[I know where Anne Forger is.]]cr(found_anne)
+[[Nevermind]]</tw-passagedata><tw-passagedata pid="4" name="Nevermind" tags="" position="450,325" size="100,100">Ok *click</tw-passagedata><tw-passagedata pid="5" name="I know where Anne Forger is." tags="" position="575,450" size="100,100">Where?
+
+[[She was on a date and went hiking at the Myre&#39;s Precipace.]]</tw-passagedata><tw-passagedata pid="6" name="I know where my mom is." tags="" position="700,450" size="100,100">Who?
+
+[[Lisa Thompson.]]</tw-passagedata><tw-passagedata pid="7" name="She was on a date and went hiking at the Myre&#39;s Precipace." tags="" position="575,575" size="100,100">Ok, we will take this lead into account and send some K-9 units to sniff that area. Thank you. *click</tw-passagedata><tw-passagedata pid="8" name="She was taken to a room at the Kipter Lodge. The kidnapper&#39;s car is outside of it right now." tags="" position="825,725" size="100,100">Ok, we will send some dispatchers there right away.
+
+[[Thank you.]]</tw-passagedata><tw-passagedata pid="9" name="Lisa Thompson." tags="" position="825,575" size="100,100">Oh, yeah. Where is she?
+
+[[She was taken to a room at the Kipter Lodge. The kidnapper&#39;s car is outside of it right now.]]</tw-passagedata><tw-passagedata pid="10" name="Thank you." tags="" position="825,850" size="100,100">*click</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
