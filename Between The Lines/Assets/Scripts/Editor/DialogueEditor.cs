@@ -157,7 +157,7 @@ public class DialogueEditor : Editor
             if (responseIndex != -1)
             {
                 thisNode.dialogueStage.prompt = thisNode.text.Substring(0, responseIndex);
-                responseStrings = thisNode.text.Substring(responseIndex).Split('\n');
+                responseStrings = thisNode.text.Substring(responseIndex).Split('\n', '\r');
             }
             else
             {
@@ -189,6 +189,7 @@ public class DialogueEditor : Editor
                     if (split.Length > 1)
                     {
                         string flags = split[1];
+                        flags.TrimEnd();
                         while (flags.Length > 0)
                         //while (false)
                         {
@@ -245,6 +246,7 @@ public class DialogueEditor : Editor
                             {
                                 UnityEventTools.AddStringPersistentListener(response.onContinue, notebookWrapper.ChangeDialogueTree, data);
                             }
+                            flags.TrimEnd();
                         }
                     }
                     // Had some errors but the tree was correct
