@@ -39,6 +39,7 @@ public class NewsArticle : MonoBehaviour
     public void Shrink()
     {
         expandedVersion.SetActive(false);
+        WatchManager.Instance.NextTurn();
     }
 
     public string GetHeadline()

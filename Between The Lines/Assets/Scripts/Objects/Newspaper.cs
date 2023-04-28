@@ -69,10 +69,12 @@ public class Newspaper : MonoBehaviour
             case PageType.ONEPAGE:
                 onePageBackground.gameObject.SetActive(true);
                 twoPageBackground.gameObject.SetActive(false);
+                WatchManager.Instance.OnePage();
                 break;
             case PageType.TWOPAGE:
                 onePageBackground.gameObject.SetActive(false);
                 twoPageBackground.gameObject.SetActive(true);
+                WatchManager.Instance.TwoPage();
                 break;
         }
     }

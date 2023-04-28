@@ -2220,7 +2220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notebookPosition: {x: 4, y: 0}
   phonePosition: {x: 0, y: 2.5}
-  animationsParent: {fileID: 0}
+  animationsParent: {fileID: 344420624}
 --- !u!1 &526164878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb1951e61e6b5a4091055344b76e868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onePagePosition: {x: -1.035, y: 0.315}
+  twoPagePosition: {x: -1.415, y: -0.385}
   hourHandRenderer: {fileID: 526164880}
   minuteHandRenderer: {fileID: 526164880}
   hourSprites:

@@ -5,6 +5,9 @@ using UnityEngine;
 public class WatchManager : Singleton<WatchManager>
 {
     
+    [SerializeField] private Vector2 onePagePosition;
+    [SerializeField] private Vector2 twoPagePosition;
+
     [SerializeField] private SpriteRenderer hourHandRenderer;
     [SerializeField] private SpriteRenderer minuteHandRenderer;
 
@@ -29,7 +32,7 @@ public class WatchManager : Singleton<WatchManager>
     public void SetTurn(int turnNumber)
     {
         this.turnNumber = turnNumber % maxTurns;
-        hourHandRenderer.sprite = hourSprites[Mathf.FloorToInt(this.turnNumber / maxTurns * hourSprites.Length)];
+        hourHandRenderer.sprite = hourSprites[Mathf.FloorToInt((float)this.turnNumber / (float)maxTurns * hourSprites.Length)];
     }
 
     public void NextTurn()
@@ -43,5 +46,15 @@ public class WatchManager : Singleton<WatchManager>
         {
             SetTurn(turnNumber+1);
         }
+    }
+
+    public void OnePage()
+    {
+        transform.localPosition = new Vector3(onePagePosition.x, onePagePosition.y, transform.localPosition.z);
+    }
+
+    public void TwoPage()
+    {
+        transform.localPosition = new Vector3(twoPagePosition.x, twoPagePosition.y, transform.localPosition.z);
     }
 }
