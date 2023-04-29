@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3242705844442351561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8136265329389099759}
+  - component: {fileID: 4215458942044661380}
+  m_Layer: 0
+  m_Name: I want my fortune read
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8136265329389099759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242705844442351561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7855234714042048713}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215458942044661380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242705844442351561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  prompt: 'GOOD, GOOD... OOOOHHHH CRYSTAL BAAAALLL
+
+    
+
+'
+  responses:
+  - response: Wait, we are doing this now?
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4120557941431806093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7855234714042048713}
+  - component: {fileID: 5001408105402592076}
+  m_Layer: 0
+  m_Name: Shouldn't you already know why I called you?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7855234714042048713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120557941431806093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8136265329389099759}
+  m_Father: {fileID: 1428499202732229619}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5001408105402592076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120557941431806093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  prompt: 'I MUST PUT A GREAT DEAL OF EFFORT INTO A FORTUNE, I AM NOT ALL KNOWING
+    ALTHOUGH MY POWER HAS BEEN GROWING STEADILY FOR THE PAST...TWO....WEEKS!
+
+    
+
+'
+  responses:
+  - response: Oh, well that sounds great
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I want my fortune read
+    requiredClue: 
+    nextStage: {fileID: 4215458942044661380}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4971887240342121673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1428499202732229619}
+  - component: {fileID: 6031084069274653361}
+  - component: {fileID: 1029807870121257816}
+  m_Layer: 0
+  m_Name: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1428499202732229619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971887240342121673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7855234714042048713}
+  - {fileID: 6193388632017301209}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6031084069274653361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971887240342121673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  prompt: 'HELLO TO ALL THOSE WHO DELIGHT IN THE WORKS OF THE SPIRITS, and spa services.
+    TO WHAT DO I OWE THE PLEASURE.
+
+    
+
+'
+  responses:
+  - response: Shouldn't you already know why I called you?
+    requiredClue: 
+    nextStage: {fileID: 5001408105402592076}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I want my fortune read
+    requiredClue: 
+    nextStage: {fileID: 4215458942044661380}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I was told to call you
+    requiredClue: Talk to Dianne Offerton
+    nextStage: {fileID: 6587918763487420899}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: So... how about that Anne Forger Case
+    requiredClue: Talk to Dianne Offerton
+    nextStage: {fileID: 7180096239432395215}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1029807870121257816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971887240342121673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5026400782604226854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5000990539312374864}
+  - component: {fileID: 7180096239432395215}
+  m_Layer: 0
+  m_Name: So... how about that Anne Forger Case
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5000990539312374864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026400782604226854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6193388632017301209}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7180096239432395215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026400782604226854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  prompt: 'Oh! I know what happened to her!
+
+    
+
+'
+  responses: []
+--- !u!1 &8869554080247682782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6193388632017301209}
+  - component: {fileID: 6587918763487420899}
+  m_Layer: 0
+  m_Name: I was told to call you
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6193388632017301209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869554080247682782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5000990539312374864}
+  m_Father: {fileID: 1428499202732229619}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6587918763487420899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869554080247682782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Diane_Offerton
+  prompt: 'Must have been Mrs. Carson. She worries over NOTHING AT ALL HAHEHAHA!
+    She''s a good friend, a little overprotective. But I have been around and around
+    and around the block a few times. AN ANCIENT WITCH BEYOND TIME!!!!
+
+    
+
+'
+  responses:
+  - response: Why don't you call her by her first name?
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: So... how about that Anne Forger Case
+    requiredClue: 
+    nextStage: {fileID: 7180096239432395215}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []

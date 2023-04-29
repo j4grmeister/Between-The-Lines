@@ -1,0 +1,645 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2965851222153215805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8716969508913381915}
+  - component: {fileID: 1691440231600719464}
+  m_Layer: 0
+  m_Name: Do you know where my mom is yet?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8716969508913381915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965851222153215805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5105777574287175123}
+  m_Father: {fileID: 5897764311012429063}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691440231600719464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965851222153215805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Sorry, we can''t give any information about ongoing investigations. Is
+    there anything else I can help with?
+
+    
+
+'
+  responses:
+  - response: I know where my mom is.
+    requiredClue: endgame
+    nextStage: {fileID: 404214023318751246}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Did you find Anne Forger?
+    requiredClue: anne_forger_is_missing
+    nextStage: {fileID: 2688288220196821954}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know where Anne Forger is.
+    requiredClue: found_anne
+    nextStage: {fileID: 1075095812677603655}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Nevermind
+    requiredClue: 
+    nextStage: {fileID: 466493764426950748}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4166798345230096320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2388422035250881596}
+  - component: {fileID: 7647454608642388961}
+  m_Layer: 0
+  m_Name: She was taken to a room at the Kipter Lodge. The kidnapper's car is outside
+    of it right now.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2388422035250881596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166798345230096320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4044967785473090203}
+  m_Father: {fileID: 2378315055557452263}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7647454608642388961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166798345230096320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Ok, we will send some dispatchers there right away.
+
+    
+
+'
+  responses:
+  - response: Thank you.
+    requiredClue: 
+    nextStage: {fileID: 238211120538628384}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4510518162836558378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4680214472007862612}
+  - component: {fileID: 1075095812677603655}
+  m_Layer: 0
+  m_Name: I know where Anne Forger is.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4680214472007862612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510518162836558378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3265064892124092799}
+  m_Father: {fileID: 5105777574287175123}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1075095812677603655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510518162836558378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Where?
+
+    
+
+'
+  responses:
+  - response: She was on a date and went hiking at the Myre's Precipace.
+    requiredClue: 
+    nextStage: {fileID: 2857777933027558591}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4803994663480353466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8807057281795812139}
+  - component: {fileID: 466493764426950748}
+  m_Layer: 0
+  m_Name: Nevermind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8807057281795812139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803994663480353466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5105777574287175123}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466493764426950748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803994663480353466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: Ok *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4830202271131016933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2378315055557452263}
+  - component: {fileID: 3703118178709095778}
+  m_Layer: 0
+  m_Name: Lisa Thompson.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2378315055557452263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830202271131016933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2388422035250881596}
+  m_Father: {fileID: 3101356983227497997}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3703118178709095778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830202271131016933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Oh, yeah. Where is she?
+
+    
+
+'
+  responses:
+  - response: She was taken to a room at the Kipter Lodge. The kidnapper's car is
+      outside of it right now.
+    requiredClue: 
+    nextStage: {fileID: 7647454608642388961}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5920999681245821547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4044967785473090203}
+  - component: {fileID: 238211120538628384}
+  m_Layer: 0
+  m_Name: Thank you.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4044967785473090203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920999681245821547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2388422035250881596}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238211120538628384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920999681245821547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: '*click'
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6139180004685724980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3265064892124092799}
+  - component: {fileID: 2857777933027558591}
+  m_Layer: 0
+  m_Name: She was on a date and went hiking at the Myre's Precipace.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3265064892124092799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6139180004685724980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4680214472007862612}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2857777933027558591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6139180004685724980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: Ok, we will take this lead into account and send some K-9 units to sniff
+    that area. Thank you. *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7833455040431121164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5105777574287175123}
+  - component: {fileID: 2688288220196821954}
+  m_Layer: 0
+  m_Name: Did you find Anne Forger?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5105777574287175123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833455040431121164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4680214472007862612}
+  - {fileID: 8807057281795812139}
+  m_Father: {fileID: 8716969508913381915}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2688288220196821954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833455040431121164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'No, but we can''t give any more information. Is there anything else I
+    can help you with?
+
+'
+  responses:
+  - response: I know where my mom is.
+    requiredClue: endgame
+    nextStage: {fileID: 404214023318751246}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Do you know where my mom is yet?
+    requiredClue: 
+    nextStage: {fileID: 1691440231600719464}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know where Anne Forger is.
+    requiredClue: found_anne
+    nextStage: {fileID: 1075095812677603655}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Nevermind
+    requiredClue: 
+    nextStage: {fileID: 466493764426950748}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8383623790427036686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5897764311012429063}
+  - component: {fileID: 405349764270924913}
+  - component: {fileID: 3066251383902308490}
+  m_Layer: 0
+  m_Name: Barchester_PD_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5897764311012429063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383623790427036686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3101356983227497997}
+  - {fileID: 8716969508913381915}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &405349764270924913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383623790427036686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Hello, this is Barchester Police Department, how can we help you?
+
+    
+
+'
+  responses:
+  - response: I know where my mom is.
+    requiredClue: endgame
+    nextStage: {fileID: 404214023318751246}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Do you know where my mom is yet?
+    requiredClue: 
+    nextStage: {fileID: 1691440231600719464}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Did you find Anne Forger?
+    requiredClue: anne_forger_is_missing
+    nextStage: {fileID: 2688288220196821954}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know where Anne Forger is.
+    requiredClue: found_anne
+    nextStage: {fileID: 1075095812677603655}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Nevermind
+    requiredClue: 
+    nextStage: {fileID: 466493764426950748}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &3066251383902308490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383623790427036686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &9055695980738522109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3101356983227497997}
+  - component: {fileID: 404214023318751246}
+  m_Layer: 0
+  m_Name: I know where my mom is.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3101356983227497997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055695980738522109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2378315055557452263}
+  m_Father: {fileID: 5897764311012429063}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404214023318751246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055695980738522109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_2
+  prompt: 'Who?
+
+    
+
+'
+  responses:
+  - response: Lisa Thompson.
+    requiredClue: 
+    nextStage: {fileID: 3703118178709095778}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []

@@ -1,0 +1,787 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8511509732571387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8896992961261474433}
+  - component: {fileID: 96948398412635812}
+  - component: {fileID: 4461423802691699885}
+  m_Layer: 0
+  m_Name: Barchester_PD_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8896992961261474433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511509732571387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6245347796040273049}
+  - {fileID: 7513294767446200437}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96948398412635812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511509732571387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Hello, this is Barchester Police Department, how may I help you?
+
+    
+
+'
+  responses:
+  - response: I'd like to report a missing person.
+    requiredClue: 
+    nextStage: {fileID: 6020418321006038396}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I'd like to report a break-in.
+    requiredClue: 
+    nextStage: {fileID: 2491645691132569560}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &4461423802691699885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511509732571387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &182523239862413703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4585657732951951731}
+  - component: {fileID: 5461147743238713503}
+  m_Layer: 0
+  m_Name: I can't get down there.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4585657732951951731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182523239862413703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8528307783589370722}
+  m_Father: {fileID: 4065013162464730070}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5461147743238713503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182523239862413703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Well, why not?
+
+    
+
+'
+  responses:
+  - response: I have a disability, so I can't really get around town very well without
+      my mom.
+    requiredClue: 
+    nextStage: {fileID: 1117110054356517366}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &472917049147930236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8528307783589370722}
+  - component: {fileID: 1117110054356517366}
+  m_Layer: 0
+  m_Name: I have a disability, so I can't really get around town very well without
+    my mom.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8528307783589370722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472917049147930236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 484360044741891188}
+  m_Father: {fileID: 4585657732951951731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117110054356517366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472917049147930236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Well, why don''t you ask her to take you?
+
+    
+
+'
+  responses:
+  - response: She's the one who's missing.
+    requiredClue: 
+    nextStage: {fileID: 5009173302416606985}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2664101239641885545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4424047511385079849}
+  - component: {fileID: 4853431894339555990}
+  m_Layer: 0
+  m_Name: But my house was broken into!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4424047511385079849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2664101239641885545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5566447586794479648}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4853431894339555990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2664101239641885545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Well why didn''t you say that earlier? We''ll send some dispacters there
+    right away, sir. What''s the address of the break-in?
+
+    
+
+'
+  responses:
+  - response: 109 Galax Street.
+    requiredClue: 
+    nextStage: {fileID: 7774538157857173447}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3880679523219088760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6245347796040273049}
+  - component: {fileID: 6020418321006038396}
+  m_Layer: 0
+  m_Name: I'd like to report a missing person.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6245347796040273049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880679523219088760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5566447586794479648}
+  - {fileID: 4065013162464730070}
+  m_Father: {fileID: 8896992961261474433}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6020418321006038396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880679523219088760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'How long has this person been missing?
+
+    
+
+'
+  responses:
+  - response: I just woke up and they were gone.
+    requiredClue: 
+    nextStage: {fileID: 8909407415338880766}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: A few days.
+    requiredClue: 
+    nextStage: {fileID: 5193640559843483710}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3964982052969954134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5566447586794479648}
+  - component: {fileID: 8909407415338880766}
+  m_Layer: 0
+  m_Name: I just woke up and they were gone.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5566447586794479648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964982052969954134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4424047511385079849}
+  m_Father: {fileID: 6245347796040273049}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8909407415338880766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964982052969954134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: "See, we'd like if you'd wait just a few days before filing a report because
+    there's a good chance this person will just show up. \r\n\r\n"
+  responses:
+  - response: But my house was broken into!
+    requiredClue: 
+    nextStage: {fileID: 4853431894339555990}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5382039081775727644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639658157373923663}
+  - component: {fileID: 7774538157857173447}
+  m_Layer: 0
+  m_Name: 109 Galax Street.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1639658157373923663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382039081775727644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5783265156931727644}
+  m_Father: {fileID: 7513294767446200437}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7774538157857173447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382039081775727644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Ok. We''ll have some folks down there shortly.
+
+    
+
+'
+  responses:
+  - response: Thank you.
+    requiredClue: 
+    nextStage: {fileID: 2674397943974197354}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5811682559143130474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832011769439002317}
+  - component: {fileID: 2054356982649473109}
+  m_Layer: 0
+  m_Name: That would be great.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832011769439002317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5811682559143130474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 484360044741891188}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2054356982649473109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5811682559143130474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'I appreciate the positivity. I''m very sorry for what''s happening right
+    now. What address would you want those dispatchers going out to?
+
+    
+
+'
+  responses:
+  - response: 109 Galax Street.
+    requiredClue: 
+    nextStage: {fileID: 7774538157857173447}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6889385395702514462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484360044741891188}
+  - component: {fileID: 5009173302416606985}
+  m_Layer: 0
+  m_Name: She's the one who's missing.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484360044741891188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889385395702514462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3376687146796411916}
+  - {fileID: 1832011769439002317}
+  m_Father: {fileID: 8528307783589370722}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5009173302416606985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889385395702514462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Ah. I see. Well, I''ll tell you what, we will ask some of our dispacters
+    to head on over there and drop of the form for you, how does that sound?
+
+    
+
+'
+  responses:
+  - response: Thanks.
+    requiredClue: 
+    nextStage: {fileID: 1607600401044878881}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: That would be great.
+    requiredClue: 
+    nextStage: {fileID: 2054356982649473109}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7802072501218453074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3376687146796411916}
+  - component: {fileID: 1607600401044878881}
+  m_Layer: 0
+  m_Name: Thanks.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3376687146796411916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802072501218453074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 484360044741891188}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607600401044878881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802072501218453074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Of course, we''re here to serve. What address would you want those dispatchers
+    going out to?
+
+    
+
+'
+  responses:
+  - response: 109 Galax Street.
+    requiredClue: 
+    nextStage: {fileID: 7774538157857173447}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7880373401814603723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7513294767446200437}
+  - component: {fileID: 2491645691132569560}
+  m_Layer: 0
+  m_Name: I'd like to reports a break-in.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7513294767446200437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7880373401814603723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1639658157373923663}
+  m_Father: {fileID: 8896992961261474433}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2491645691132569560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7880373401814603723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Ok, we will send some dispatchers over right away to assess the situation.
+    What address did this occur at?
+
+    
+
+'
+  responses:
+  - response: 109 Galax Street.
+    requiredClue: 
+    nextStage: {fileID: 7774538157857173447}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8405373119995456164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4065013162464730070}
+  - component: {fileID: 5193640559843483710}
+  m_Layer: 0
+  m_Name: A few days.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4065013162464730070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405373119995456164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4585657732951951731}
+  m_Father: {fileID: 6245347796040273049}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5193640559843483710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405373119995456164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: 'Ok, if you''d head on down to the police station we''ll get you set up
+    with a missing person''s report to file.
+
+    
+
+'
+  responses:
+  - response: I can't get down there.
+    requiredClue: 
+    nextStage: {fileID: 5461147743238713503}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8680333320405559602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5783265156931727644}
+  - component: {fileID: 2674397943974197354}
+  m_Layer: 0
+  m_Name: Thank you.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5783265156931727644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680333320405559602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1639658157373923663}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2674397943974197354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680333320405559602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Barchester_PD_1
+  prompt: You're welcome. *Click*
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []

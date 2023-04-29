@@ -167,7 +167,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: The business people are staying at the Kipter Lodge - 608 Lake Kipter
+        Drive
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
@@ -223,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Kipter Lodge's expansion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -404,6 +405,88 @@ RectTransform:
   m_AnchoredPosition: {x: -0.011, y: 0.194}
   m_SizeDelta: {x: 7.6899, y: 2.4182}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &59871240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-820-9223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: Bryce Pooler
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: Chief Pooler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &59871241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 59871240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &67765651
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,11 +645,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: I know where my mom is being kept. I just have to call the police
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -618,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: I did it
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -747,7 +830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -807,6 +890,172 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
   m_PrefabInstance: {fileID: 182686704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &183539094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-900-3210
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: Dylan_Portman
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 'Dylan Portman
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &183539095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 183539094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &235714804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-666-6666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: Dianne Offerton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: DIANNE OFFERTON
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &235714805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 235714804}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &240101209
 PrefabInstance:
@@ -897,6 +1146,88 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
   m_PrefabInstance: {fileID: 240101209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &250669226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-820-9237
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: BPD
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: BPD
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &250669227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 250669226}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &289686045
 GameObject:
@@ -1081,11 +1412,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Who ever took my mom has some sort of fancy business shoe. He's probably
+        from out of town
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1137,7 +1469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: The Business Shoe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -1155,7 +1487,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Anne was last seen with a boy outside the Daily Drip
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
@@ -1211,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Anne's Date
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -1253,6 +1585,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &382972773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-927-7639
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: BTG
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: BTG
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &382972774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 382972773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &387899737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,7 +2148,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Tom Forger reported his daughter missing, the town is in an uproar
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
@@ -1790,7 +2204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Anne Forger is missing
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -1980,11 +2394,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Dianne seems to think that Anne was taken by Annie of the Myre. If only
+        there was a way I could investigate that cliff.
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2036,7 +2451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Annie of the Myre
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -2095,8 +2510,8 @@ Transform:
   - {fileID: 498874743}
   - {fileID: 2129721846}
   - {fileID: 1739278062}
-  - {fileID: 326803966}
   - {fileID: 2091942881}
+  - {fileID: 326803966}
   m_Father: {fileID: 1989955394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2314,11 +2729,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: The outfit that Anne was wearing man indicate that she went hiking
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2370,7 +2785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Anne went hiking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -2644,6 +3059,88 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
   m_PrefabInstance: {fileID: 425518652859753481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &597799184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1575439316}
+    m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-927-0514
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[0]
+      value: 
+      objectReference: {fileID: 8105062971427951588, guid: 6bc1628df05d3b046a572543ab6fa047, type: 3}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_Name
+      value: Mrs. Lindsay
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745227, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: Mrs. Lindsay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+--- !u!4 &597799185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+  m_PrefabInstance: {fileID: 597799184}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &598558211
 GameObject:
@@ -3001,7 +3498,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Kidnapper's shoeprint
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
@@ -3057,7 +3554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: There was a pointy shoe print with the letters R and P
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -3073,6 +3570,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1575439316}
     m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-000-0000
+      objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: characterBackground
       value: 
@@ -3780,11 +4281,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: The pizza delivery guy said he'd call me if he sees that car again
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3836,7 +4337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Frank's Help
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -4026,11 +4527,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Moore seemed to get fed up with me. She said I should ask Pooler if
+        I can help with the searches
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4082,7 +4584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: I should ask Pooler for help
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -4304,7 +4806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: The Daily Drip is bringing business people from out of town here
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
@@ -4360,7 +4862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Sanddollar might buy Daily Drip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -4551,11 +5053,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: The delivery guy for Angiola's might have information about my mom
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4607,7 +5109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Angiola's pizza
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -4689,7 +5191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: m_text
-      value: Pizza Shop
+      value: Angiola's Pizza
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
@@ -4926,11 +5428,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Dylan Portman could really use some help finding work
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4982,7 +5484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Dylan's rent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -5393,11 +5895,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: For some reason, Tom Forger has been hostile towards police chief Pooler.
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5441,7 +5943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_Name
-      value: forger_hates_pooler
+      value: tom_hates_pooler
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_IsActive
@@ -5449,7 +5951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Forger hates Pooler
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -5493,6 +5995,12 @@ Transform:
   - {fileID: 1297293783}
   - {fileID: 1854437904}
   - {fileID: 2042581294}
+  - {fileID: 235714805}
+  - {fileID: 59871241}
+  - {fileID: 382972774}
+  - {fileID: 597799185}
+  - {fileID: 183539095}
+  - {fileID: 250669227}
   m_Father: {fileID: 1989955394}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5958,11 +6466,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6014,7 +6522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -6184,11 +6692,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: I think I just made Pooler quit his job. Maybe Moore should know
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6240,7 +6748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Pooler Quit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -6258,11 +6766,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Anne was last seen wearing a strange outfit with a nice dress and dirty
+        old boots
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6314,7 +6823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Anne's outfit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -6639,6 +7148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1575439316}
     m_Modifications:
+    - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: m_text
+      value: 555-927-7463
+      objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -6701,7 +7214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2645358157471425779, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: m_text
-      value: Shoe Store
+      value: Nolan's Shoes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
@@ -6719,11 +7232,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Wait, it looks like Dianne could have been right about where Anne was.
+        I should report this!
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6767,7 +7281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_Name
-      value: forger_footprint
+      value: annes_shoeprint
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_IsActive
@@ -6775,7 +7289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: Bootprint by Lake Kipter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -7444,11 +7958,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: It looks like BIG-TOP!!! could use help documenting their production
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7500,7 +8014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: BIG-TOP!!! needs help
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -7737,11 +8251,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: description
-      value: Default Description
+      value: Dianne seems like a troubled woman. But maybe reaching out woundn't
+        hurt... much
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7793,7 +8308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
       propertyPath: m_text
-      value: Replace Me
+      value: I should have Dianne
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
@@ -8118,7 +8633,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2645358156509172606, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: m_text
-      value: 510-452-7643
+      value: 555-866-2663
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size

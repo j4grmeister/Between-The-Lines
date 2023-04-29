@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &164766620110510661
+--- !u!1 &63420163473780981
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,118 +8,63 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2892504835660040709}
-  - component: {fileID: 6984743163113497036}
+  - component: {fileID: 8145254391617203139}
+  - component: {fileID: 3738523734142819606}
   m_Layer: 0
-  m_Name: Not really.
+  m_Name: Did you not know she was with him?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2892504835660040709
+--- !u!4 &8145254391617203139
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164766620110510661}
+  m_GameObject: {fileID: 63420163473780981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1996825390379404860}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6984743163113497036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164766620110510661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Ok, well have a great day, then.
-
-
-'
-  responses:
-  - response: Thanks.
-    requiredClue: 
-    nextStage: {fileID: 2834668148135043943}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &445034873763229172
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1097469841205482277}
-  - component: {fileID: 7648445417373979368}
-  m_Layer: 0
-  m_Name: It was left by the person who kidnapped my mom.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1097469841205482277
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445034873763229172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7443621473584422233}
-  m_Father: {fileID: 5560709164929971444}
+  m_Father: {fileID: 1188527177144549998}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7648445417373979368
+--- !u!114 &3738523734142819606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445034873763229172}
+  m_GameObject: {fileID: 63420163473780981}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Goodness gracious, son. I''m so sorry to hear that.
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'No, she lied to me. Said she wouldn''t see that boy again. We''ll have
+    a talk about that later.
 
+    
 
 '
   responses:
-  - response: It's ok.
+  - response: If you were a better father, she wouldn't have to lie
     requiredClue: 
-    nextStage: {fileID: 7965679073454825532}
+    nextStage: {fileID: 5588629130075057189}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Yeah. Thank you for helping me, though.
+  - response: That's no help
     requiredClue: 
-    nextStage: {fileID: 7803620249821414297}
+    nextStage: {fileID: 1186881753071316269}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1229891431376202595
+--- !u!1 &1074117617530929939
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,56 +72,122 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1996825390379404860}
-  - component: {fileID: 8222873746825091976}
+  - component: {fileID: 5921897656176166001}
+  - component: {fileID: 4538986732073080757}
   m_Layer: 0
-  m_Name: Ok.
+  m_Name: I know who your daughter was with
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1996825390379404860
+--- !u!4 &5921897656176166001
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229891431376202595}
+  m_GameObject: {fileID: 1074117617530929939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2892504835660040709}
-  m_Father: {fileID: 3677550022339622088}
+  - {fileID: 1188527177144549998}
+  m_Father: {fileID: 4616802904743236331}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4538986732073080757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074117617530929939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'What do ya mean?
+
+    
+
+'
+  responses:
+  - response: She was with a boy
+    requiredClue: 
+    nextStage: {fileID: 4805197220018951126}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1497280332187255805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4391748172072584136}
+  - component: {fileID: 321802266786448044}
+  m_Layer: 0
+  m_Name: An investigator with the police of Barchester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4391748172072584136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497280332187255805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 454854221477705798}
+  - {fileID: 4616802904743236331}
+  m_Father: {fileID: 8115712719770836934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8222873746825091976
+--- !u!114 &321802266786448044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229891431376202595}
+  m_GameObject: {fileID: 1497280332187255805}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Is there anything else I can help you with?
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'Well, ya find my girl yet?
 
+    
 
 '
   responses:
-  - response: Not really.
+  - response: Not yet...
     requiredClue: 
-    nextStage: {fileID: 6984743163113497036}
+    nextStage: {fileID: 1610734428612291794}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1290276057087603360
+  - response: I am calling to ask some questions
+    requiredClue: 
+    nextStage: {fileID: 7572268187854062787}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2394106680560022022
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,355 +195,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1226074182634665975}
-  - component: {fileID: 3649975453909042512}
+  - component: {fileID: 4044755375722076729}
+  - component: {fileID: 6920488832723023528}
   m_Layer: 0
-  m_Name: It was left by someone who broke into my house.
+  m_Name: I wanted to see what I could do to help
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1226074182634665975
+--- !u!4 &4044755375722076729
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290276057087603360}
+  m_GameObject: {fileID: 2394106680560022022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6934529455361962718}
-  - {fileID: 8949370905220788469}
-  m_Father: {fileID: 5560709164929971444}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3649975453909042512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290276057087603360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well, I hope this helps you catch them, somehow.
-
-
-'
-  responses:
-  - response: Me too!
-    requiredClue: 
-    nextStage: {fileID: 9173422702588971581}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Yep, thanks for the help.
-    requiredClue: 
-    nextStage: {fileID: 8596358426108145054}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2490605283123060675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7443621473584422233}
-  - component: {fileID: 7965679073454825532}
-  m_Layer: 0
-  m_Name: It's ok.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7443621473584422233
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2490605283123060675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6928980653807369032}
-  m_Father: {fileID: 1097469841205482277}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7965679073454825532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2490605283123060675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'I can''t imagine what you are going through.
-
-
-'
-  responses:
-  - response: Yeah. Thank you for helping me, though.
-    requiredClue: 
-    nextStage: {fileID: 7803620249821414297}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2729067239091691518
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3694962428827453536}
-  - component: {fileID: 5614815370352503352}
-  m_Layer: 0
-  m_Name: I have a disability and I can't leave the house.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3694962428827453536
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729067239091691518}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5074424557793282720}
-  - {fileID: 7706064762526156848}
-  m_Father: {fileID: 8067760893967385648}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5614815370352503352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729067239091691518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'I see. Well, I guess I could try to help if you describe it to me.
-
-
-'
-  responses:
-  - response: CLICK ON NOTEBOOK AND CLICK ON RIGHT CLUE.
-    requiredClue: 
-    nextStage: {fileID: 1644576203200612917}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: CLICK ON NOTEBOOK AND CLICK ON WRONG CLUE. 2
-    requiredClue: 
-    nextStage: {fileID: 652236835341368192}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2857809343275194665
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5074424557793282720}
-  - component: {fileID: 1644576203200612917}
-  m_Layer: 0
-  m_Name: CLICK ON NOTEBOOK AND CLICK ON RIGHT CLUE.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5074424557793282720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857809343275194665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5560709164929971444}
-  m_Father: {fileID: 3694962428827453536}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1644576203200612917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857809343275194665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'I see... it sounds like some sort of designer business shoe...
-
-
-'
-  responses:
-  - response: Ok?
-    requiredClue: 
-    nextStage: {fileID: 5305382629686753041}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4009014909231360075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4098318922385289010}
-  - component: {fileID: 4108894380575798896}
-  m_Layer: 0
-  m_Name: I'd like to buy some shoes.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4098318922385289010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4009014909231360075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3047878832925605033}
-  m_Father: {fileID: 183144205790504289}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4108894380575798896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4009014909231360075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Okay... Do you know what kind of shoes you want?
-
-
-'
-  responses:
-  - response: No.
-    requiredClue: 
-    nextStage: {fileID: 736165553705584928}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4093352327837032948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5948399324885962481}
-  - component: {fileID: 5336775430666269005}
-  m_Layer: 0
-  m_Name: I wanted to ask about some shoes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5948399324885962481
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4093352327837032948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8475636081886735035}
-  m_Father: {fileID: 183144205790504289}
+  m_Children: []
+  m_Father: {fileID: 6218042832666472163}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5336775430666269005
+--- !u!114 &6920488832723023528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4093352327837032948}
+  m_GameObject: {fileID: 2394106680560022022}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Alright, what shoes are you referring to?
-
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: Well, I got people goin' door to door lookin' for her. If you have any
+    idea where she might be, just let me know. Keep your eye peeled. Anyway, I have
+    some more places to check, I'll be in touch. *click
   responses:
-  - response: Anne Forger's
-    requiredClue: Anne Forger's outfit
-    nextStage: {fileID: 7274476072887878600}
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &4319423283222153950
+--- !u!1 &2455955219019724302
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,57 +250,826 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8475636081886735035}
-  - component: {fileID: 7274476072887878600}
+  - component: {fileID: 6250562261716798644}
+  - component: {fileID: 1186881753071316269}
   m_Layer: 0
-  m_Name: Anne Forger's
+  m_Name: That's no help
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8475636081886735035
+--- !u!4 &6250562261716798644
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319423283222153950}
+  m_GameObject: {fileID: 2455955219019724302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7556552199325096736}
-  m_Father: {fileID: 5948399324885962481}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 3027292796791142713}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7274476072887878600
+--- !u!114 &1186881753071316269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319423283222153950}
+  m_GameObject: {fileID: 2455955219019724302}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Oh, ...those sound like her hiking boots, I sold them a long time ago
-    to her father... They''ve held up well enough so far.
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: Don't know what you expected. I told you all I know. Now, if you'll excuse
+    me, I need to find my daughter. *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2474162663184359036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7559754526253749922}
+  - component: {fileID: 4303047551095048006}
+  m_Layer: 0
+  m_Name: I found out what happened to her
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7559754526253749922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2474162663184359036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6991112189959952558}
+  m_Father: {fileID: 4616802904743236331}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4303047551095048006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2474162663184359036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'What happened, is she safe?
 
+    
 
 '
   responses:
-  - response: Do you know why she would wear them?
+  - response: Tell him about Anne of the myre
     requiredClue: 
-    nextStage: {fileID: 6216788654377208759}
+    nextStage: {fileID: 809753507136326955}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2811385590146287156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6218042832666472163}
+  - component: {fileID: 8709604494447227373}
+  m_Layer: 0
+  m_Name: A concerned citizen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6218042832666472163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2811385590146287156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7480339911898625993}
+  - {fileID: 4044755375722076729}
+  m_Father: {fileID: 8115712719770836934}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8709604494447227373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2811385590146287156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'Well, hello. I''m glad you''re worried about my daughter. What do ya need?
+
+    
+
+'
+  responses:
+  - response: I just wanted to say it will be okay
+    requiredClue: 
+    nextStage: {fileID: 8675401594614969902}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I wanted to see what I could do to help
+    requiredClue: 
+    nextStage: {fileID: 6920488832723023528}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3239983109945776711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6165630378747310320}
+  - component: {fileID: 334239722687971568}
+  m_Layer: 0
+  m_Name: At least we know she's in the forest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6165630378747310320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239983109945776711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9066131240627622256}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334239722687971568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239983109945776711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: We don't but it's a good lead. I'll start getting a search party together
+    *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4403301823348536626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2404965050619155052}
+  - component: {fileID: 6036162082254455617}
+  m_Layer: 0
+  m_Name: Is that why you won't talk to the cheif?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2404965050619155052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403301823348536626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4316843292506743213}
+  m_Father: {fileID: 2995708195359072380}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6036162082254455617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403301823348536626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: '''Course it is, but this aint your business. Any other interrigations
+    you need from me, or can I keep lookin'' for my daughter?
+
+    
+
+'
+  responses:
+  - response: Sorry for the trouble
+    requiredClue: 
+    nextStage: {fileID: 2757775975795586537}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4424637313001104915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4616802904743236331}
+  - component: {fileID: 7572268187854062787}
+  m_Layer: 0
+  m_Name: I am calling to ask some questions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4616802904743236331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424637313001104915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5501199562866250959}
+  - {fileID: 7559754526253749922}
+  - {fileID: 5921897656176166001}
+  m_Father: {fileID: 4391748172072584136}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7572268187854062787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424637313001104915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'Haven''t you people asked enough questions? What''ve you actually done
+    to find my daughter?
+
+    
+
+'
+  responses:
+  - response: The police cheif asked around town
+    requiredClue: 
+    nextStage: {fileID: 8509600650474961158}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I found out what happened to her
+    requiredClue: anne_of_the_myre
+    nextStage: {fileID: 4303047551095048006}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know who your daughter was with
+    requiredClue: annes_date
+    nextStage: {fileID: 4538986732073080757}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5234640928087055557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5501199562866250959}
+  - component: {fileID: 8509600650474961158}
+  m_Layer: 0
+  m_Name: The police cheif asked around town
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5501199562866250959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234640928087055557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4616802904743236331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8509600650474961158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234640928087055557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: I'M DOIN' THAT NOW. WHAT ARE WE PAYIN' YOU FOR ANYWAY *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5737523243320695045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454854221477705798}
+  - component: {fileID: 1610734428612291794}
+  m_Layer: 0
+  m_Name: Not yet...
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454854221477705798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5737523243320695045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4391748172072584136}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610734428612291794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5737523243320695045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: Then why are ya wastin' my time? Stop spendin' time callin' me when there's
+    work to be done *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6578474855556307275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6991112189959952558}
+  - component: {fileID: 809753507136326955}
+  m_Layer: 0
+  m_Name: Tell him about Anne of the myre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6991112189959952558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578474855556307275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7559754526253749922}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809753507136326955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578474855556307275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: A ghost story aint an explanation. Find my daughter, not fairy stories.
+    *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7262320611038374252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9066131240627622256}
+  - component: {fileID: 1681265400519749046}
+  m_Layer: 0
+  m_Name: Do you know what this outfit means?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9066131240627622256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262320611038374252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6165630378747310320}
+  m_Father: {fileID: 8115712719770836934}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681265400519749046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262320611038374252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'She likes that dress... The boots are her hiking boots... I didn''t think
+    to look at which shoes were gone. She wears those when she goes to the lake.
+    She might be out there! But there are a lot of woods out there. A lot of area
+    to look.
+
+    
+
+'
+  responses:
+  - response: At least we know she's in the forest
+    requiredClue: 
+    nextStage: {fileID: 334239722687971568}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7498461665168785523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7480339911898625993}
+  - component: {fileID: 8675401594614969902}
+  m_Layer: 0
+  m_Name: I just wanted to say it will be okay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7480339911898625993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498461665168785523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6218042832666472163}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8675401594614969902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498461665168785523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: Well, if that's all, then I'll kindly keep lookin' for my daughter. Words
+    don't do a thing *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7658479395599948374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3027292796791142713}
+  - component: {fileID: 5631738924936329102}
+  m_Layer: 0
+  m_Name: Do you know where they could have gone?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3027292796791142713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658479395599948374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4707250844754059671}
+  - {fileID: 6250562261716798644}
+  m_Father: {fileID: 1188527177144549998}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5631738924936329102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658479395599948374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: "'Course not, I didn't even know she was out with him. Said she was goin'
+    to study. We'll have a talk about her lyin'i like that. \r\n\r\n"
+  responses:
+  - response: If you were a better father, she wouldn't have to lie
+    requiredClue: 
+    nextStage: {fileID: 5588629130075057189}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: That's no help
+    requiredClue: 
+    nextStage: {fileID: 1186881753071316269}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7999003928686687503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4316843292506743213}
+  - component: {fileID: 2757775975795586537}
+  m_Layer: 0
+  m_Name: Sorry for the trouble
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4316843292506743213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999003928686687503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2404965050619155052}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2757775975795586537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999003928686687503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: Just do your job *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8714597819718972815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8115712719770836934}
+  - component: {fileID: 8236409918830475070}
+  - component: {fileID: 934848481700619602}
+  m_Layer: 0
+  m_Name: Trouble_on_Lake_Kipter_-_Tom_Forger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8115712719770836934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714597819718972815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4391748172072584136}
+  - {fileID: 6218042832666472163}
+  - {fileID: 9066131240627622256}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8236409918830475070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714597819718972815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'Hey, Forger, who''s talkin''?
+
+    
+
+'
+  responses:
+  - response: An investigator with the police of Barchester
+    requiredClue: 
+    nextStage: {fileID: 321802266786448044}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: A concerned citizen
+    requiredClue: 
+    nextStage: {fileID: 8709604494447227373}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Do you know what this outfit means?
+    requiredClue: annes_outfit
+    nextStage: {fileID: 1681265400519749046}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 202707257508728689}
+        - m_Target: {fileID: 934848481700619602}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
           m_MethodName: DiscoverClue
           m_Mode: 5
@@ -599,736 +1078,22 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Anne Forger went hiking
+            m_StringArgument: anne_went_hiking
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &4418847740745170370
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2548317606516589797}
-  - component: {fileID: 2704356230001372662}
-  m_Layer: 0
-  m_Name: Thank you, sir.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2548317606516589797
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418847740745170370}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6928980653807369032}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2704356230001372662
+--- !u!114 &934848481700619602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418847740745170370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'No problem at all. Is there anything else I can help you with?
-
-
-'
-  responses:
-  - response: Not really.
-    requiredClue: 
-    nextStage: {fileID: 6984743163113497036}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4733330735913408820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4282859966946404891}
-  - component: {fileID: 629934210258339529}
-  m_Layer: 0
-  m_Name: I would like to identify a shoe print.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4282859966946404891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733330735913408820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8067760893967385648}
-  m_Father: {fileID: 183144205790504289}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &629934210258339529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733330735913408820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well... I could help you with that... I guess. We close at 6, so you can
-    come in any time... I''ll help get you... shoes of some kind.
-
-
-'
-  responses:
-  - response: I can't.
-    requiredClue: 
-    nextStage: {fileID: 7102582340642916094}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I have a disability and I can't leave the house.
-    requiredClue: 
-    nextStage: {fileID: 5614815370352503352}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4758448588607201103
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7556552199325096736}
-  - component: {fileID: 6216788654377208759}
-  m_Layer: 0
-  m_Name: Do you know why she would wear them?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7556552199325096736
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4758448588607201103}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8475636081886735035}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6216788654377208759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4758448588607201103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: Yeah... They are hiking boots... used for hiking.
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5417289159996583509
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7706064762526156848}
-  - component: {fileID: 652236835341368192}
-  m_Layer: 0
-  m_Name: CLICK ON NOTEBOOK AND CLICK ON WRONG CLUE. 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7706064762526156848
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5417289159996583509}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3694962428827453536}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &652236835341368192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5417289159996583509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Sir... You said you have a disability... Are you sure you want a hiking
-    boot?
-
-
-'
-  responses:
-  - response: CLICK ON NOTEBOOK AND CLICK ON RIGHT CLUE.
-    requiredClue: 
-    nextStage: {fileID: 1644576203200612917}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5744053967384061032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6934529455361962718}
-  - component: {fileID: 9173422702588971581}
-  m_Layer: 0
-  m_Name: Me too!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6934529455361962718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5744053967384061032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1226074182634665975}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9173422702588971581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5744053967384061032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Is there anything else I can help you with?
-
-
-'
-  responses:
-  - response: Not really.
-    requiredClue: 
-    nextStage: {fileID: 6984743163113497036}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6431376381425081482
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8949370905220788469}
-  - component: {fileID: 8596358426108145054}
-  m_Layer: 0
-  m_Name: Yep, thanks for the help.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8949370905220788469
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6431376381425081482}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1226074182634665975}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8596358426108145054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6431376381425081482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'No problem. Is there anything else I can help you with?
-
-
-'
-  responses:
-  - response: Not really.
-    requiredClue: 
-    nextStage: {fileID: 6984743163113497036}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6897785274779342674
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6928980653807369032}
-  - component: {fileID: 7803620249821414297}
-  m_Layer: 0
-  m_Name: Yeah. Thank you for helping me, though.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6928980653807369032
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897785274779342674}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2548317606516589797}
-  m_Father: {fileID: 7443621473584422233}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7803620249821414297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897785274779342674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Of course, I''d love to help any way I can.
-
-
-'
-  responses:
-  - response: Thank you, sir.
-    requiredClue: 
-    nextStage: {fileID: 2704356230001372662}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7346649885921228924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3877862128593060344}
-  - component: {fileID: 2834668148135043943}
-  m_Layer: 0
-  m_Name: Thanks.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3877862128593060344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7346649885921228924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3677550022339622088}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2834668148135043943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7346649885921228924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: No problem, son. *Click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7478676499393045111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8067760893967385648}
-  - component: {fileID: 7102582340642916094}
-  m_Layer: 0
-  m_Name: I can't.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8067760893967385648
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7478676499393045111}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3694962428827453536}
-  m_Father: {fileID: 4282859966946404891}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7102582340642916094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7478676499393045111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well why not?
-
-
-'
-  responses:
-  - response: I have a disability and I can't leave the house.
-    requiredClue: 
-    nextStage: {fileID: 5614815370352503352}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7796436247640015678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3047878832925605033}
-  - component: {fileID: 736165553705584928}
-  m_Layer: 0
-  m_Name: No.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3047878832925605033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7796436247640015678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1093130256557426145}
-  m_Father: {fileID: 4098318922385289010}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &736165553705584928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7796436247640015678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'You... don''t know what shoes you want to order?
-
-
-'
-  responses:
-  - response: Nope.
-    requiredClue: 
-    nextStage: {fileID: 1229020883718765026}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8392158504748640022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5560709164929971444}
-  - component: {fileID: 5305382629686753041}
-  m_Layer: 0
-  m_Name: Ok?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5560709164929971444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392158504748640022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1226074182634665975}
-  - {fileID: 1097469841205482277}
-  - {fileID: 3677550022339622088}
-  m_Father: {fileID: 5074424557793282720}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5305382629686753041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392158504748640022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well, it''s just not really a shoe we sell here. We sell mostly boots,
-    and this shoe is too nice to even be someone''s church shoes.
-
-    Son, what
-    interest do you have in a shoe like this?
-
-
-'
-  responses:
-  - response: It was left by someone who broke into my house.
-    requiredClue: 
-    nextStage: {fileID: 3649975453909042512}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: It was left by the person who kidnapped my mom.
-    requiredClue: 
-    nextStage: {fileID: 7648445417373979368}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I'm just trying to ball.
-    requiredClue: 
-    nextStage: {fileID: 117582103794908595}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8733838648159340119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 183144205790504289}
-  - component: {fileID: 5514889141106336549}
-  - component: {fileID: 202707257508728689}
-  m_Layer: 0
-  m_Name: Shoe Store Call - No Loop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &183144205790504289
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8733838648159340119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4098318922385289010}
-  - {fileID: 5948399324885962481}
-  - {fileID: 4282859966946404891}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5514889141106336549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8733838648159340119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Hey ... Pete''s footwear, fit for all your footwear needs, how may I help
-    you?
-
-
-'
-  responses:
-  - response: I'd like to buy some shoes.
-    requiredClue: 
-    nextStage: {fileID: 4108894380575798896}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I wanted to ask about some shoes
-    requiredClue: Anne Forger's outfit
-    nextStage: {fileID: 5336775430666269005}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I would like to identify a shoe print.
-    requiredClue: Shoe_print_clue
-    nextStage: {fileID: 629934210258339529}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &202707257508728689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8733838648159340119}
+  m_GameObject: {fileID: 8714597819718972815}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &8883347312885641841
+--- !u!1 &8724484081587577235
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1336,64 +1101,73 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3677550022339622088}
-  - component: {fileID: 117582103794908595}
+  - component: {fileID: 1188527177144549998}
+  - component: {fileID: 4805197220018951126}
   m_Layer: 0
-  m_Name: I'm just trying to ball.
+  m_Name: She was with a boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3677550022339622088
+--- !u!4 &1188527177144549998
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8883347312885641841}
+  m_GameObject: {fileID: 8724484081587577235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1996825390379404860}
-  - {fileID: 3877862128593060344}
-  m_Father: {fileID: 5560709164929971444}
-  m_RootOrder: 2
+  - {fileID: 2995708195359072380}
+  - {fileID: 8145254391617203139}
+  - {fileID: 3027292796791142713}
+  m_Father: {fileID: 5921897656176166001}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &117582103794908595
+--- !u!114 &4805197220018951126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8883347312885641841}
+  m_GameObject: {fileID: 8724484081587577235}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well, ok. We don''t have that in stock here, so you''d probably have to
-    drive into the city to get that one.
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'Mangy kid, him again. I told Anne that guy was bad news. I''ll give him
+    a thing or two to worry about when I find him. If he did anything to my daughter
+    i''ll...
 
+    
 
 '
   responses:
-  - response: Ok.
+  - response: You know who the kid is?
     requiredClue: 
-    nextStage: {fileID: 8222873746825091976}
+    nextStage: {fileID: 8047574093380329560}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Thanks.
+  - response: Did you not know she was with him?
     requiredClue: 
-    nextStage: {fileID: 2834668148135043943}
+    nextStage: {fileID: 3738523734142819606}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &9217376519104011131
+  - response: Do you know where they could have gone?
+    requiredClue: 
+    nextStage: {fileID: 5631738924936329102}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8860323556699951938
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1401,58 +1175,108 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1093130256557426145}
-  - component: {fileID: 1229020883718765026}
+  - component: {fileID: 4707250844754059671}
+  - component: {fileID: 5588629130075057189}
   m_Layer: 0
-  m_Name: Nope.
+  m_Name: If you were a better father, she wouldn't have to lie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1093130256557426145
+--- !u!4 &4707250844754059671
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9217376519104011131}
+  m_GameObject: {fileID: 8860323556699951938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3047878832925605033}
+  m_Father: {fileID: 3027292796791142713}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1229020883718765026
+--- !u!114 &5588629130075057189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9217376519104011131}
+  m_GameObject: {fileID: 8860323556699951938}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Shoe Store Call - No Loop
-  prompt: 'Well, we close at 6, so you can come in any time... I''ll help get you...
-    shoes of some kind.
-
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: '*click'
   responses:
-  - response: I can't.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 7102582340642916094}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: I have a disability and I can't leave the house.
+--- !u!1 &9009486271423154170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2995708195359072380}
+  - component: {fileID: 8047574093380329560}
+  m_Layer: 0
+  m_Name: You know who the kid is?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2995708195359072380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009486271423154170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2404965050619155052}
+  m_Father: {fileID: 1188527177144549998}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8047574093380329560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009486271423154170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Tom_Forger
+  prompt: 'You should, It''s your chief''s kid. That rascal is trouble. Not an ounce
+    of work ethic in ''im. I told him that if he touched my daughter again, he would
+    have bigger issues than findin'' a job.
+
+    
+
+'
+  responses:
+  - response: Is that why you won't talk to the cheif?
     requiredClue: 
-    nextStage: {fileID: 5614815370352503352}
+    nextStage: {fileID: 6036162082254455617}
     onContinue:
       m_PersistentCalls:
         m_Calls: []

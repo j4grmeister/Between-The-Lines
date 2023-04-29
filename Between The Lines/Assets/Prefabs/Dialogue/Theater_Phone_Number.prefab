@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &661828471718251724
+--- !u!1 &68827221898237753
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,703 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6380661304215333827}
-  - component: {fileID: 1603882511864609613}
+  - component: {fileID: 4995840541115666246}
+  - component: {fileID: 7191818953494105252}
   m_Layer: 0
-  m_Name: And what did the inspection reveal?
+  m_Name: No, not really.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6380661304215333827
+--- !u!4 &4995840541115666246
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661828471718251724}
+  m_GameObject: {fileID: 68827221898237753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7347367128136822216}
+  m_Children:
+  - {fileID: 4685505595869553451}
+  - {fileID: 6074046822963730552}
+  m_Father: {fileID: 4577042044631194048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1603882511864609613
+--- !u!114 &7191818953494105252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661828471718251724}
+  m_GameObject: {fileID: 68827221898237753}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: That it was a big fish.... anyway I have $500 to spend... WAIT, WHERE IS
-    MY MONEY, THOSE GREEDY LITTLE *click*
+  treeName: Theater_Phone_Number
+  prompt: 'Are you sure? We have positions for all kinds of people to be a BIG-PART!!!
+    of BIG-TOP!!!
+
+    
+
+'
+  responses:
+  - response: No, I'm good.
+    requiredClue: 
+    nextStage: {fileID: 4373543619098780468}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Please stop shouting.
+    requiredClue: 
+    nextStage: {fileID: 3454651098942409582}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &608246144472375350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9185078008838481018}
+  - component: {fileID: 4614831693917463454}
+  m_Layer: 0
+  m_Name: Actually I was calling for Dylan Portman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9185078008838481018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608246144472375350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4577042044631194048}
+  m_Father: {fileID: 2370795288917402865}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4614831693917463454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608246144472375350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'Dylan? What about him?
+
+    
+
+'
+  responses:
+  - response: He wants to join
+    requiredClue: 
+    nextStage: {fileID: 3842159294660430486}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &723376078653321588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6453873829806116967}
+  - component: {fileID: 2274684850263503238}
+  m_Layer: 0
+  m_Name: The one and only!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6453873829806116967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723376078653321588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2934471170508165963}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2274684850263503238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723376078653321588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'We would LOVE to have you be a BIG-PART!!! of BIG-TOP!!! can we get a
+    phone-number to call you back?
+
+    
+
+'
+  responses:
+  - response: Sure, it's 555-900-3210 (Dylan's number)
+    requiredClue: 
+    nextStage: {fileID: 6361393808146636548}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6518536201437720539}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hire_a_photographer
+            m_BoolArgument: 0
+          m_CallState: 2
+  - response: Actually, to be honest...
+    requiredClue: 
+    nextStage: {fileID: 7073332920393555602}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &950188308328508923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6074046822963730552}
+  - component: {fileID: 3454651098942409582}
+  m_Layer: 0
+  m_Name: Please stop shouting.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6074046822963730552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950188308328508923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4384414314083440152}
+  m_Father: {fileID: 4995840541115666246}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3454651098942409582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950188308328508923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'How can I when the prospect of having wonderful community members being
+    a BIG-PART!!! of BIG-TOP!!! brings me BIG-EXCITEMENT!!! and will lead to a theater
+    experience that BIG-CHESTER!!! will remember for GEN-ERATIONS!!!
+
+    
+
+'
+  responses:
+  - response: Those didn't even make any sense.
+    requiredClue: 
+    nextStage: {fileID: 5030610026787656550}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1269543597715485347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2353700626529595580}
+  - component: {fileID: 3750678630468213919}
+  m_Layer: 0
+  m_Name: All of it!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2353700626529595580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269543597715485347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1859443915054347745}
+  m_Father: {fileID: 8963081824150851362}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3750678630468213919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269543597715485347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'A TRUE THESBIAN!! I can''t wait to work with you!
+
+    
+
+'
+  responses:
+  - response: You too!
+    requiredClue: 
+    nextStage: {fileID: 3642063786435814458}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1292101727694241537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6914446169984238177}
+  - component: {fileID: 2758963114894354346}
+  m_Layer: 0
+  m_Name: Yeah, I don't really have any interest in that.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6914446169984238177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292101727694241537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4685505595869553451}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2758963114894354346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292101727694241537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'But we are hiring for so many diverse positions that there simply isn''t
+    a single person in Barchester that doesn''t find interest in at least one of
+    them! Do you want me to list everything we are hiring for?
+
+    
+
+'
+  responses:
+  - response: No, not really.
+    requiredClue: 
+    nextStage: {fileID: 7191818953494105252}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1478364141156685061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2250672107976301371}
+  - component: {fileID: 4097510661668494303}
+  m_Layer: 0
+  m_Name: Actually I don't technically work for them, I just allow--
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2250672107976301371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478364141156685061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6271786911271590762}
+  - {fileID: 5173992402099931759}
+  m_Father: {fileID: 2934471170508165963}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4097510661668494303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478364141156685061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'We would LOVE to have you be a BIG-PART!!! of BIG-TOP!!! can we get a
+    phone-number to call you back?
+
+    
+
+'
+  responses:
+  - response: Sure, it's 555-900-3210 (Dylan's number)
+    requiredClue: 
+    nextStage: {fileID: 6361393808146636548}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6518536201437720539}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hire_a_photographer
+            m_BoolArgument: 0
+          m_CallState: 2
+  - response: Actually, to be honest...
+    requiredClue: 
+    nextStage: {fileID: 7073332920393555602}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1770998294492872251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4685505595869553451}
+  - component: {fileID: 4373543619098780468}
+  m_Layer: 0
+  m_Name: No, I'm good.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4685505595869553451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770998294492872251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6914446169984238177}
+  - {fileID: 4969027842526061821}
+  m_Father: {fileID: 4995840541115666246}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4373543619098780468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770998294492872251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'Oh, but won''t you please reconsider? We welcome people from all walks
+    of life that are trying to help create a production Barchester will remember
+    for generations.
+
+    
+
+'
+  responses:
+  - response: Yeah, I don't really have any interest in that.
+    requiredClue: 
+    nextStage: {fileID: 2758963114894354346}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Fine.
+    requiredClue: 
+    nextStage: {fileID: 3271633833339719886}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3192248097202163929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4969027842526061821}
+  - component: {fileID: 3271633833339719886}
+  m_Layer: 0
+  m_Name: Fine.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4969027842526061821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192248097202163929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8524559480288568521}
+  m_Father: {fileID: 4685505595869553451}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3271633833339719886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192248097202163929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'Oh, thank you so much!! What number would you like us to call you back
+    with?
+
+    
+
+'
+  responses:
+  - response: 555-900-3210 (Dylan's number)
+    requiredClue: 
+    nextStage: {fileID: 7515086124880186506}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6518536201437720539}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hire_a_photographer
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &4024432173456566709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2370795288917402865}
+  - component: {fileID: 7893066189893829732}
+  m_Layer: 0
+  m_Name: Hi, I saw you were looking for people!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2370795288917402865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4024432173456566709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8963081824150851362}
+  - {fileID: 9185078008838481018}
+  m_Father: {fileID: 769275645318525015}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7893066189893829732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4024432173456566709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: 'Are you looking to join! We can always use more people. These things really
+    take most of the town to put on!
+
+    
+
+'
+  responses:
+  - response: Yes, I want to join!
+    requiredClue: 
+    nextStage: {fileID: 1952158463052224128}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Actually I was calling for Dylan Portman
+    requiredClue: photographer_down
+    nextStage: {fileID: 4614831693917463454}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6620199268364655423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859443915054347745}
+  - component: {fileID: 3642063786435814458}
+  m_Layer: 0
+  m_Name: You too!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859443915054347745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620199268364655423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2353700626529595580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3642063786435814458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620199268364655423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: WOOO *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -53,7 +712,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &747817793512053938
+--- !u!1 &6846553505018372722
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,158 +720,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 589974163128648845}
-  - component: {fileID: 3449611049858078396}
+  - component: {fileID: 8524559480288568521}
+  - component: {fileID: 7515086124880186506}
   m_Layer: 0
-  m_Name: You assume?
+  m_Name: 555-900-3210 (Dylan's number)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &589974163128648845
+--- !u!4 &8524559480288568521
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747817793512053938}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7999697073283297584}
-  m_Father: {fileID: 1475512028517183883}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3449611049858078396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747817793512053938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Well yeah, I wasn't down there, I don't know what happened, I'm not some
-    genie.
-  responses:
-  - response: We will see.
-    requiredClue: 
-    nextStage: {fileID: 4498303119967864690}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1110482197643561088
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 53048528335748328}
-  - component: {fileID: 4156223174617003465}
-  m_Layer: 0
-  m_Name: Or you could have taken the fish out there with you!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &53048528335748328
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110482197643561088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6290143369149498895}
-  - {fileID: 5074962037766151707}
-  m_Father: {fileID: 1475512028517183883}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4156223174617003465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110482197643561088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: No, they checked for fish before the boats were launched.... You accusing
-    me of something?
-  responses:
-  - response: Yes!
-    requiredClue: 
-    nextStage: {fileID: 4487924313679433516}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: No?
-    requiredClue: 
-    nextStage: {fileID: 7675990476260482159}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1177668589598185580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5074962037766151707}
-  - component: {fileID: 7675990476260482159}
-  m_Layer: 0
-  m_Name: No?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5074962037766151707
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177668589598185580}
+  m_GameObject: {fileID: 6846553505018372722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 53048528335748328}
-  m_RootOrder: 1
+  m_Father: {fileID: 4969027842526061821}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7675990476260482159
+--- !u!114 &7515086124880186506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177668589598185580}
+  m_GameObject: {fileID: 6846553505018372722}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Well figure it out and call me back. *click*
+  treeName: Theater_Phone_Number
+  prompt: That's great! Thank you so much. We will reach out to you shortly! *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -220,7 +765,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1199845221615542058
+--- !u!1 &6892923410973632109
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,51 +773,64 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7999697073283297584}
-  - component: {fileID: 4498303119967864690}
+  - component: {fileID: 2934471170508165963}
+  - component: {fileID: 8276095646906016988}
   m_Layer: 0
-  m_Name: We will see.
+  m_Name: Dylan Portman.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7999697073283297584
+--- !u!4 &2934471170508165963
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199845221615542058}
+  m_GameObject: {fileID: 6892923410973632109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 589974163128648845}
+  m_Children:
+  - {fileID: 6453873829806116967}
+  - {fileID: 2250672107976301371}
+  m_Father: {fileID: 1303945925452205668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4498303119967864690
+--- !u!114 &8276095646906016988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199845221615542058}
+  m_GameObject: {fileID: 6892923410973632109}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Wierdo. *click*
+  treeName: Theater_Phone_Number
+  prompt: 'Oh! Dylan Portman, from the Barchester Post?!
+
+    
+
+'
   responses:
-  - response: '*Hang up*'
+  - response: The one and only!
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 2274684850263503238}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1354517019162469915
+  - response: Actually I don't technically work for them, I just allow--
+    requiredClue: 
+    nextStage: {fileID: 4097510661668494303}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7296772078783116687
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,336 +838,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7347367128136822216}
-  - component: {fileID: 7599011575260379471}
+  - component: {fileID: 769275645318525015}
+  - component: {fileID: 4901116636171332794}
+  - component: {fileID: 6518536201437720539}
   m_Layer: 0
-  m_Name: What does the inspection look like?
+  m_Name: Theater_Phone_Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7347367128136822216
+--- !u!4 &769275645318525015
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354517019162469915}
+  m_GameObject: {fileID: 7296772078783116687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6380661304215333827}
-  m_Father: {fileID: 6009954351128328624}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7599011575260379471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354517019162469915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: 'Just the judges inspecting, weighing, and measuring the fish for their
-    records. '
-  responses:
-  - response: And what did the inspection reveal?
-    requiredClue: 
-    nextStage: {fileID: 1603882511864609613}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1519044192039947514
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7276827644642295886}
-  - component: {fileID: 8274470568043519768}
-  m_Layer: 0
-  m_Name: Like you?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7276827644642295886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519044192039947514}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4993227631802234060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8274470568043519768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519044192039947514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Heh, If I cheated, the town would never know. But I didn't. Everyone else
-    is just angry at their lack of luck, while I am drowning in it. If you have an
-    issue, take it up with City Hall. *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1574247545639452715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5331579738295894419}
-  - component: {fileID: 8865797620022541092}
-  m_Layer: 0
-  m_Name: Was it fake?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5331579738295894419
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574247545639452715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 332957415168903149}
-  m_Father: {fileID: 3730228602822802613}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8865797620022541092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574247545639452715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Of course it wasn't fake. It was weighed on the shoreline by the judges...
-    Hard to fake fish scales and guts.
-  responses:
-  - response: What if you caught it earlier?
-    requiredClue: 
-    nextStage: {fileID: 547158042685805306}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1814413220845013515
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6036614818557418541}
-  - component: {fileID: 6379202102971862666}
-  m_Layer: 0
-  m_Name: Do you think the contest was fair?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6036614818557418541
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814413220845013515}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7024004332261606639}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6379202102971862666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814413220845013515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: 
-  responses: []
---- !u!1 &1915747321391710705
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4993227631802234060}
-  - component: {fileID: 5066739865038378530}
-  m_Layer: 0
-  m_Name: Has anyone ever been caught?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4993227631802234060
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915747321391710705}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7276827644642295886}
-  - {fileID: 9034944818521215642}
-  m_Father: {fileID: 4137685203381186943}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5066739865038378530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915747321391710705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Yeah, a couple of people throughout the years. Idiots that got caught in
-    an obvious lie. If you have the guts to cheat, you should have the brains to
-    not get caught.
-  responses:
-  - response: Like you?
-    requiredClue: 
-    nextStage: {fileID: 8274470568043519768}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I would never get caught.
-    requiredClue: 
-    nextStage: {fileID: 3307584977983611991}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2019607331520740015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 194068954567580084}
-  - component: {fileID: 4538637237614459895}
-  m_Layer: 0
-  m_Name: Paul Davidson
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &194068954567580084
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019607331520740015}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8713795878524765637}
-  - {fileID: 3730228602822802613}
-  - {fileID: 7024004332261606639}
+  - {fileID: 2370795288917402865}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4538637237614459895
+--- !u!114 &4901116636171332794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019607331520740015}
+  m_GameObject: {fileID: 7296772078783116687}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: What do you need?
+  treeName: Theater_Phone_Number
+  prompt: 'Hello! This is Tina with BTG! Can you believe we got the rights to BIG
+    TOP! WOOOO!
+
+    
+
+'
   responses:
-  - response: I think you cheated!
+  - response: Hi, I saw you were looking for people!
     requiredClue: 
-    nextStage: {fileID: 7874714202104705290}
+    nextStage: {fileID: 7893066189893829732}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Pretty impressive catch you had!
-    requiredClue: 
-    nextStage: {fileID: 2309681166593976907}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: How did you like the competition?
-    requiredClue: 
-    nextStage: {fileID: 2169841834021992041}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3357462290754587930
+--- !u!114 &6518536201437720539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7296772078783116687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7350839001650128814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -617,115 +910,63 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6290143369149498895}
-  - component: {fileID: 4487924313679433516}
+  - component: {fileID: 4577042044631194048}
+  - component: {fileID: 3842159294660430486}
   m_Layer: 0
-  m_Name: Yes!
+  m_Name: He wants to join
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6290143369149498895
+--- !u!4 &4577042044631194048
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3357462290754587930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 53048528335748328}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4487924313679433516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3357462290754587930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Ahh. *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3574823866165296236
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 998403620243179342}
-  - component: {fileID: 6114386674989760802}
-  m_Layer: 0
-  m_Name: How did you catch it?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &998403620243179342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3574823866165296236}
+  m_GameObject: {fileID: 7350839001650128814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1475512028517183883}
-  - {fileID: 6009954351128328624}
-  m_Father: {fileID: 3730228602822802613}
-  m_RootOrder: 2
+  - {fileID: 4995840541115666246}
+  m_Father: {fileID: 9185078008838481018}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6114386674989760802
+--- !u!114 &3842159294660430486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3574823866165296236}
+  m_GameObject: {fileID: 7350839001650128814}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: It was swimming right near the bottom in the weeds. Get the right lure
-    and it will skim right through without snagging the weeds. Looks like a fish
-    to the bass. Give it enough time and you might even find a whole patch of 'em.
-    That's where the big ones come from. Not mine though, the monster was alone,
-    only fish I caught out there.
+  treeName: Theater_Phone_Number
+  prompt: 'Then he should call silly! Did you want to join?
+
+    
+
+'
   responses:
-  - response: Isn't it strange that it was alone?
+  - response: Yes, I want to join!
     requiredClue: 
-    nextStage: {fileID: 8750804027109104891}
+    nextStage: {fileID: 1952158463052224128}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: How long did it take you?
+  - response: No, not really.
     requiredClue: 
-    nextStage: {fileID: 8639114669419537454}
+    nextStage: {fileID: 7191818953494105252}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &3968688138174114326
+--- !u!1 &8303135523894356926
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -733,114 +974,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7024004332261606639}
-  - component: {fileID: 2169841834021992041}
+  - component: {fileID: 8963081824150851362}
+  - component: {fileID: 1952158463052224128}
   m_Layer: 0
-  m_Name: How did you like the competition?
+  m_Name: Yes, I want to join!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7024004332261606639
+--- !u!4 &8963081824150851362
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3968688138174114326}
+  m_GameObject: {fileID: 8303135523894356926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4137685203381186943}
-  - {fileID: 6036614818557418541}
-  m_Father: {fileID: 194068954567580084}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2169841834021992041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3968688138174114326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: The competion has always been run well. The security measures at the beginning
-    are a little annoying, but I guess they are necessary to keep the contest fair.
-  responses:
-  - response: What kind of security measures?
-    requiredClue: 
-    nextStage: {fileID: 7789952594136358341}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Do you think the contest was fair?
-    requiredClue: 
-    nextStage: {fileID: 6379202102971862666}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4630323068355105916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9176836795958420103}
-  - component: {fileID: 4176061194044167025}
-  m_Layer: 0
-  m_Name: Can I see a picture of it?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9176836795958420103
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630323068355105916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3730228602822802613}
+  - {fileID: 2353700626529595580}
+  - {fileID: 1303945925452205668}
+  m_Father: {fileID: 2370795288917402865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4176061194044167025
+--- !u!114 &1952158463052224128
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630323068355105916}
+  m_GameObject: {fileID: 8303135523894356926}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Absolutely! I even think there is a picture on the back of the 2nd edition
-    of the paper! Took it just after catching the beauty. You'll see. It's great.
-    In fact, I should call them now! *click*
+  treeName: Theater_Phone_Number
+  prompt: 'Awesome! What are you interested in? Acting? Singing? Building? Tech?
+    Makeup?
+
+    
+
+'
   responses:
-  - response: '*Hang up*'
+  - response: All of it!
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 3750678630468213919}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &5151526647861344538
+  - response: Actually, I'm a photographer.
+    requiredClue: photographer_down
+    nextStage: {fileID: 6468231715129720927}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8531612825101348857
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -848,112 +1040,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1475512028517183883}
-  - component: {fileID: 8750804027109104891}
+  - component: {fileID: 1303945925452205668}
+  - component: {fileID: 6468231715129720927}
   m_Layer: 0
-  m_Name: Isn't it strange that it was alone?
+  m_Name: Actually, I'm a photographer.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1475512028517183883
+--- !u!4 &1303945925452205668
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5151526647861344538}
+  m_GameObject: {fileID: 8531612825101348857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 589974163128648845}
-  - {fileID: 53048528335748328}
-  m_Father: {fileID: 998403620243179342}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8750804027109104891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5151526647861344538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: A little, but I assume that monster scared everything away from it.
-  responses:
-  - response: You assume?
-    requiredClue: 
-    nextStage: {fileID: 3449611049858078396}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Or you could have taken the fish out there with you!
-    requiredClue: 
-    nextStage: {fileID: 4156223174617003465}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5166322294544083337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9034944818521215642}
-  - component: {fileID: 3307584977983611991}
-  m_Layer: 0
-  m_Name: I would never get caught.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9034944818521215642
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5166322294544083337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4993227631802234060}
+  - {fileID: 2934471170508165963}
+  m_Father: {fileID: 8963081824150851362}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3307584977983611991
+--- !u!114 &6468231715129720927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5166322294544083337}
+  m_GameObject: {fileID: 8531612825101348857}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: You joining the competition? Don't bother, I would crush you like everyone
-    else. *click*
+  treeName: Theater_Phone_Number
+  prompt: 'Oh, that just perfect! Can we get your name?
+
+    
+
+'
   responses:
-  - response: '*Hang up*'
+  - response: Dylan Portman.
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 8276095646906016988}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &5813102888283777274
+--- !u!1 &8786228771223758809
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -961,173 +1098,98 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3730228602822802613}
-  - component: {fileID: 2309681166593976907}
+  - component: {fileID: 4384414314083440152}
+  - component: {fileID: 5030610026787656550}
   m_Layer: 0
-  m_Name: Pretty impressive catch you had!
+  m_Name: Those didn't even make any sense.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3730228602822802613
+--- !u!4 &4384414314083440152
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5813102888283777274}
+  m_GameObject: {fileID: 8786228771223758809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 9176836795958420103}
-  - {fileID: 5331579738295894419}
-  - {fileID: 998403620243179342}
-  m_Father: {fileID: 194068954567580084}
+  m_Children: []
+  m_Father: {fileID: 6074046822963730552}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5030610026787656550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786228771223758809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Theater_Phone_Number
+  prompt: I'm just trying to keep the community positive, jerk *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8900390261552832280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5173992402099931759}
+  - component: {fileID: 7073332920393555602}
+  m_Layer: 0
+  m_Name: Actually, to be honest...
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5173992402099931759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900390261552832280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2250672107976301371}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2309681166593976907
+--- !u!114 &7073332920393555602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5813102888283777274}
+  m_GameObject: {fileID: 8900390261552832280}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: Thanks, one of the biggest I have ever seen. A beauty, truly.
-  responses:
-  - response: Can I see a picture of it?
-    requiredClue: 
-    nextStage: {fileID: 4176061194044167025}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Was it fake?
-    requiredClue: 
-    nextStage: {fileID: 8865797620022541092}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: How did you catch it?
-    requiredClue: 
-    nextStage: {fileID: 6114386674989760802}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6505834021088929337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6009954351128328624}
-  - component: {fileID: 8639114669419537454}
-  m_Layer: 0
-  m_Name: How long did it take you?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6009954351128328624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505834021088929337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4724575164938580828}
-  - {fileID: 7347367128136822216}
-  m_Father: {fileID: 998403620243179342}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8639114669419537454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505834021088929337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Not long, the monster was the first thing I brought in, only about an hour
-    and a half to get out there, get the fish and get back for the inspection.
-  responses:
-  - response: Well, thank you for the info.
-    requiredClue: 
-    nextStage: {fileID: 599147728866680011}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: What does the inspection look like?
-    requiredClue: 
-    nextStage: {fileID: 7599011575260379471}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6846067360770652264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3191147816572031793}
-  - component: {fileID: 8009677447234240646}
-  m_Layer: 0
-  m_Name: Did you use any illegal fishing gear?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3191147816572031793
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6846067360770652264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4137685203381186943}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8009677447234240646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6846067360770652264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: '''Course I didn''t. If you''re good enough, you don''t have to cheat.
-    I never lose in anything, much less a fishing competition. I went through the
-    security measures same as everyone else. Take it up with City Hall. *click*'
+  treeName: Theater_Phone_Number
+  prompt: Wow, would you look at this! I just glanced at the newspaper and saw your
+    phone number there! We will call you back in just a few days, thanks! *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -1135,7 +1197,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &7265834156130920610
+--- !u!1 &8946861520596760795
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1143,209 +1205,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4137685203381186943}
-  - component: {fileID: 7789952594136358341}
+  - component: {fileID: 6271786911271590762}
+  - component: {fileID: 6361393808146636548}
   m_Layer: 0
-  m_Name: What kind of security measures?
+  m_Name: Sure, it's 555-900-3210 (Dylan's number)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4137685203381186943
+--- !u!4 &6271786911271590762
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7265834156130920610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3191147816572031793}
-  - {fileID: 4993227631802234060}
-  m_Father: {fileID: 7024004332261606639}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7789952594136358341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7265834156130920610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Just people looking for Illegal fishing gear... nets, cages, the like.
-    The competition is hook, pole, and bait only.
-  responses:
-  - response: Did you use any illegal fishing gear?
-    requiredClue: 
-    nextStage: {fileID: 8009677447234240646}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Has anyone ever been caught?
-    requiredClue: 
-    nextStage: {fileID: 5066739865038378530}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8807582521782496237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4724575164938580828}
-  - component: {fileID: 599147728866680011}
-  m_Layer: 0
-  m_Name: Well, thank you for the info.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4724575164938580828
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8807582521782496237}
+  m_GameObject: {fileID: 8946861520596760795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6009954351128328624}
+  m_Father: {fileID: 2250672107976301371}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &599147728866680011
+--- !u!114 &6361393808146636548
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8807582521782496237}
+  m_GameObject: {fileID: 8946861520596760795}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: You wanting to join next year? Don't bother, the prize money will always
-    be mine. *click*
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8842451727517934755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 332957415168903149}
-  - component: {fileID: 547158042685805306}
-  m_Layer: 0
-  m_Name: What if you caught it earlier?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &332957415168903149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8842451727517934755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5331579738295894419}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &547158042685805306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8842451727517934755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: It was still twitching.... Take it up with City Hall. *click
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &9065776669357374336
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8713795878524765637}
-  - component: {fileID: 7874714202104705290}
-  m_Layer: 0
-  m_Name: I think you cheated!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8713795878524765637
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9065776669357374336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 194068954567580084}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7874714202104705290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9065776669357374336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Take it up with City Hall. *click*
+  treeName: Theater_Phone_Number
+  prompt: That's great! Thank you so much, Dylan, we will reach out to you shortly!
+    *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
