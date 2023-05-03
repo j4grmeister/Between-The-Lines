@@ -2438,7 +2438,7 @@ MonoBehaviour:
   - {fileID: 1106639418, guid: 44ed62d075d78a64e952d6374220485c, type: 3}
   - {fileID: 258666586, guid: 44ed62d075d78a64e952d6374220485c, type: 3}
   - {fileID: -690213940, guid: 44ed62d075d78a64e952d6374220485c, type: 3}
-  maxTurns: 12
+  maxTurns: 1
 --- !u!4 &538631229
 Transform:
   m_ObjectHideFlags: 0
@@ -4126,6 +4126,9 @@ MonoBehaviour:
   levels:
   - {fileID: 1914769628178533474, guid: 360f185d74f4c7748b0bf0b85e7ecefb, type: 3}
   - {fileID: 1914769628178533474, guid: a221f7e73d62fc74f88f7c0b6a722ecb, type: 3}
+  endOfDayAnimators:
+  - {fileID: 2145908352}
+  - {fileID: 924932582}
   levelParent: {fileID: 916716712}
   savedArticlesParent: {fileID: 1441974339}
   expandedArticle: {fileID: 1253530343}

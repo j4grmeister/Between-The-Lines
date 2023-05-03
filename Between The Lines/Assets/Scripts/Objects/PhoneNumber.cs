@@ -18,6 +18,7 @@ public class PhoneNumber : MonoBehaviour
         CameraManager.Instance.GoToPhone();
         DialogueManager.Instance.SetBackground(characterBackground);
         DialogueManager.Instance.TriggerDialogue(dialogueEntries[dialogueIndex]);
+        WatchManager.Instance.NextTurn();
     }
 
     public void SetDialogueIndex(int dialogueIndex)

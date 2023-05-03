@@ -7,6 +7,7 @@ public class NewsManager : Singleton<NewsManager>
 {
     [SerializeField] private int maxSavedArticles = 3;
     [SerializeField] private List<GameObject> levels;
+    [SerializeField] private List<FrameAnimator> endOfDayAnimators;
 
     [SerializeField] private GameObject levelParent;
     [SerializeField] private GameObject savedArticlesParent;
@@ -92,12 +93,16 @@ public class NewsManager : Singleton<NewsManager>
     public void NextLevel()
     {
         levelIndex++;
-        animations[levelIndex-1].Play();
-        MoveSavedArticles();
+        //MoveSavedArticles();
         if (levelIndex < levels.Count)
         {
             GameObject.Destroy(currentLevel);
             currentLevel = GameObject.Instantiate(levels[levelIndex], levelParent.transform);
+            animations[levelIndex-1].Play();
+        }
+        else
+        {
+            // TODO: Game over
         }
     }
 
