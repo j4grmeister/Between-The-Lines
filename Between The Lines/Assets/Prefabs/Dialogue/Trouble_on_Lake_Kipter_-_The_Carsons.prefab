@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &181858332221894922
+--- !u!1 &395417209707648775
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 207212944447898898}
-  - component: {fileID: 622529055712347487}
+  - component: {fileID: 554150611016218533}
+  - component: {fileID: 1323775022233127037}
   m_Layer: 0
   m_Name: Do you know what happened to her?
   m_TagString: Untagged
@@ -17,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &207212944447898898
+--- !u!4 &554150611016218533
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181858332221894922}
+  m_GameObject: {fileID: 395417209707648775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8122664648442980491}
+  m_Father: {fileID: 2491674946036870234}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &622529055712347487
+--- !u!114 &1323775022233127037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181858332221894922}
+  m_GameObject: {fileID: 395417209707648775}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -48,16 +48,17 @@ MonoBehaviour:
   prompt: 'No, I mean, I''m sorry, I would tell you if I did know, but I haven''t
     heard anything.
 
+    
 
 '
   responses:
   - response: Was she with anyone?
     requiredClue: 
-    nextStage: {fileID: 6076437527966798678}
+    nextStage: {fileID: 766697549153644492}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
+        - m_Target: {fileID: 3804307926020269797}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
           m_MethodName: DiscoverClue
           m_Mode: 5
@@ -66,16 +67,16 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Anne Forger was with a boy
+            m_StringArgument: annes_date
             m_BoolArgument: 0
           m_CallState: 2
   - response: Do you know where she went?
     requiredClue: 
-    nextStage: {fileID: 3260107539818607983}
+    nextStage: {fileID: 533631189203756223}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &221385964410858849
+--- !u!1 &421063704683382817
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,44 +84,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7161948923716288129}
-  - component: {fileID: 3366146651541936217}
+  - component: {fileID: 4147930808403133558}
+  - component: {fileID: 5291825735547419127}
   m_Layer: 0
-  m_Name: I will fix all his issues
+  m_Name: Thank you for your help!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7161948923716288129
+--- !u!4 &4147930808403133558
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221385964410858849}
+  m_GameObject: {fileID: 421063704683382817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4750411029286367339}
-  m_RootOrder: 1
+  m_Father: {fileID: 6456354274639214232}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3366146651541936217
+--- !u!114 &5291825735547419127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221385964410858849}
+  m_GameObject: {fileID: 421063704683382817}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: Oh... well, do what you can, I suppose. Thank you for calling deary *click
+  prompt: Oh! The coffee is getting cold *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -128,7 +129,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &893537797847971896
+--- !u!1 &715833366329966015
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,116 +137,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8826611846348754792}
-  - component: {fileID: 5213377453937479463}
+  - component: {fileID: 5268493789331745949}
+  - component: {fileID: 9102524625017431643}
   m_Layer: 0
-  m_Name: Tell me more about this outfit!
+  m_Name: are you still there?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8826611846348754792
+--- !u!4 &5268493789331745949
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893537797847971896}
+  m_GameObject: {fileID: 715833366329966015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3785187269451206148}
-  m_Father: {fileID: 8122664648442980491}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5213377453937479463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893537797847971896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Well, she was wearing a nice little dress with floral patterns and a silver
-    necklace. All very delicate and ladylike! But I can''t help but mention that
-    she was wearing these large clompy boots that stood out from the rest.
-
-
-'
-  responses:
-  - response: That sounds cute
-    requiredClue: 
-    nextStage: {fileID: 3153721834134204421}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1083824809431149580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3945973627199473014}
-  - component: {fileID: 3260107539818607983}
-  m_Layer: 0
-  m_Name: Do you know where she went?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3945973627199473014
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083824809431149580}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3288693925194407909}
-  m_Father: {fileID: 6670429936809555632}
+  - {fileID: 6190749695332423892}
+  - {fileID: 4194194517179615963}
+  m_Father: {fileID: 1008697232739959391}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3260107539818607983
+--- !u!114 &9102524625017431643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083824809431149580}
+  m_GameObject: {fileID: 715833366329966015}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Actually, she did say something about enjoying the beauty of the landscape...
-    Maybe she was headed to lake Kipter.
+  prompt: 'Oh, sorry deary, she can be quite dissagreeable in the mornings. She is
+    a lonely woman, thank you for entertaining her. Maybe you should call her...
+    I think there was a small advertisement in the bottom right of the paper.
 
+    
 
 '
   responses:
-  - response: Lake Kipter?
+  - response: I don't know
     requiredClue: 
-    nextStage: {fileID: 1246677835171001703}
+    nextStage: {fileID: 4949790405257751616}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1180059724119297584
+  - response: Absolutely
+    requiredClue: 
+    nextStage: {fileID: 4471477799003586538}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &883928788338014153
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,56 +204,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2951741390615904359}
-  - component: {fileID: 8311761018889375502}
+  - component: {fileID: 1178371982543148351}
+  - component: {fileID: 499733065209076024}
   m_Layer: 0
-  m_Name: Wrong again
+  m_Name: Can I get his number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2951741390615904359
+--- !u!4 &1178371982543148351
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180059724119297584}
+  m_GameObject: {fileID: 883928788338014153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8965708501248067485}
-  m_Father: {fileID: 1227259849396648027}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 7953827747472548477}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8311761018889375502
+--- !u!114 &499733065209076024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180059724119297584}
+  m_GameObject: {fileID: 883928788338014153}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'CURSES, MY EARTHY BREW IS NEEDED TO RETURN MY POWER.....
-
-
-'
+  prompt: His phone number is 555-866-2663, but be caref- GIBBERISH TEXT BUT IN CAPITALS.
+    Oh, sorry deary, I can't hear you. Dianne is getting cranky don't worry, your
+    earthy brew is coming *click
   responses:
-  - response: okaaay
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 8529081577429232058}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1532989470613952286
+--- !u!1 &970960134805254947
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,69 +259,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6801834758938148535}
-  - component: {fileID: 6099814785320430487}
+  - component: {fileID: 6872776694982810036}
+  - component: {fileID: 6118396621399633946}
   m_Layer: 0
-  m_Name: Sure
+  m_Name: Yeah?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6801834758938148535
+--- !u!4 &6872776694982810036
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532989470613952286}
+  m_GameObject: {fileID: 970960134805254947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 442814631802658127}
-  m_Father: {fileID: 1227259849396648027}
+  - {fileID: 7522680233828055462}
+  m_Father: {fileID: 8576411252164129439}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6099814785320430487
+--- !u!114 &6118396621399633946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532989470613952286}
+  m_GameObject: {fileID: 970960134805254947}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'YOUR LACK OF ENTHUSIASM IS DISCOURAGING TO ME!! PERHAPS I CAN IMPRESS
-    YOU FURTHER WITH A DEMONSTRATION OF MY POWER!!!! WAIT NO, DON''t take the ph....
+  prompt: 'I AM A MASTER OF ALL KNOWLEDGE. Stop by my shop for 50% off your first
+    visit!.............
 
+    
 
 '
   responses:
-  - response: are you still there?
+  - response: Are you still there?
     requiredClue: 
-    nextStage: {fileID: 4480580982477881353}
+    nextStage: {fileID: 8323310936513345351}
     onContinue:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Talk to Dianne Offerton
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1613691657858531169
+        m_Calls: []
+--- !u!1 &1102751920299107544
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,8 +318,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2468259514431516348}
-  - component: {fileID: 4800344888942800699}
+  - component: {fileID: 1635276585074826020}
+  - component: {fileID: 4274670878969128210}
   m_Layer: 0
   m_Name: Yes?
   m_TagString: Untagged
@@ -389,29 +327,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2468259514431516348
+--- !u!4 &1635276585074826020
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613691657858531169}
+  m_GameObject: {fileID: 1102751920299107544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8096179101415451448}
-  m_Father: {fileID: 3146349621972642797}
+  - {fileID: 8576411252164129439}
+  m_Father: {fileID: 2620552645590064744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4800344888942800699
+--- !u!114 &4274670878969128210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613691657858531169}
+  m_GameObject: {fileID: 1102751920299107544}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -420,21 +358,23 @@ MonoBehaviour:
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
   prompt: 'Here, let me hand give the phone over then.
 
+    
 
     HALLOOOOOOO!!
 
+    
 
 '
   responses:
   - response: Hello?
     requiredClue: 
-    nextStage: {fileID: 4452229318291764887}
+    nextStage: {fileID: 7387002167525345285}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
+        - m_Target: {fileID: 3804307926020269797}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
+          m_MethodName: DiscoverPhoneNumber
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -444,7 +384,7 @@ MonoBehaviour:
             m_StringArgument: Diane Offerton
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &1642998027955757585
+--- !u!1 &1748983914124934014
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,287 +392,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8647231484825656200}
-  - component: {fileID: 1294874372280766885}
-  m_Layer: 0
-  m_Name: How long has she been like this?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8647231484825656200
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642998027955757585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1960996558813045056}
-  m_Father: {fileID: 8965708501248067485}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1294874372280766885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642998027955757585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Dianne has always been different. As a child she loved crystals, tangled
-    hair, and what her family called a &quot;natural garden&quot;. Though I guess
-    she has grown more peculiar over the last year or so.
-
-
-'
-  responses:
-  - response: How long have you known her?
-    requiredClue: 
-    nextStage: {fileID: 4953404621112925331}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Is she sane?
-    requiredClue: 
-    nextStage: {fileID: 2680704829308562120}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2269860558106092757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 869373014329962583}
-  - component: {fileID: 2179015876430927803}
-  m_Layer: 0
-  m_Name: Alright
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &869373014329962583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2269860558106092757}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4750411029286367339}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2179015876430927803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2269860558106092757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: Good, speak with gentleness deary! *click
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2385468146121098107
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6670429936809555632}
-  - component: {fileID: 6076437527966798678}
-  m_Layer: 0
-  m_Name: Was she with anyone?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6670429936809555632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2385468146121098107}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3945973627199473014}
-  m_Father: {fileID: 8122664648442980491}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6076437527966798678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2385468146121098107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'She didn''t come in with anyone deary... Although there was a strapping
-    young lad that I saw waiting outside. I think she thought I wouldn''t notice.
-    I wonder if she was with him.
-
-
-'
-  responses:
-  - response: Do you know where she went?
-    requiredClue: 
-    nextStage: {fileID: 3260107539818607983}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2541845899694572093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8122664648442980491}
-  - component: {fileID: 6403150662298528598}
-  m_Layer: 0
-  m_Name: Where did you see her last?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8122664648442980491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2541845899694572093}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6670429936809555632}
-  - {fileID: 8826611846348754792}
-  - {fileID: 207212944447898898}
-  m_Father: {fileID: 2343465902708731079}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6403150662298528598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2541845899694572093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'My husband and I actually saw her yesterday afternoon! She was beaming
-    with happiness and wearing a cute dress! What a wonderful young girl!
-
-
-'
-  responses:
-  - response: Was she with anyone?
-    requiredClue: 
-    nextStage: {fileID: 6076437527966798678}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Anne Forger was with a boy
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: Tell me more about this outfit!
-    requiredClue: 
-    nextStage: {fileID: 5213377453937479463}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Anne Forger's outfit
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: Do you know where she went?
-    requiredClue: 
-    nextStage: {fileID: 3260107539818607983}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Do you know what happened to her?
-    requiredClue: 
-    nextStage: {fileID: 622529055712347487}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3686366525278171755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4091805672802458502}
-  - component: {fileID: 8563734831400550446}
+  - component: {fileID: 4194194517179615963}
+  - component: {fileID: 4471477799003586538}
   m_Layer: 0
   m_Name: Absolutely
   m_TagString: Untagged
@@ -740,28 +401,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4091805672802458502
+--- !u!4 &4194194517179615963
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686366525278171755}
+  m_GameObject: {fileID: 1748983914124934014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 442814631802658127}
+  m_Father: {fileID: 5268493789331745949}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8563734831400550446
+--- !u!114 &4471477799003586538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686366525278171755}
+  m_GameObject: {fileID: 1748983914124934014}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -777,7 +438,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &4059798314567888010
+--- !u!1 &1823459007712637830
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -785,8 +446,442 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2343465902708731079}
-  - component: {fileID: 39616171886537237}
+  - component: {fileID: 2901634744710454408}
+  - component: {fileID: 3031207049168632455}
+  m_Layer: 0
+  m_Name: okaaay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2901634744710454408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823459007712637830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 950766048782143628}
+  - {fileID: 5635822346943985257}
+  - {fileID: 4870184801571184667}
+  m_Father: {fileID: 5640222946348988143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3031207049168632455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823459007712637830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Oh, sorry about that deary, Dianne is a little unpredictable before she
+    gets her coffee. She is a troubled soul. Not sure if there is much left of her
+    mind, but she is still a close friend of mine.
+
+    
+
+'
+  responses:
+  - response: How long have you known her?
+    requiredClue: 
+    nextStage: {fileID: 1662563647318903325}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Is she okay?
+    requiredClue: 
+    nextStage: {fileID: 8269704691705455141}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: How long has she been like this?
+    requiredClue: 
+    nextStage: {fileID: 5007458673675537767}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1883115709086571855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5640222946348988143}
+  - component: {fileID: 8706636148018102082}
+  m_Layer: 0
+  m_Name: Wrong again
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5640222946348988143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883115709086571855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2901634744710454408}
+  m_Father: {fileID: 3696407784269263914}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8706636148018102082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883115709086571855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'CURSES, MY EARTHY BREW IS NEEDED TO RETURN MY POWER.....
+
+    
+
+'
+  responses:
+  - response: okaaay
+    requiredClue: 
+    nextStage: {fileID: 3031207049168632455}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1969637071224587243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6456354274639214232}
+  - component: {fileID: 6656473955680607415}
+  m_Layer: 0
+  m_Name: You think Anne went there?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6456354274639214232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969637071224587243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4147930808403133558}
+  m_Father: {fileID: 4625136185134393020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6656473955680607415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969637071224587243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'I don''t know of any other place that around here so filled with natural
+    beauty. I would guess she is headed there!
+
+    
+
+'
+  responses:
+  - response: Thank you for your help!
+    requiredClue: 
+    nextStage: {fileID: 5291825735547419127}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2142633544592242640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5635822346943985257}
+  - component: {fileID: 8269704691705455141}
+  m_Layer: 0
+  m_Name: Is she okay?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5635822346943985257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142633544592242640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2901634744710454408}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8269704691705455141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142633544592242640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'She does well enough for her age, dear. Do not worry about her, she is
+    in good hands.
+
+    
+
+'
+  responses:
+  - response: How long have you known her?
+    requiredClue: 
+    nextStage: {fileID: 1662563647318903325}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2390062625247602190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5133666920588687414}
+  - component: {fileID: 1487693707292376903}
+  m_Layer: 0
+  m_Name: Uhh, no thanks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5133666920588687414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390062625247602190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2620552645590064744}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487693707292376903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390062625247602190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: That is too bad, well, I should get her her EARTHY BREW before she bewitches
+    me with some sort of curse. Thank you for checking in deary! *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2391734881660201011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8884513591819723143}
+  - component: {fileID: 766697549153644492}
+  m_Layer: 0
+  m_Name: Was she with anyone?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8884513591819723143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391734881660201011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3216328126125171316}
+  m_Father: {fileID: 2491674946036870234}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766697549153644492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391734881660201011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'She didn''t come in with anyone deary... Although there was a strapping
+    young lad that I saw waiting outside. I think she thought I wouldn''t notice.
+    I wonder if she was with him.
+
+    
+
+'
+  responses:
+  - response: Do you know where she went?
+    requiredClue: 
+    nextStage: {fileID: 533631189203756223}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2442819179462502891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008697232739959391}
+  - component: {fileID: 7424194162511570106}
+  m_Layer: 0
+  m_Name: Sure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008697232739959391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442819179462502891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5268493789331745949}
+  m_Father: {fileID: 3696407784269263914}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7424194162511570106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442819179462502891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'YOUR LACK OF ENTHUSIASM IS DISCOURAGING TO ME!! PERHAPS I CAN IMPRESS
+    YOU FURTHER WITH A DEMONSTRATION OF MY POWER!!!! WAIT NO, DON''t take the ph....
+
+    
+
+'
+  responses:
+  - response: are you still there?
+    requiredClue: 
+    nextStage: {fileID: 9102524625017431643}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3804307926020269797}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: talk_to_dianne
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &2616589918848163482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377117019890786090}
+  - component: {fileID: 8925306776161810966}
   m_Layer: 0
   m_Name: Just wanted to see how you were doing!
   m_TagString: Untagged
@@ -794,31 +889,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2343465902708731079
+--- !u!4 &1377117019890786090
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4059798314567888010}
+  m_GameObject: {fileID: 2616589918848163482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3146349621972642797}
-  - {fileID: 4750411029286367339}
-  - {fileID: 8122664648442980491}
-  m_Father: {fileID: 2831438388878398227}
+  - {fileID: 2620552645590064744}
+  - {fileID: 7953827747472548477}
+  - {fileID: 2491674946036870234}
+  m_Father: {fileID: 1131953310528681358}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &39616171886537237
+--- !u!114 &8925306776161810966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4059798314567888010}
+  m_GameObject: {fileID: 2616589918848163482}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -827,24 +922,25 @@ MonoBehaviour:
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
   prompt: 'Oh... Haven''t you heard? Dear miss Anne Forger has gone missing. Terrible
     state of things this mornin''. People in an uproar, the house hasn''t had a peep
-    of quiet all morning. This should be translated to gibberish text in the background.
+    of quiet all morning.
 
+    
 
 '
   responses:
   - response: What was that?
     requiredClue: 
-    nextStage: {fileID: 1228642415520748930}
+    nextStage: {fileID: 2880807243980405032}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
   - response: Is there anything I can do?
     requiredClue: 
-    nextStage: {fileID: 9045998712488627470}
+    nextStage: {fileID: 4312024182519136580}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
+        - m_Target: {fileID: 3804307926020269797}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
           m_MethodName: DiscoverPhoneNumber
           m_Mode: 5
@@ -858,11 +954,11 @@ MonoBehaviour:
           m_CallState: 2
   - response: Where did you see her last?
     requiredClue: 
-    nextStage: {fileID: 6403150662298528598}
+    nextStage: {fileID: 7938990328450605622}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &4103309438006184773
+--- !u!1 &2769981656285586479
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -870,48 +966,226 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4681871680759524898}
-  - component: {fileID: 6374415972200089125}
+  - component: {fileID: 4233496797170265350}
+  - component: {fileID: 1178374564758635028}
   m_Layer: 0
-  m_Name: I don't know
+  m_Name: Tell me more about this outfit!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4681871680759524898
+--- !u!4 &4233496797170265350
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4103309438006184773}
+  m_GameObject: {fileID: 2769981656285586479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 442814631802658127}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 1732637524878862929}
+  m_Father: {fileID: 2491674946036870234}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6374415972200089125
+--- !u!114 &1178374564758635028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4103309438006184773}
+  m_GameObject: {fileID: 2769981656285586479}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Just think on it alright, deary? I need to get back to the shop, I trust
-    you to do the right thing.
+  prompt: 'Well, she was wearing a nice little dress with floral patterns and a silver
+    necklace. All very delicate and ladylike! But I can''t help but mention that
+    she was wearing these large clompy boots that stood out from the rest.
 
+    
 
-    *click'
+'
+  responses:
+  - response: That sounds cute
+    requiredClue: 
+    nextStage: {fileID: 6297248649264425963}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3080524411339854196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7522680233828055462}
+  - component: {fileID: 8323310936513345351}
+  m_Layer: 0
+  m_Name: Are you still there?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7522680233828055462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080524411339854196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6872776694982810036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8323310936513345351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080524411339854196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'I DOZED OFF A LITTLE. HARD TO STAY AWAKE WITHOUT MY EARTHY BREW! GOODBYE!...
+
+    
+
+'
+  responses:
+  - response: okaaay
+    requiredClue: 
+    nextStage: {fileID: 3031207049168632455}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &3699770693115526051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8576411252164129439}
+  - component: {fileID: 7387002167525345285}
+  m_Layer: 0
+  m_Name: Hello?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8576411252164129439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3699770693115526051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6872776694982810036}
+  - {fileID: 3696407784269263914}
+  m_Father: {fileID: 1635276585074826020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7387002167525345285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3699770693115526051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'HELLO THERE! YOU ARE NEW TO TOWN AND WANT A DOG!
+
+    
+
+'
+  responses:
+  - response: Yeah?
+    requiredClue: 
+    nextStage: {fileID: 6118396621399633946}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Wrong.
+    requiredClue: 
+    nextStage: {fileID: 1711119437236655189}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4411327564659637344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2524318829106851232}
+  - component: {fileID: 4071951655730077496}
+  m_Layer: 0
+  m_Name: I will fix all his issues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2524318829106851232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4411327564659637344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7953827747472548477}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4071951655730077496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4411327564659637344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: Oh... well, do what you can, I suppose. Thank you for calling deary *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -919,7 +1193,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &4353739393081682435
+--- !u!1 &4508594638687358858
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,8 +1201,325 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3785187269451206148}
-  - component: {fileID: 3153721834134204421}
+  - component: {fileID: 3746533657633821464}
+  - component: {fileID: 5267712349793642062}
+  m_Layer: 0
+  m_Name: Alright
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3746533657633821464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508594638687358858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7953827747472548477}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5267712349793642062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508594638687358858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: Good, speak with gentleness deary! *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4697565413029960738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3216328126125171316}
+  - component: {fileID: 533631189203756223}
+  m_Layer: 0
+  m_Name: Do you know where she went?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3216328126125171316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697565413029960738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4625136185134393020}
+  m_Father: {fileID: 8884513591819723143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533631189203756223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697565413029960738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Actually, she did say something about enjoying the beauty of the landscape...
+    Maybe she was headed to lake Kipter.
+
+    
+
+'
+  responses:
+  - response: Lake Kipter?
+    requiredClue: 
+    nextStage: {fileID: 9062729417968773897}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4898185645955275919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950766048782143628}
+  - component: {fileID: 1662563647318903325}
+  m_Layer: 0
+  m_Name: How long have you known her?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &950766048782143628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4898185645955275919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2901634744710454408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662563647318903325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4898185645955275919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: We've been friends since we were both little.
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5729511166336342315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4870184801571184667}
+  - component: {fileID: 5007458673675537767}
+  m_Layer: 0
+  m_Name: How long has she been like this?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4870184801571184667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729511166336342315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1929549850329386839}
+  m_Father: {fileID: 2901634744710454408}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5007458673675537767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729511166336342315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Dianne has always been different. As a child she loved crystals, tangled
+    hair, and what her family called a &quot;natural garden&quot;. Though I guess
+    she has grown more peculiar over the last year or so.
+
+    
+
+'
+  responses:
+  - response: How long have you known her?
+    requiredClue: 
+    nextStage: {fileID: 1662563647318903325}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Is she sane?
+    requiredClue: 
+    nextStage: {fileID: 240241997923034007}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &6422907914296942253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7953827747472548477}
+  - component: {fileID: 4312024182519136580}
+  m_Layer: 0
+  m_Name: Is there anything I can do?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7953827747472548477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422907914296942253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3746533657633821464}
+  - {fileID: 2524318829106851232}
+  - {fileID: 1178371982543148351}
+  m_Father: {fileID: 1377117019890786090}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4312024182519136580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422907914296942253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Oh no, just be kind to Tom, he worries so much about her. As any good
+    father should. Perhaps give him a call. He may be a little... touchy, though.
+    Just be sensitive alright?
+
+    
+
+'
+  responses:
+  - response: Alright
+    requiredClue: 
+    nextStage: {fileID: 5267712349793642062}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I will fix all his issues
+    requiredClue: 
+    nextStage: {fileID: 4071951655730077496}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Can I get his number
+    requiredClue: 
+    nextStage: {fileID: 499733065209076024}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3804307926020269797}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverPhoneNumber
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Tom Forger
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &6450737702680242088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732637524878862929}
+  - component: {fileID: 6297248649264425963}
   m_Layer: 0
   m_Name: That sounds cute
   m_TagString: Untagged
@@ -936,28 +1527,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3785187269451206148
+--- !u!4 &1732637524878862929
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4353739393081682435}
+  m_GameObject: {fileID: 6450737702680242088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8826611846348754792}
+  m_Father: {fileID: 4233496797170265350}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3153721834134204421
+--- !u!114 &6297248649264425963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4353739393081682435}
+  m_GameObject: {fileID: 6450737702680242088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -974,7 +1565,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &4739556235493590899
+--- !u!1 &7587444120744276476
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -982,8 +1573,196 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3288693925194407909}
-  - component: {fileID: 1246677835171001703}
+  - component: {fileID: 3696407784269263914}
+  - component: {fileID: 1711119437236655189}
+  m_Layer: 0
+  m_Name: Wrong.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3696407784269263914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587444120744276476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1008697232739959391}
+  - {fileID: 5640222946348988143}
+  m_Father: {fileID: 8576411252164129439}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711119437236655189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587444120744276476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'YOU ARE MODERATELY AQUAINTED WITH THE TOWN AND WANT A CAT!
+
+    
+
+'
+  responses:
+  - response: Sure
+    requiredClue: 
+    nextStage: {fileID: 7424194162511570106}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Wrong again
+    requiredClue: 
+    nextStage: {fileID: 8706636148018102082}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8308749565287144901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6190749695332423892}
+  - component: {fileID: 4949790405257751616}
+  m_Layer: 0
+  m_Name: I don't know
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6190749695332423892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308749565287144901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5268493789331745949}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4949790405257751616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308749565287144901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Just think on it alright, deary? I need to get back to the shop, I trust
+    you to do the right thing.
+
+    
+
+    *click'
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8605362066073151420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2620552645590064744}
+  - component: {fileID: 2880807243980405032}
+  m_Layer: 0
+  m_Name: What was that?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2620552645590064744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605362066073151420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1635276585074826020}
+  - {fileID: 5133666920588687414}
+  m_Father: {fileID: 1377117019890786090}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2880807243980405032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605362066073151420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
+  prompt: 'Oh, that was just Dianne Offerton, wanna talk to her?
+
+    
+
+'
+  responses:
+  - response: Yes?
+    requiredClue: 
+    nextStage: {fileID: 4274670878969128210}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Uhh, no thanks
+    requiredClue: 
+    nextStage: {fileID: 1487693707292376903}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8655826418921646961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4625136185134393020}
+  - component: {fileID: 9062729417968773897}
   m_Layer: 0
   m_Name: Lake Kipter?
   m_TagString: Untagged
@@ -991,29 +1770,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3288693925194407909
+--- !u!4 &4625136185134393020
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739556235493590899}
+  m_GameObject: {fileID: 8655826418921646961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8529056437044185922}
-  m_Father: {fileID: 3945973627199473014}
+  - {fileID: 6456354274639214232}
+  m_Father: {fileID: 3216328126125171316}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1246677835171001703
+--- !u!114 &9062729417968773897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739556235493590899}
+  m_GameObject: {fileID: 8655826418921646961}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -1024,16 +1803,17 @@ MonoBehaviour:
     called lake Kipter. The poeple that do come to town come to see the lake, climbe
     the surrounding hills, or hike along the ridges. It really is gorgeous.
 
+    
 
 '
   responses:
   - response: You think Anne went there?
     requiredClue: 
-    nextStage: {fileID: 2912610956959454284}
+    nextStage: {fileID: 6656473955680607415}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
+        - m_Target: {fileID: 3804307926020269797}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
           m_MethodName: DiscoverClue
           m_Mode: 5
@@ -1042,10 +1822,10 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Anne Forger headed to Lake Kipter
+            m_StringArgument: anne_went_hiking
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &4750876954804505093
+--- !u!1 &8758427678899598770
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1053,806 +1833,102 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3146349621972642797}
-  - component: {fileID: 1228642415520748930}
+  - component: {fileID: 2491674946036870234}
+  - component: {fileID: 7938990328450605622}
   m_Layer: 0
-  m_Name: What was that?
+  m_Name: Where did you see her last?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3146349621972642797
+--- !u!4 &2491674946036870234
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750876954804505093}
+  m_GameObject: {fileID: 8758427678899598770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2468259514431516348}
-  - {fileID: 3766298186922553941}
-  m_Father: {fileID: 2343465902708731079}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1228642415520748930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750876954804505093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Oh, that was just Dianne Offerton, wanna talk to her?
-
-
-'
-  responses:
-  - response: Yes?
-    requiredClue: 
-    nextStage: {fileID: 4800344888942800699}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Uhh, no thanks
-    requiredClue: 
-    nextStage: {fileID: 4487823054576470932}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &4825090448079972699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3450955374563836372}
-  - component: {fileID: 7443991480162764364}
-  m_Layer: 0
-  m_Name: Can I get his number
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3450955374563836372
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825090448079972699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4750411029286367339}
+  - {fileID: 8884513591819723143}
+  - {fileID: 4233496797170265350}
+  - {fileID: 554150611016218533}
+  m_Father: {fileID: 1377117019890786090}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7443991480162764364
+--- !u!114 &7938990328450605622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825090448079972699}
+  m_GameObject: {fileID: 8758427678899598770}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: GIBBERISH TEXT BUT IN CAPITALS. Oh, sorry deary, I can't hear you. Dianne
-    is getting cranky don't worry, your earthy brew is coming *click
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5040993297694667294
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2831438388878398227}
-  - component: {fileID: 4219476675766471396}
-  - component: {fileID: 2771172270694635394}
-  m_Layer: 0
-  m_Name: Trouble_on_Lake_Kipter_-_The_Carsons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2831438388878398227
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5040993297694667294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2343465902708731079}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4219476675766471396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5040993297694667294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Oh, hello there deary! What can I do to serve you today!
+  prompt: 'My husband and I actually saw her yesterday afternoon! She was beaming
+    with happiness and wearing a cute dress! What a wonderful young girl!
 
+    
 
 '
   responses:
-  - response: Just wanted to see how you were doing!
+  - response: Was she with anyone?
     requiredClue: 
-    nextStage: {fileID: 39616171886537237}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &2771172270694635394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5040993297694667294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &5520939536073167045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7982845123339100335}
-  - component: {fileID: 9204343363927398799}
-  m_Layer: 0
-  m_Name: Are you still there?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7982845123339100335
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5520939536073167045}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3090919151728022994}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9204343363927398799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5520939536073167045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'I DOZED OFF A LITTLE. HARD TO STAY AWAKE WITHOUT MY EARTHY BREW! GOODBYE!...
-
-
-'
-  responses:
-  - response: okaaay
-    requiredClue: 
-    nextStage: {fileID: 8529081577429232058}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5649446818493022822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8990237219757071934}
-  - component: {fileID: 174617613851955218}
-  m_Layer: 0
-  m_Name: Thank you for your help!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8990237219757071934
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5649446818493022822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8529056437044185922}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &174617613851955218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5649446818493022822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: Oh! The coffee is getting cold *click
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6623395330170394425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 442814631802658127}
-  - component: {fileID: 4480580982477881353}
-  m_Layer: 0
-  m_Name: are you still there?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &442814631802658127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6623395330170394425}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4681871680759524898}
-  - {fileID: 4091805672802458502}
-  m_Father: {fileID: 6801834758938148535}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4480580982477881353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6623395330170394425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Oh, sorry deary, she can be quite dissagreeable in the mornings. She is
-    a lonely woman, thank you for entertaining her. Maybe you should call her...
-    I think there was a small advertisement in the bottom right of the paper.
-
-
-'
-  responses:
-  - response: I don't know
-    requiredClue: 
-    nextStage: {fileID: 6374415972200089125}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Absolutely
-    requiredClue: 
-    nextStage: {fileID: 8563734831400550446}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7638348294031429759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8096179101415451448}
-  - component: {fileID: 4452229318291764887}
-  m_Layer: 0
-  m_Name: Hello?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8096179101415451448
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7638348294031429759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3090919151728022994}
-  - {fileID: 1227259849396648027}
-  m_Father: {fileID: 2468259514431516348}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4452229318291764887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7638348294031429759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'HELLO THERE! YOU ARE NEW TO TOWN AND WANT A DOG!
-
-
-'
-  responses:
-  - response: How do you know that?
-    requiredClue: 
-    nextStage: {fileID: 9149716295414716337}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Wrong.
-    requiredClue: 
-    nextStage: {fileID: 8021811824062967210}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7658468013434294639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7288352013255866925}
-  - component: {fileID: 4953404621112925331}
-  m_Layer: 0
-  m_Name: How long have you known her?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7288352013255866925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658468013434294639}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8965708501248067485}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4953404621112925331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658468013434294639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: We've been friends since we were both little.
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8157677238976261059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8965708501248067485}
-  - component: {fileID: 8529081577429232058}
-  m_Layer: 0
-  m_Name: okaaay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8965708501248067485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157677238976261059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7288352013255866925}
-  - {fileID: 6039876178914017231}
-  - {fileID: 8647231484825656200}
-  m_Father: {fileID: 2951741390615904359}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8529081577429232058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157677238976261059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Oh, sorry about that deary, Dianne is a little unpredictable before she
-    gets her coffee. She is a troubled soul. Not sure if there is much left of her
-    mind, but she is still a close friend of mine.
-
-
-'
-  responses:
-  - response: How long have you known her?
-    requiredClue: 
-    nextStage: {fileID: 4953404621112925331}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Is she okay?
-    requiredClue: 
-    nextStage: {fileID: 2751714642188024538}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: How long has she been like this?
-    requiredClue: 
-    nextStage: {fileID: 1294874372280766885}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8400293147270030685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3090919151728022994}
-  - component: {fileID: 9149716295414716337}
-  m_Layer: 0
-  m_Name: How do you know that?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3090919151728022994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8400293147270030685}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7982845123339100335}
-  m_Father: {fileID: 8096179101415451448}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9149716295414716337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8400293147270030685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'I AM A MASTER OF ALL KNOWLEDGE. Stop by my shop for 50% off your first
-    visit!.............
-
-
-'
-  responses:
-  - response: Are you still there?
-    requiredClue: 
-    nextStage: {fileID: 9204343363927398799}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8512733610354196310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4750411029286367339}
-  - component: {fileID: 9045998712488627470}
-  m_Layer: 0
-  m_Name: Is there anything I can do?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4750411029286367339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512733610354196310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 869373014329962583}
-  - {fileID: 7161948923716288129}
-  - {fileID: 3450955374563836372}
-  m_Father: {fileID: 2343465902708731079}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9045998712488627470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512733610354196310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'Oh no, just be kind to Tom, he worries so much about her. As any good
-    father should. Perhaps give him a call. He may be a little... touchy, though.
-    Just be sensitive alright?
-
-
-'
-  responses:
-  - response: Alright
-    requiredClue: 
-    nextStage: {fileID: 2179015876430927803}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: I will fix all his issues
-    requiredClue: 
-    nextStage: {fileID: 3366146651541936217}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Can I get his number
-    requiredClue: 
-    nextStage: {fileID: 7443991480162764364}
+    nextStage: {fileID: 766697549153644492}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2771172270694635394}
+        - m_Target: {fileID: 3804307926020269797}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverPhoneNumber
+          m_MethodName: DiscoverClue
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Paul Davidson
+            m_StringArgument: annes_date
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &8635814369218455152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3766298186922553941}
-  - component: {fileID: 4487823054576470932}
-  m_Layer: 0
-  m_Name: Uhh, no thanks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3766298186922553941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8635814369218455152}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3146349621972642797}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4487823054576470932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8635814369218455152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: That is too bad, well, I should get her her EARTHY BREW before she bewitches
-    me with some sort of curse. Thank you for checking in deary! *click
-  responses:
-  - response: '*Hang up*'
+  - response: Tell me more about this outfit!
     requiredClue: 
-    nextStage: {fileID: 0}
+    nextStage: {fileID: 1178374564758635028}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3804307926020269797}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: annes_outfit
+            m_BoolArgument: 0
+          m_CallState: 2
+  - response: Do you know where she went?
+    requiredClue: 
+    nextStage: {fileID: 533631189203756223}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8696924642857807051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6039876178914017231}
-  - component: {fileID: 2751714642188024538}
-  m_Layer: 0
-  m_Name: Is she okay?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6039876178914017231
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8696924642857807051}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8965708501248067485}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2751714642188024538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8696924642857807051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'She does well enough for her age, dear. Do not worry about her, she is
-    in good hands.
-
-
-'
-  responses:
-  - response: How long have you known her?
+  - response: Do you know what happened to her?
     requiredClue: 
-    nextStage: {fileID: 4953404621112925331}
+    nextStage: {fileID: 1323775022233127037}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &8747630750391514796
+--- !u!1 &9150205800885899406
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1860,66 +1936,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8529056437044185922}
-  - component: {fileID: 2912610956959454284}
-  m_Layer: 0
-  m_Name: You think Anne went there?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8529056437044185922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8747630750391514796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8990237219757071934}
-  m_Father: {fileID: 3288693925194407909}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2912610956959454284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8747630750391514796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'I don''t know of any other place that around here so filled with natural
-    beauty. I would guess she is headed there!
-
-
-'
-  responses:
-  - response: Thank you for your help!
-    requiredClue: 
-    nextStage: {fileID: 174617613851955218}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &9035553390948968656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1960996558813045056}
-  - component: {fileID: 2680704829308562120}
+  - component: {fileID: 1929549850329386839}
+  - component: {fileID: 240241997923034007}
   m_Layer: 0
   m_Name: Is she sane?
   m_TagString: Untagged
@@ -1927,28 +1945,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1960996558813045056
+--- !u!4 &1929549850329386839
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035553390948968656}
+  m_GameObject: {fileID: 9150205800885899406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8647231484825656200}
+  m_Father: {fileID: 4870184801571184667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2680704829308562120
+--- !u!114 &240241997923034007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035553390948968656}
+  m_GameObject: {fileID: 9150205800885899406}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
@@ -1965,7 +1983,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &9036211411151537724
+--- !u!1 &9176557174958570954
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1973,59 +1991,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1227259849396648027}
-  - component: {fileID: 8021811824062967210}
+  - component: {fileID: 1131953310528681358}
+  - component: {fileID: 6699945278050087512}
+  - component: {fileID: 3804307926020269797}
   m_Layer: 0
-  m_Name: Wrong.
+  m_Name: Trouble_on_Lake_Kipter_-_The_Carsons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1227259849396648027
+--- !u!4 &1131953310528681358
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036211411151537724}
+  m_GameObject: {fileID: 9176557174958570954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6801834758938148535}
-  - {fileID: 2951741390615904359}
-  m_Father: {fileID: 8096179101415451448}
-  m_RootOrder: 1
+  - {fileID: 1377117019890786090}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8021811824062967210
+--- !u!114 &6699945278050087512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036211411151537724}
+  m_GameObject: {fileID: 9176557174958570954}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   treeName: Trouble_on_Lake_Kipter_-_The_Carsons
-  prompt: 'YOU ARE MODERATELY AQUAINTED WITH THE TOWN AND WANT A CAT!
+  prompt: 'Oh, hello there deary! What can I do to serve you today!
 
+    
 
 '
   responses:
-  - response: Sure
+  - response: Just wanted to see how you were doing!
     requiredClue: 
-    nextStage: {fileID: 6099814785320430487}
+    nextStage: {fileID: 8925306776161810966}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Wrong again
-    requiredClue: 
-    nextStage: {fileID: 8311761018889375502}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
+--- !u!114 &3804307926020269797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176557174958570954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

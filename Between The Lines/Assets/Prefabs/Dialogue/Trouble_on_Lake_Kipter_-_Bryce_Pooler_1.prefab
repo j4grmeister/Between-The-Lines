@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &60767091750078812
+--- !u!1 &5374342056052046
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,86 +8,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8814958900628359942}
-  - component: {fileID: 2480919104020448575}
+  - component: {fileID: 6404461614675796670}
+  - component: {fileID: 1753273760454314499}
   m_Layer: 0
-  m_Name: Sure.
+  m_Name: Have you tried to talk to him again?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8814958900628359942
+--- !u!4 &6404461614675796670
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60767091750078812}
+  m_GameObject: {fileID: 5374342056052046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7345700167073213547}
+  m_Children:
+  - {fileID: 5403523649423016943}
+  m_Father: {fileID: 481442760388879104}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2480919104020448575
+--- !u!114 &1753273760454314499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60767091750078812}
+  m_GameObject: {fileID: 5374342056052046}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that would be $8.99. What address would you like to send it to?
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'A couple times, but he won''t talk to me, he is still livid
 
-    
 
 '
   responses:
-  - response: 109 Galax Street.
+  - response: Just apologize, dude.
     requiredClue: 
-    nextStage: {fileID: 2561118185221454146}
+    nextStage: {fileID: 7112167882843692032}
     onContinue:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &78593147596852447
+        m_Calls: []
+--- !u!1 &591891274146563986
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,44 +65,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6308569773942256394}
-  - component: {fileID: 4068918993814891297}
+  - component: {fileID: 8268278101195523656}
+  - component: {fileID: 819998244643175078}
   m_Layer: 0
-  m_Name: Can I get a pineapple pizza?
+  m_Name: Yikes, I guess you shouldn't call him then
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6308569773942256394
+--- !u!4 &8268278101195523656
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78593147596852447}
+  m_GameObject: {fileID: 591891274146563986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7190533281666589500}
+  m_Father: {fileID: 481442760388879104}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4068918993814891297
+--- !u!114 &819998244643175078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78593147596852447}
+  m_GameObject: {fileID: 591891274146563986}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: '*Click*'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: I won't... It's hard to run an investigation without access to those close
+    to the case. Anyway, I should get back to to these interviews. Please look into
+    this further! *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -140,7 +112,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &312574484802225402
+--- !u!1 &1809679502804716708
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,336 +120,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 403678645601852499}
-  - component: {fileID: 6162397746675611975}
+  - component: {fileID: 5957443560354887709}
+  - component: {fileID: 4874304267282987803}
   m_Layer: 0
-  m_Name: Ok! I'm sorry!
+  m_Name: She said that you're fired
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &403678645601852499
+--- !u!4 &5957443560354887709
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312574484802225402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1675192581444450087}
-  m_Father: {fileID: 2523161201056189004}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6162397746675611975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312574484802225402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Address.
-
-    
-
-'
-  responses:
-  - response: Huh?
-    requiredClue: 
-    nextStage: {fileID: 5931155787241431643}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &408332165316100984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3269053094185061777}
-  - component: {fileID: 6831739184000974261}
-  m_Layer: 0
-  m_Name: There isn't a drink that comes with it?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3269053094185061777
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408332165316100984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6830870274994777387}
-  m_Father: {fileID: 7345700167073213547}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6831739184000974261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408332165316100984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'No.
-
-    
-
-'
-  responses:
-  - response: Why is it called a meal?
-    requiredClue: 
-    nextStage: {fileID: 505679057627138407}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &456441530291912578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6147171669006376619}
-  - component: {fileID: 8241158650226589446}
-  m_Layer: 0
-  m_Name: No, thank you.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6147171669006376619
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456441530291912578}
+  m_GameObject: {fileID: 1809679502804716708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7345700167073213547}
+  m_Father: {fileID: 4539878099395386014}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8241158650226589446
+--- !u!114 &4874304267282987803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456441530291912578}
+  m_GameObject: {fileID: 1809679502804716708}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok. What address would you like it sent to?
-
-    
-
-'
-  responses:
-  - response: 109 Galax Street.
-    requiredClue: 
-    nextStage: {fileID: 2561118185221454146}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &494333993697403751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 106959332949533808}
-  - component: {fileID: 3653740893646998550}
-  m_Layer: 0
-  m_Name: No, thank you. I'll keep the medium.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &106959332949533808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494333993697403751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7675973371605986598}
-  - {fileID: 1290880732416502457}
-  m_Father: {fileID: 4315769985163935327}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3653740893646998550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494333993697403751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that will be $14.99. What address would you like that sent to?
-
-    
-
-'
-  responses:
-  - response: 109 Galax Street.
-    requiredClue: 
-    nextStage: {fileID: 2561118185221454146}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1410702088724951016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7299398213701660047}
-  - component: {fileID: 7836449100091813872}
-  m_Layer: 0
-  m_Name: Wait.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7299398213701660047
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410702088724951016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7410551095374878574}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7836449100091813872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410702088724951016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: Why you... *Click*
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: Finally, thought it was time to retire *click
   responses:
   - response: '*Hang up*'
     requiredClue: 
@@ -485,7 +165,7 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &1520771559243099284
+--- !u!1 &1811860791184701841
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -493,116 +173,280 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3207632081749249674}
-  - component: {fileID: 8177343687190943605}
+  - component: {fileID: 2347400006639275467}
+  - component: {fileID: 4918385970780073427}
   m_Layer: 0
-  m_Name: Ok, thanks.
+  m_Name: You're not even looking?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3207632081749249674
+--- !u!4 &2347400006639275467
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520771559243099284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1290880732416502457}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8177343687190943605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520771559243099284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: '*Click*'
-  responses:
-  - response: '*Hang up*'
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1854290318590650234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5142666100115464367}
-  - component: {fileID: 7545434206117338997}
-  m_Layer: 0
-  m_Name: Large.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5142666100115464367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854290318590650234}
+  m_GameObject: {fileID: 1811860791184701841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 372537128772172908}
-  m_Father: {fileID: 28717785512311400}
+  - {fileID: 1041677153973162290}
+  - {fileID: 3733370448594394368}
+  m_Father: {fileID: 3083703375846358976}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4918385970780073427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811860791184701841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'At the moment, no. Your mom is on the top of our priority list for when
+    we solve this one. We can''t spread too thin or we won''t be able to help anyone.
+
+
+'
+  responses:
+  - response: And what if my mom doesn't come back?
+    requiredClue: 
+    nextStage: {fileID: 3880942930042246273}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Isn't that your job
+    requiredClue: 
+    nextStage: {fileID: 656365197485340626}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1924580248176043661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4535729212183232184}
+  - component: {fileID: 6364563960702717178}
+  m_Layer: 0
+  m_Name: I have evidence to report.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4535729212183232184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924580248176043661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7262642464536227125}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6364563960702717178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924580248176043661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Well, what is it?
+
+
+'
+  responses:
+  - response: I know what Anne Forger was wearing
+    requiredClue: annes_outfit
+    nextStage: {fileID: 6641708998219993458}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know who Anne Forger was with
+    requiredClue: annes_date
+    nextStage: {fileID: 3214660089105177134}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I have a theory for what happened
+    requiredClue: anne_of_myre
+    nextStage: {fileID: 223349067395512119}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2029019947398488255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4539878099395386014}
+  - component: {fileID: 2760209716929915891}
+  m_Layer: 0
+  m_Name: Moore told me to call you.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4539878099395386014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029019947398488255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6811364090572264541}
+  - {fileID: 68385301539472965}
+  - {fileID: 5957443560354887709}
+  m_Father: {fileID: 7262642464536227125}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2760209716929915891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029019947398488255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Okay, well what did she say?
+
+
+'
+  responses:
+  - response: She said you were doing a good job!
+    requiredClue: 
+    nextStage: {fileID: 7315368126979090486}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: She said you might give me work to do
+    requiredClue: 
+    nextStage: {fileID: 8331028484873793339}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7386456209474879051}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: tom_hates_pooler
+            m_BoolArgument: 0
+          m_CallState: 2
+  - response: She said that you're fired
+    requiredClue: 
+    nextStage: {fileID: 4874304267282987803}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7386456209474879051}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: pooler_quit
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &2037189820342639711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2248279874121467048}
+  - component: {fileID: 339151103031508620}
+  m_Layer: 0
+  m_Name: I'll call him right up *click
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2248279874121467048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037189820342639711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 68385301539472965}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7545434206117338997
+--- !u!114 &339151103031508620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854290318590650234}
+  m_GameObject: {fileID: 2037189820342639711}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Would you like to upgrade to an extra large for only $3.00 more?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: '   '
   responses:
-  - response: No, thanks. I'll keep the large.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 472516671853162578}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Sure. I'll ugrade to a extra large.
-    requiredClue: 
-    nextStage: {fileID: 2409121349904852041}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &1996873294349264463
+--- !u!1 &2904620754731667963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,57 +454,412 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1675192581444450087}
-  - component: {fileID: 5931155787241431643}
+  - component: {fileID: 3731983567011348100}
+  - component: {fileID: 5844064777250408418}
   m_Layer: 0
-  m_Name: Huh?
+  m_Name: Could the two cases be connected?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1675192581444450087
+--- !u!4 &3731983567011348100
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996873294349264463}
+  m_GameObject: {fileID: 2904620754731667963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6595110473109372633}
-  m_Father: {fileID: 403678645601852499}
-  m_RootOrder: 0
+  - {fileID: 3569109492977191656}
+  - {fileID: 3242420971471383104}
+  m_Father: {fileID: 3083703375846358976}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5931155787241431643
+--- !u!114 &5844064777250408418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996873294349264463}
+  m_GameObject: {fileID: 2904620754731667963}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'An address for your order.
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'It''s not impossible, but I can''t really tell you too much about the
+    cases, just rest assured that we are doing our best to solve every case.
 
-    
 
 '
   responses:
-  - response: Oh, 109 Galax Street.
+  - response: Please, just update me when you can
     requiredClue: 
-    nextStage: {fileID: 1932283258988174024}
+    nextStage: {fileID: 7265019273618707690}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Can I help in any way?
+    requiredClue: 
+    nextStage: {fileID: 1970355350806670129}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4291940327771580539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6811364090572264541}
+  - component: {fileID: 7315368126979090486}
+  m_Layer: 0
+  m_Name: She said you were doing a good job!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6811364090572264541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291940327771580539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2553452816783851405}
+  m_Father: {fileID: 4539878099395386014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7315368126979090486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291940327771580539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: "Well, I haven't done the job yet, so I don't know how it would be good.
+    But tell her thanks. \n\n"
+  responses:
+  - response: Have you discovered anything so far?
+    requiredClue: 
+    nextStage: {fileID: 6807210096224468527}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Is there anything I can help with?
+    requiredClue: 
+    nextStage: {fileID: 6138362915223298909}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4531020248086420335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68385301539472965}
+  - component: {fileID: 8331028484873793339}
+  m_Layer: 0
+  m_Name: She said you might give me work to do
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68385301539472965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531020248086420335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5827417718547620189}
+  - {fileID: 481442760388879104}
+  - {fileID: 2248279874121467048}
+  m_Father: {fileID: 4539878099395386014}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8331028484873793339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531020248086420335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Oh yeah? I don''t know you too well, so I can''t give you much.... Actually,
+    now that I think about it, I might have something for you. Tom Forger and I don''t
+    get along too well, but if you could call him, that would be a massive help!
+
+
+'
+  responses:
+  - response: Uhh, I don't know...
+    requiredClue: 
+    nextStage: {fileID: 7978473149565996581}
     onContinue:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
+        - m_Target: {fileID: 7386456209474879051}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverPhoneNumber
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Tom Forger
+            m_BoolArgument: 0
+          m_CallState: 2
+  - response: Why don't you get along with Tom?
+    requiredClue: 
+    nextStage: {fileID: 5337576153880571789}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I'll call him right up *click
+    requiredClue: 
+    nextStage: {fileID: 339151103031508620}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4552771178777025393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6814206228560311637}
+  - component: {fileID: 7348042037558545680}
+  m_Layer: 0
+  m_Name: Uhh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6814206228560311637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552771178777025393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5831827359986216725}
+  m_Father: {fileID: 4325717981812635305}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7348042037558545680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552771178777025393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Exactly, don''t lie to me, I have heard everything. Now, Private eye or
+    concerned citizen.
+
+
+'
+  responses:
+  - response: Concerned Citizen
+    requiredClue: 
+    nextStage: {fileID: 8847543899116464797}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Private Eye?
+    requiredClue: 
+    nextStage: {fileID: 6629878150975023739}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4615579462393205440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3219827681112088893}
+  - component: {fileID: 6641708998219993458}
+  m_Layer: 0
+  m_Name: I know what Anne Forger was wearing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3219827681112088893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4615579462393205440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2234560141423428555}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6641708998219993458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4615579462393205440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'I don''t know anything about the dress, but maybe those boots are a clue
+    about something... Maybe someone close to her might know what she was going to
+    do. That seems like an unconvential outfit for the average girl.
+
+
+'
+  responses:
+  - response: I have evidence to report
+    requiredClue: 
+    nextStage: {fileID: 6364563960702717178}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &4622693973617489614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2234560141423428555}
+  - component: {fileID: 8847543899116464797}
+  m_Layer: 0
+  m_Name: Concerned Citizen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2234560141423428555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622693973617489614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3219827681112088893}
+  - {fileID: 2331215077491234362}
+  - {fileID: 6477586087707365122}
+  - {fileID: 4897171143513278451}
+  m_Father: {fileID: 7755251487840782533}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8847543899116464797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622693973617489614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Well, if you get any amount of evidence, you can just let me know. I always
+    have my cell on me, so just let me know if you find anything. Just show me any
+    evidence you think is relevant to the case.
+
+
+'
+  responses:
+  - response: I will make sure to let you know!
+    requiredClue: 
+    nextStage: {fileID: 1946666141148215871}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know what Anne Forger was wearing
+    requiredClue: annes_outfit
+    nextStage: {fileID: 6641708998219993458}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I know who Anne Forger was with
+    requiredClue: annes_date
+    nextStage: {fileID: 3214660089105177134}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: I have a theory for what happened
+    requiredClue: anne_of_the_myre
+    nextStage: {fileID: 223349067395512119}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7386456209474879051}
           m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
           m_MethodName: DiscoverClue
           m_Mode: 5
@@ -669,28 +868,10 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
+            m_StringArgument: Expedition
             m_BoolArgument: 0
           m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &2444959271852493417
+--- !u!1 &4797574735726548037
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -698,57 +879,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6830870274994777387}
-  - component: {fileID: 505679057627138407}
+  - component: {fileID: 3569109492977191656}
+  - component: {fileID: 7265019273618707690}
   m_Layer: 0
-  m_Name: Why is it called a meal?
+  m_Name: Please, just update me when you can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6830870274994777387
+--- !u!4 &3569109492977191656
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2444959271852493417}
+  m_GameObject: {fileID: 4797574735726548037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 464101125356376923}
-  m_Father: {fileID: 3269053094185061777}
+  m_Children: []
+  m_Father: {fileID: 3731983567011348100}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505679057627138407
+--- !u!114 &7265019273618707690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2444959271852493417}
+  m_GameObject: {fileID: 4797574735726548037}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'It''s 12 breadsticks.
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: You'll get any necessary information as it is aquired. Thank you for your
+    time *click.
   responses:
-  - response: Ok?
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 3655481876656514246}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &2566675627611244741
+--- !u!1 &5393347645931974963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -756,57 +933,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4803505136455101031}
-  - component: {fileID: 7002205550506284505}
+  - component: {fileID: 3733370448594394368}
+  - component: {fileID: 656365197485340626}
   m_Layer: 0
-  m_Name: Sure. I'll ugrade to a large.
+  m_Name: Isn't that your job
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4803505136455101031
+--- !u!4 &3733370448594394368
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2566675627611244741}
+  m_GameObject: {fileID: 5393347645931974963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3953806704772184544}
-  m_Father: {fileID: 4315769985163935327}
+  m_Children: []
+  m_Father: {fileID: 2347400006639275467}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7002205550506284505
+--- !u!114 &656365197485340626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2566675627611244741}
+  m_GameObject: {fileID: 5393347645931974963}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Would you like to upgrade to an extra large for only $3.00 more?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: Our job is to help people... I'm sorry. The boys are doing their best.
+    I'm sorry we can't be of more help *click
   responses:
-  - response: Sure. I'll ugrade to a extra large.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 2409121349904852041}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &3055670521006569833
+--- !u!1 &5541883847550213366
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -814,69 +987,117 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4209149661446178426}
-  - component: {fileID: 9036263326810656426}
+  - component: {fileID: 4469444908887217322}
+  - component: {fileID: 6938058249828076779}
   m_Layer: 0
-  m_Name: The meal thing you said.
+  m_Name: Hello??
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4209149661446178426
+--- !u!4 &4469444908887217322
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3055670521006569833}
+  m_GameObject: {fileID: 5541883847550213366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1157442985404757214}
+  m_Father: {fileID: 5403523649423016943}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6938058249828076779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541883847550213366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: '    '
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &5782471102710810654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3083703375846358976}
+  - component: {fileID: 9141456762443351872}
+  m_Layer: 0
+  m_Name: Did you find my mom?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3083703375846358976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782471102710810654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2347400006639275467}
+  - {fileID: 3731983567011348100}
+  m_Father: {fileID: 7262642464536227125}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9036263326810656426
+--- !u!114 &9141456762443351872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3055670521006569833}
+  m_GameObject: {fileID: 5782471102710810654}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that would be a breadstick meal for $6.99. Would you like a drink
-    with it?
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Your mom? Oh... Missing person, reported yesterday. Unfortunately all
+    our resources are geared towards another missing person''s case at the moment.
 
-    
 
 '
   responses:
-  - response: Sure.
+  - response: You're not even looking?
     requiredClue: 
-    nextStage: {fileID: 2480919104020448575}
+    nextStage: {fileID: 4918385970780073427}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: There isn't a drink that comes with it?
+  - response: Could the two cases be connected?
     requiredClue: 
-    nextStage: {fileID: 6831739184000974261}
+    nextStage: {fileID: 5844064777250408418}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: No, thank you.
-    requiredClue: 
-    nextStage: {fileID: 8241158650226589446}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3434377109271930223
+--- !u!1 &5841211943883610694
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -884,372 +1105,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7410551095374878574}
-  - component: {fileID: 4080806670791975917}
+  - component: {fileID: 2331215077491234362}
+  - component: {fileID: 3214660089105177134}
   m_Layer: 0
-  m_Name: No, I'm not trying to order any food, I'm just trying to talk to Frank.
+  m_Name: I know who Anne Forger was with
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7410551095374878574
+--- !u!4 &2331215077491234362
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3434377109271930223}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7299398213701660047}
-  - {fileID: 1157442985404757214}
-  m_Father: {fileID: 740879764806001003}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4080806670791975917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3434377109271930223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Well, once again, he''s busy. You can call back once you get hungry, bye
-
-    
-
-'
-  responses:
-  - response: Wait.
-    requiredClue: 
-    nextStage: {fileID: 7836449100091813872}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Actually, I will order.
-    requiredClue: 
-    nextStage: {fileID: 8408871994996896275}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3783400904419469779
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2523161201056189004}
-  - component: {fileID: 4793926843186807906}
-  m_Layer: 0
-  m_Name: Yeah, but &quot;meals&quot; usually include drinks.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2523161201056189004
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3783400904419469779}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 403678645601852499}
-  m_Father: {fileID: 464101125356376923}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4793926843186807906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3783400904419469779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Listen here, I don''t go to the moron factory and tell you how to run
-    things, so don''t come into my place and act like you know everything! I''m not
-    runnin'' a charity, if you want that, go to the Daily Drip.
-
-    
-
-'
-  responses:
-  - response: Ok! I'm sorry!
-    requiredClue: 
-    nextStage: {fileID: 6162397746675611975}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3843477889905264339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 28717785512311400}
-  - component: {fileID: 9210393259836803945}
-  m_Layer: 0
-  m_Name: Yes, can I get a cheese pizza?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &28717785512311400
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3843477889905264339}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5903017458615914637}
-  - {fileID: 8057987857815456220}
-  - {fileID: 5142666100115464367}
-  m_Father: {fileID: 7190533281666589500}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9210393259836803945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3843477889905264339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'What size?
-
-    
-
-'
-  responses:
-  - response: Small.
-    requiredClue: 
-    nextStage: {fileID: 8714971191652647799}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Medium.
-    requiredClue: 
-    nextStage: {fileID: 5718961419875022496}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Large.
-    requiredClue: 
-    nextStage: {fileID: 7545434206117338997}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5020569077882869994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7445232125444795379}
-  - component: {fileID: 5466614617571689233}
-  m_Layer: 0
-  m_Name: Yeah, no, I need to talk to one of your delivery drivers.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7445232125444795379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020569077882869994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 740879764806001003}
-  m_Father: {fileID: 4167237505307263062}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5466614617571689233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020569077882869994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: "Since that Father Jones came into town and took all the drop-outs we've
-    only have one driver, Frank. \r\n\r\n"
-  responses:
-  - response: Can I talk to him?
-    requiredClue: 
-    nextStage: {fileID: 3194613555676310661}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5172727778630728357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 464101125356376923}
-  - component: {fileID: 3655481876656514246}
-  m_Layer: 0
-  m_Name: Ok?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &464101125356376923
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172727778630728357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2523161201056189004}
-  m_Father: {fileID: 6830870274994777387}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3655481876656514246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172727778630728357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'It''s a meal''s worth of breadsticks.
-
-    
-
-'
-  responses:
-  - response: Yeah, but &quot;meals&quot; usually include drinks.
-    requiredClue: 
-    nextStage: {fileID: 4793926843186807906}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5336514924438070100
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8057987857815456220}
-  - component: {fileID: 5718961419875022496}
-  m_Layer: 0
-  m_Name: Medium.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8057987857815456220
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336514924438070100}
+  m_GameObject: {fileID: 5841211943883610694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 28717785512311400}
+  m_Father: {fileID: 2234560141423428555}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5718961419875022496
+--- !u!114 &3214660089105177134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336514924438070100}
+  m_GameObject: {fileID: 5841211943883610694}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Would you like to upgrade to a large for only $2.00 more?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: "She was with a boy huh? I wonder if there is anyone that would know who
+    this boy is? Maybe someone close to her? \n\n"
   responses:
-  - response: No, thank you. I'll keep the medium.
+  - response: I have evidence to report
     requiredClue: 
-    nextStage: {fileID: 3653740893646998550}
+    nextStage: {fileID: 6364563960702717178}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Sure. I'll ugrade to a large.
-    requiredClue: 
-    nextStage: {fileID: 7002205550506284505}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &5646002534290318333
+--- !u!1 &6025851405734590843
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1257,115 +1159,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5903017458615914637}
-  - component: {fileID: 8714971191652647799}
+  - component: {fileID: 3242420971471383104}
+  - component: {fileID: 1970355350806670129}
   m_Layer: 0
-  m_Name: Small.
+  m_Name: Can I help in any way?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5903017458615914637
+--- !u!4 &3242420971471383104
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646002534290318333}
+  m_GameObject: {fileID: 6025851405734590843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4315769985163935327}
-  m_Father: {fileID: 28717785512311400}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8714971191652647799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646002534290318333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'We don''t make small pizzas.
-
-    
-
-'
-  responses:
-  - response: Ok... then a medium, then.
-    requiredClue: 
-    nextStage: {fileID: 5554142774337051398}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &6339466333701234510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1290880732416502457}
-  - component: {fileID: 5337731268236377453}
-  m_Layer: 0
-  m_Name: 608 Lake Kipter Drive.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1290880732416502457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339466333701234510}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3207632081749249674}
-  m_Father: {fileID: 106959332949533808}
+  m_Children: []
+  m_Father: {fileID: 3731983567011348100}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5337731268236377453
+--- !u!114 &1970355350806670129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339466333701234510}
+  m_GameObject: {fileID: 6025851405734590843}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'It''ll be there in 30 minutes.
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: No, you're too personally involved, it could get in the way, just sit tight,
+    we will find both of them soon. We appreciate your concern *click.
   responses:
-  - response: Ok, thanks.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 8177343687190943605}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &6611811319309086416
+--- !u!1 &6418206365537119207
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1373,272 +1213,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3953806704772184544}
-  - component: {fileID: 2409121349904852041}
+  - component: {fileID: 7755251487840782533}
+  - component: {fileID: 6138362915223298909}
   m_Layer: 0
-  m_Name: Sure. I'll ugrade to a extra large.
+  m_Name: Is there anything I can help with?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3953806704772184544
+--- !u!4 &7755251487840782533
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6611811319309086416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4803505136455101031}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2409121349904852041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6611811319309086416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that will be $19.99. What address would you like that sent to?
-
-    
-
-'
-  responses:
-  - response: 109 Galax Street.
-    requiredClue: 
-    nextStage: {fileID: 2561118185221454146}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &6734903369592925204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7675973371605986598}
-  - component: {fileID: 2561118185221454146}
-  m_Layer: 0
-  m_Name: 109 Galax Street.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7675973371605986598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6734903369592925204}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 106959332949533808}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2561118185221454146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6734903369592925204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'It''ll be there in 30 minutes.
-
-    
-
-'
-  responses:
-  - response: Ok, thanks.
-    requiredClue: 
-    nextStage: {fileID: 8177343687190943605}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7062365596090955775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6595110473109372633}
-  - component: {fileID: 1932283258988174024}
-  m_Layer: 0
-  m_Name: Oh, 109 Galax Street.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6595110473109372633
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7062365596090955775}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1675192581444450087}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1932283258988174024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7062365596090955775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'It''ll be there in 30 minutes.
-
-    
-
-'
-  responses:
-  - response: Ok, thanks.
-    requiredClue: 
-    nextStage: {fileID: 8177343687190943605}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &7083615874970977484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7190533281666589500}
-  - component: {fileID: 4429438783981401244}
-  m_Layer: 0
-  m_Name: Is that how you pronounce it?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7190533281666589500
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7083615874970977484}
+  m_GameObject: {fileID: 6418206365537119207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 28717785512311400}
-  - {fileID: 6308569773942256394}
-  - {fileID: 4167237505307263062}
-  m_Father: {fileID: 5136498674687494981}
-  m_RootOrder: 0
+  - {fileID: 6601886818715293488}
+  - {fileID: 2234560141423428555}
+  - {fileID: 4325717981812635305}
+  m_Father: {fileID: 7262642464536227125}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4429438783981401244
+--- !u!114 &6138362915223298909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7083615874970977484}
+  m_GameObject: {fileID: 6418206365537119207}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'You think I pronounce my own name wrong? Ya want a pizza or not kid.
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: '*sigh, I assume you are talkin about the Forger case. Plenty...Concerned
+    citizen or private eye?
 
-    
 
 '
   responses:
-  - response: Yes, can I get a cheese pizza?
+  - response: No I'm talking about my mom
     requiredClue: 
-    nextStage: {fileID: 9210393259836803945}
+    nextStage: {fileID: 7577174347635119474}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Can I get a pineapple pizza?
+  - response: Concerned Citizen
     requiredClue: 
-    nextStage: {fileID: 4068918993814891297}
+    nextStage: {fileID: 8847543899116464797}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: No, actually I am trying to get some information.
-    requiredClue: pizzashop_clue
-    nextStage: {fileID: 4812520799433590890}
+  - response: Private Eye
+    requiredClue: 
+    nextStage: {fileID: 2499855850707242005}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &7950658687299609877
+--- !u!1 &6497289415926290235
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1646,71 +1285,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7345700167073213547}
-  - component: {fileID: 2425711719294793625}
+  - component: {fileID: 481442760388879104}
+  - component: {fileID: 5337576153880571789}
   m_Layer: 0
-  m_Name: Actually, sure.
+  m_Name: Why don't you get along with Tom?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7345700167073213547
+--- !u!4 &481442760388879104
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7950658687299609877}
+  m_GameObject: {fileID: 6497289415926290235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8814958900628359942}
-  - {fileID: 3269053094185061777}
-  - {fileID: 6147171669006376619}
-  m_Father: {fileID: 740879764806001003}
+  - {fileID: 6404461614675796670}
+  - {fileID: 8268278101195523656}
+  m_Father: {fileID: 68385301539472965}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2425711719294793625
+--- !u!114 &5337576153880571789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7950658687299609877}
+  m_GameObject: {fileID: 6497289415926290235}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that would be $6.99. Would you like a drink with it?
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Just a little spat about tresspassing on his property a few months back.
+    At least that''s what I think. We were civil about a week before that, I came
+    by to check at him and he just yelled about unwelcome guests and tresspassing.
 
-    
 
 '
   responses:
-  - response: Sure.
+  - response: Have you tried to talk to him again?
     requiredClue: 
-    nextStage: {fileID: 2480919104020448575}
+    nextStage: {fileID: 1753273760454314499}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: There isn't a drink that comes with it?
+  - response: Yikes, I guess you shouldn't call him then
     requiredClue: 
-    nextStage: {fileID: 6831739184000974261}
+    nextStage: {fileID: 819998244643175078}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: No, thank you.
-    requiredClue: 
-    nextStage: {fileID: 8241158650226589446}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8000565195979315474
+--- !u!1 &6739698724568691269
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1718,68 +1351,55 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5396168197162450055}
-  - component: {fileID: 5641007422215903566}
+  - component: {fileID: 6477586087707365122}
+  - component: {fileID: 223349067395512119}
   m_Layer: 0
-  m_Name: A cheese pizza.
+  m_Name: I have a theory for what happened
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5396168197162450055
+--- !u!4 &6477586087707365122
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8000565195979315474}
+  m_GameObject: {fileID: 6739698724568691269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1157442985404757214}
-  m_RootOrder: 0
+  m_Father: {fileID: 2234560141423428555}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5641007422215903566
+--- !u!114 &223349067395512119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8000565195979315474}
+  m_GameObject: {fileID: 6739698724568691269}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'What size?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: Huh, so you think she was taken by a lake spirit. That doesn't seem to
+    be possible... I'll keep looking for other evidence. *sigh, fine, we can check
+    on the location, I'll bring Dianne Thank you for all your help, it's a lead at
+    least, lets hope it pans out.
   responses:
-  - response: Small.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 8714971191652647799}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Medium.
-    requiredClue: 
-    nextStage: {fileID: 5718961419875022496}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: Large.
-    requiredClue: 
-    nextStage: {fileID: 7545434206117338997}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8019348190920595523
+--- !u!1 &6918956060961150837
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1787,147 +1407,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1157442985404757214}
-  - component: {fileID: 8408871994996896275}
+  - component: {fileID: 3595631671929282891}
+  - component: {fileID: 5494288450518683505}
   m_Layer: 0
-  m_Name: Actually, I will order.
+  m_Name: I'll think about it.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1157442985404757214
+--- !u!4 &3595631671929282891
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8019348190920595523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5396168197162450055}
-  - {fileID: 4209149661446178426}
-  m_Father: {fileID: 7410551095374878574}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8408871994996896275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8019348190920595523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: "Ok, what can I get for you. \r\n\r\n"
-  responses:
-  - response: A cheese pizza.
-    requiredClue: 
-    nextStage: {fileID: 5641007422215903566}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
-  - response: The meal thing you said.
-    requiredClue: 
-    nextStage: {fileID: 9036263326810656426}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8035122580943842861
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 372537128772172908}
-  - component: {fileID: 472516671853162578}
-  m_Layer: 0
-  m_Name: No, thanks. I'll keep the large.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &372537128772172908
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8035122580943842861}
+  m_GameObject: {fileID: 6918956060961150837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5142666100115464367}
+  m_Father: {fileID: 5827417718547620189}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &472516671853162578
+--- !u!114 &5494288450518683505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8035122580943842861}
+  m_GameObject: {fileID: 6918956060961150837}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Ok, that will be $16.99. What address would you like that sent to?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: Well please do. *click
   responses:
-  - response: 109 Galax Street.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 2561118185221454146}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: pizza_ordered
-            m_BoolArgument: 0
-          m_CallState: 2
-  - response: 608 Lake Kipter Drive.
-    requiredClue: franks_help
-    nextStage: {fileID: 5337731268236377453}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8566028477484405240}
-          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
-          m_MethodName: DiscoverClue
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: endgame
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &8370749377125310474
+        m_Calls: []
+--- !u!1 &7105549211547910186
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,88 +1460,371 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5136498674687494981}
-  - component: {fileID: 4188409993644810710}
-  - component: {fileID: 8566028477484405240}
+  - component: {fileID: 6601886818715293488}
+  - component: {fileID: 7577174347635119474}
   m_Layer: 0
-  m_Name: Pizza_shop
+  m_Name: No I'm talking about my mom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5136498674687494981
+--- !u!4 &6601886818715293488
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370749377125310474}
+  m_GameObject: {fileID: 7105549211547910186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7755251487840782533}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7577174347635119474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105549211547910186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Your mom? Oh... Missing person, reported yesterday. Unfortunately all
+    our resources are geared towards another missing person''s case at the moment.
+
+
+'
+  responses:
+  - response: You're not even looking?
+    requiredClue: 
+    nextStage: {fileID: 4918385970780073427}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: Could the two cases be connected?
+    requiredClue: 
+    nextStage: {fileID: 5844064777250408418}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7672484843322857879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5831827359986216725}
+  - component: {fileID: 6629878150975023739}
+  m_Layer: 0
+  m_Name: Private Eye?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5831827359986216725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7672484843322857879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6814206228560311637}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6629878150975023739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7672484843322857879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: This is a waste of my time *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7866866392804504758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041677153973162290}
+  - component: {fileID: 3880942930042246273}
+  m_Layer: 0
+  m_Name: And what if my mom doesn't come back?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1041677153973162290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866866392804504758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2347400006639275467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3880942930042246273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866866392804504758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: '...I''m sorry but that is a real possibility. We will do our best, but
+    we have to find Anne first.
+
+
+    *click'
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7896764460929072046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4325717981812635305}
+  - component: {fileID: 2499855850707242005}
+  m_Layer: 0
+  m_Name: Private Eye
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4325717981812635305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896764460929072046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7190533281666589500}
+  - {fileID: 6814206228560311637}
+  m_Father: {fileID: 7755251487840782533}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2499855850707242005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896764460929072046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Ahh, well hotshot, you must be the new guy in town. If you want to take
+    the lead on this one, I will follow your example. What''s the first step.
+
+
+'
+  responses:
+  - response: Uhh
+    requiredClue: 
+    nextStage: {fileID: 7348042037558545680}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7963228628103329714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4897171143513278451}
+  - component: {fileID: 1946666141148215871}
+  m_Layer: 0
+  m_Name: I will make sure to let you know!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4897171143513278451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963228628103329714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2234560141423428555}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1946666141148215871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963228628103329714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: Okay, back to work *click
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &7966506239188578598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7262642464536227125}
+  - component: {fileID: 8745888276604566876}
+  - component: {fileID: 7386456209474879051}
+  m_Layer: 0
+  m_Name: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7262642464536227125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7966506239188578598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4539878099395386014}
+  - {fileID: 3083703375846358976}
+  - {fileID: 7755251487840782533}
+  - {fileID: 4535729212183232184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4188409993644810710
+--- !u!114 &8745888276604566876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370749377125310474}
+  m_GameObject: {fileID: 7966506239188578598}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Angiola''s, may I take an order?
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: "Hullo, this is Pooler. What can I do ya for? \n\n"
   responses:
-  - response: Is that how you pronounce it?
+  - response: Moore told me to call you
     requiredClue: 
-    nextStage: {fileID: 4429438783981401244}
+    nextStage: {fileID: 2760209716929915891}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Yes, can I get a cheese pizza?
+  - response: Did you find my mom?
     requiredClue: 
-    nextStage: {fileID: 9210393259836803945}
+    nextStage: {fileID: 9141456762443351872}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Can I get a pineapple pizza?
+  - response: Is there anything I can help with?
     requiredClue: 
-    nextStage: {fileID: 4068918993814891297}
+    nextStage: {fileID: 6138362915223298909}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: No, actually I am trying to get some information.
-    requiredClue: pizzashop_clue
-    nextStage: {fileID: 4812520799433590890}
+  - response: I have evidence to report
+    requiredClue: 
+    nextStage: {fileID: 6364563960702717178}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &8566028477484405240
+--- !u!114 &7386456209474879051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370749377125310474}
+  m_GameObject: {fileID: 7966506239188578598}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31f278a816a9ae8438a2c6f93c0c92c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &8451980170163413830
+--- !u!1 &7973260452960603949
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2024,64 +1832,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 740879764806001003}
-  - component: {fileID: 3194613555676310661}
+  - component: {fileID: 6199701405384230780}
+  - component: {fileID: 8513610191263762642}
   m_Layer: 0
-  m_Name: Can I talk to him?
+  m_Name: That doesn't seem very efficient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &740879764806001003
+--- !u!4 &6199701405384230780
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451980170163413830}
+  m_GameObject: {fileID: 7973260452960603949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7410551095374878574}
-  - {fileID: 7345700167073213547}
-  m_Father: {fileID: 7445232125444795379}
+  m_Children: []
+  m_Father: {fileID: 2553452816783851405}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3194613555676310661
+--- !u!114 &8513610191263762642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451980170163413830}
+  m_GameObject: {fileID: 7973260452960603949}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'No, he''s working right now. But I can give you a breadstick combo meal.
-
-    
-
-'
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: It's not but we dont have many other leads. Anyway, I should keep looking,
+    every minute we waste is a minute Anne gets put in more danger.
   responses:
-  - response: No, I'm not trying to order any food, I'm just trying to talk to Frank.
+  - response: '*Hang up*'
     requiredClue: 
-    nextStage: {fileID: 4080806670791975917}
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Actually, sure.
-    requiredClue: 
-    nextStage: {fileID: 2425711719294793625}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &8504841468576472436
+--- !u!1 &8425011285780795089
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2089,64 +1886,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4315769985163935327}
-  - component: {fileID: 5554142774337051398}
+  - component: {fileID: 5403523649423016943}
+  - component: {fileID: 7112167882843692032}
   m_Layer: 0
-  m_Name: Ok... then a medium, then.
+  m_Name: Just apologize, dude.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4315769985163935327
+--- !u!4 &5403523649423016943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8504841468576472436}
+  m_GameObject: {fileID: 8425011285780795089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 106959332949533808}
-  - {fileID: 4803505136455101031}
-  m_Father: {fileID: 5903017458615914637}
+  - {fileID: 4469444908887217322}
+  m_Father: {fileID: 6404461614675796670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5554142774337051398
+--- !u!114 &7112167882843692032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8504841468576472436}
+  m_GameObject: {fileID: 8425011285780795089}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Would you like to upgrade to a large for only $2.00 more?
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: '''jUsT aPoLoGiZe, dUde.'' *click
 
-    
 
 '
   responses:
-  - response: No, thank you. I'll keep the medium.
+  - response: Hello??
     requiredClue: 
-    nextStage: {fileID: 3653740893646998550}
+    nextStage: {fileID: 6938058249828076779}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
-  - response: Sure. I'll ugrade to a large.
-    requiredClue: 
-    nextStage: {fileID: 7002205550506284505}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &9026404352344278574
+--- !u!1 &8736731735592559615
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2154,53 +1943,113 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4167237505307263062}
-  - component: {fileID: 4812520799433590890}
+  - component: {fileID: 2553452816783851405}
+  - component: {fileID: 6807210096224468527}
   m_Layer: 0
-  m_Name: No, actually I am trying to get some information.
+  m_Name: Have you discovered anything so far?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4167237505307263062
+--- !u!4 &2553452816783851405
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9026404352344278574}
+  m_GameObject: {fileID: 8736731735592559615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7445232125444795379}
-  m_Father: {fileID: 7190533281666589500}
-  m_RootOrder: 2
+  - {fileID: 6199701405384230780}
+  m_Father: {fileID: 6811364090572264541}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4812520799433590890
+--- !u!114 &6807210096224468527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9026404352344278574}
+  m_GameObject: {fileID: 8736731735592559615}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeName: Pizza_shop
-  prompt: 'Well, we keep all of our nutritional information online.
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'Not much, Anne Forger has been missing since yesterday morning. Her father,
+    Tom Forger reported her missing to the mayor. I''ve just been asking around town
+    seeing if anyone saw where she went
 
-    
 
 '
   responses:
-  - response: Yeah, no, I need to talk to one of your delivery drivers.
+  - response: That doesn't seem very efficient
     requiredClue: 
-    nextStage: {fileID: 5466614617571689233}
+    nextStage: {fileID: 8513610191263762642}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &8742908016129298821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5827417718547620189}
+  - component: {fileID: 7978473149565996581}
+  m_Layer: 0
+  m_Name: Uhh, I don't know...
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5827417718547620189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8742908016129298821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3595631671929282891}
+  m_Father: {fileID: 68385301539472965}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7978473149565996581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8742908016129298821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeName: Trouble_on_Lake_Kipter_-_Bryce_Pooler_1
+  prompt: 'It''ll be fine. He''s a great man, just a little hot-headed at times.
+    Here, go ahead and ask around town, and if you want to call him, call  555-866-2663.
+    Just think about it, that is biggest way you could help!
+
+
+'
+  responses:
+  - response: I'll think about it.
+    requiredClue: 
+    nextStage: {fileID: 5494288450518683505}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
