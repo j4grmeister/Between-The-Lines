@@ -417,6 +417,10 @@ PrefabInstance:
       value: 555-820-9223
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 3089e3e0a73d5eb4ba323e5b44508f7d, type: 3}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -995,6 +999,10 @@ PrefabInstance:
       value: 555-900-3210
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: ac3148bebba8353439a183cb8fea4d94, type: 3}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1078,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-666-6666
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 77952c741f88e504d9f57f55fa650256, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -1254,6 +1266,10 @@ PrefabInstance:
       propertyPath: moveOnWhenDone
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 413fd7058c56edb409ceb9def1195300, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 2
@@ -2010,6 +2026,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-927-7639
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 55a4961fae1525241b57f7b057b67242, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -3487,6 +3507,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-927-0514
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: f4960b4f5de8c474caab2af328c7cba4, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -5783,6 +5807,10 @@ PrefabInstance:
       value: 555-927-4992
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: dc0326502c1c0da48ac27ff1a93450d7, type: 3}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6019,6 +6047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickHider: {fileID: 337700175}
+  paperFlip: {fileID: 8300000, guid: 9d08272257257df4688166f9fafaf95e, type: 3}
+  notebookFlip: {fileID: 8300000, guid: e680bbb2732a3f3458233114a5a0fa0b, type: 3}
 --- !u!82 &1391047958
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6300,6 +6330,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-927-4992
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fa57b6d45ec01241a5d3bdc71274cf0, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -8036,6 +8070,10 @@ PrefabInstance:
       value: 555-927-7463
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 0cbee36253aa1c444a240d21c1acd405, type: 3}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8809,6 +8847,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-927-3747
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: d313ec2ec9ad3634a9924edf7283ea58, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
@@ -9636,6 +9678,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 555-866-2663
       objectReference: {fileID: 0}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: characterBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e9084a3c1a8f344aa31ed8738be3046, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
       value: 1
