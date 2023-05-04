@@ -141,7 +141,8 @@ public class NewsManager : Singleton<NewsManager>
     
     public void OrderPizza()
     {
-        CallInterupt call = new CallInterupt();
+        GameObject callGO = new GameObject();
+        CallInterupt call = callGO.AddComponent<CallInterupt>();
         call.ringClip = knockingClip;
         call.interuptTurnNumber = WatchManager.Instance.turnNumber + 1;
         if (call.interuptTurnNumber == 3) // THIS IS HARDCODED TO NOT INTERFERE WITH THE NEIGHBOR CALL
