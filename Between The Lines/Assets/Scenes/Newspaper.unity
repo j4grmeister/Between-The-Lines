@@ -808,6 +808,10 @@ PrefabInstance:
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Notebook, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e5e0f7e1b092004292dfb0ee42b0406, type: 3}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3995,7 +3999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827077, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
@@ -7956,7 +7960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827077, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
@@ -8543,8 +8547,8 @@ MonoBehaviour:
   phoneOffset: {x: 0, y: -0.313}
   maxPhonesPerPage: 4
   topCluePosition: {x: 0, y: -0.151}
-  clueOffset: {x: 0, y: -0.6601327}
-  maxCluesPerPage: 3
+  clueOffset: {x: 0, y: -0.313}
+  maxCluesPerPage: 4
   expandedClueObject: {fileID: 2062702648}
   expandedClueTitle: {fileID: 1927656489}
   expandedClueDescription: {fileID: 1081628196}

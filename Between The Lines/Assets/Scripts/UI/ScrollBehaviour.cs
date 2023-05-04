@@ -22,7 +22,7 @@ public class ScrollBehaviour : MonoBehaviour
         {
             if (Input.mousePosition.y >= Screen.height - boundarySize)
             {
-                float speed = speedCurve.Evaluate(boundarySize / (Input.mousePosition.y - (Screen.height - boundarySize)));
+                float speed = speedCurve.Evaluate(boundarySize / Mathf.Max(Input.mousePosition.y - (Screen.height - boundarySize), 1));
                 Vector3 newPosition = transform.position;
                 newPosition.y = Mathf.Max(startY, newPosition.y - speed*Time.deltaTime);
                 transform.position = newPosition;
@@ -33,7 +33,7 @@ public class ScrollBehaviour : MonoBehaviour
         {
             if (Input.mousePosition.y <= boundarySize)
             {
-                float speed = speedCurve.Evaluate(boundarySize / (boundarySize - Input.mousePosition.y));
+                float speed = speedCurve.Evaluate(boundarySize / Mathf.Max(boundarySize - Input.mousePosition.y, 1));
                 Vector3 newPosition = transform.position;
                 newPosition.y = Mathf.Min(startY + scrollDistance, newPosition.y + speed*Time.deltaTime);
                 transform.position = newPosition;
