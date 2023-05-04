@@ -3589,12 +3589,16 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: f4960b4f5de8c474caab2af328c7cba4, type: 3}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: dialogueEntries.Array.data[0]
       value: 
-      objectReference: {fileID: 8762512420155477246, guid: 8e0946acd08559a40b47788de93b771a, type: 3}
+      objectReference: {fileID: 8762512420155477246, guid: 7730fbda98381a449875e3428a2a6bb5, type: 3}
+    - target: {fileID: 2645358156923745225, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
+      propertyPath: dialogueEntries.Array.data[1]
+      value: 
+      objectReference: {fileID: 5995919896944504530, guid: eeb05e6cbe2fc484da94b3c970915633, type: 3}
     - target: {fileID: 2645358156923745226, guid: e1a7fb36a9093c647ba132e1436b62f5, type: 3}
       propertyPath: m_RootOrder
       value: 10
