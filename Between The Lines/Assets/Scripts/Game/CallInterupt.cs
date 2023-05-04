@@ -6,7 +6,8 @@ public class CallInterupt : MonoBehaviour
 {
     [SerializeField] public AudioClip ringClip;
     [SerializeField] public int interuptTurnNumber;
-    [SerializeField] private string phoneName;
+    [SerializeField] public string phoneName;
+    public bool discover = true;
 
     private bool triggered = false;
 
@@ -35,7 +36,14 @@ public class CallInterupt : MonoBehaviour
         //Notebook.Instance.Call(phoneName);
         SoundEffectManager.Instance.DoActionAfterPlay(ringClip, () => {
             WatchManager.Instance.turnNumber--;
-            Notebook.Instance.Call(phoneName);
+            if (discover)
+            {
+                Notebook.Instance.Call(phoneName);
+            }
+            else
+            {
+                Notebook.Instance.CallNoDiscover(phoneName);
+            }
             });
     }
 }

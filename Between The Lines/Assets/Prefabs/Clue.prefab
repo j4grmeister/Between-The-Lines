@@ -86,6 +86,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onMouseEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onMouseExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3658644650381051619
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600f3a8a51a7f740af7ff6847f01bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: {fileID: 3658644650920743387}
   description: 
 --- !u!1 &3658644650920743389
 GameObject:

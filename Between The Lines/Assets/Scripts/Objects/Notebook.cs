@@ -138,6 +138,11 @@ public class Notebook : Singleton<Notebook>
         DiscoverPhoneNumber(phoneName);
         ((PhoneNumber)phoneTable[phoneName]).Call();
     }
+    
+    public void CallNoDiscover(string phoneName)
+    {
+        ((PhoneNumber)phoneTable[phoneName]).Call();
+    }
 
     public void DiscoverClue(string clueName)
     {

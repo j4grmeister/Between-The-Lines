@@ -50,6 +50,6 @@ public class NotebookMethods : MonoBehaviour
 
     public void OrderPizza()
     {
-        
+        NewsManager.Instance.OrderPizza();
     }
 }
