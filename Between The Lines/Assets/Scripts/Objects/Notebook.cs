@@ -62,7 +62,7 @@ public class Notebook : Singleton<Notebook>
         firstCluePage.SetActive(false);
         cluePages.Add(firstCluePage);
 
-        DiscoverPhoneNumber("BPD");
+        DiscoverPhoneNumberNoNotification("BPD");
     }
 
     void Start()
@@ -73,6 +73,29 @@ public class Notebook : Singleton<Notebook>
     // IMPORTANT: These do not handle non-existent names!!!
 
     public void DiscoverPhoneNumber(string phoneName)
+    {
+        PhoneNumber phone = (PhoneNumber)phoneTable[phoneName];
+        if (!phone.gameObject.activeSelf)
+        {
+            phone.gameObject.SetActive(true);
+
+            int pageLength = phonePages[phonePages.Count-1].GetComponentsInChildren<PhoneNumber>().Length;
+            if (pageLength >= maxPhonesPerPage)
+            {
+                GameObject nextPhonePage = new GameObject("Page " + phonePages.Count.ToString());
+                nextPhonePage.transform.parent = phonebookParent.transform;
+                nextPhonePage.transform.localPosition = Vector3.zero;
+                nextPhonePage.SetActive(false);
+                phonePages.Add(nextPhonePage);
+                pageLength = 0;
+            }
+            phone.transform.parent = phonePages[phonePages.Count-1].transform;
+            phone.transform.localPosition = (Vector3)(topPhonePosition + phoneOffset * pageLength) + Vector3.back * 3;
+            NotificationManager.Instance.NotifyPhoneNumber(phone);
+        }
+    }
+
+    public void DiscoverPhoneNumberNoNotification(string phoneName)
     {   
         PhoneNumber phone = (PhoneNumber)phoneTable[phoneName];
         if (!phone.gameObject.activeSelf)
@@ -91,8 +114,6 @@ public class Notebook : Singleton<Notebook>
             }
             phone.transform.parent = phonePages[phonePages.Count-1].transform;
             phone.transform.localPosition = (Vector3)(topPhonePosition + phoneOffset * pageLength) + Vector3.back * 3;
-
-            NotificationManager.Instance.NotifyPhoneNumber(phone);
         }
     }
 
