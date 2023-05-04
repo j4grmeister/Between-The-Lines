@@ -189,64 +189,6 @@ MonoBehaviour:
     onContinue:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &2664101239641885545
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4424047511385079849}
-  - component: {fileID: 4853431894339555990}
-  m_Layer: 0
-  m_Name: But my house was broken into!
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4424047511385079849
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2664101239641885545}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5566447586794479648}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4853431894339555990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2664101239641885545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Barchester_PD_1
-  prompt: 'Well why didn''t you say that earlier? We''ll send some dispacters there
-    right away, sir. What''s the address of the break-in?
-
-
-
-'
-  responses:
-  - response: 109 Galax Street.
-    requiredClue: 
-    nextStage: {fileID: 0}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &3880679523219088760
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +218,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5566447586794479648}
   - {fileID: 4065013162464730070}
   m_Father: {fileID: 8896992961261474433}
   m_RootOrder: 0
@@ -300,70 +241,9 @@ MonoBehaviour:
 
 '
   responses:
-  - response: I just woke up and they were gone.
-    requiredClue: 
-    nextStage: {fileID: 8909407415338880766}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
   - response: A few days.
     requiredClue: 
     nextStage: {fileID: 5193640559843483710}
-    onContinue:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &3964982052969954134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5566447586794479648}
-  - component: {fileID: 8909407415338880766}
-  m_Layer: 0
-  m_Name: I just woke up and they were gone.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5566447586794479648
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3964982052969954134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4424047511385079849}
-  m_Father: {fileID: 6245347796040273049}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8909407415338880766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3964982052969954134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1015f61739c1f1c4e83401e1e538857c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeName: Barchester_PD_1
-  prompt: "See, we'd like if you'd wait just a few days before filing a report because
-    there's a good chance this person will just show up. \r\n\r\n"
-  responses:
-  - response: But my house was broken into!
-    requiredClue: 
-    nextStage: {fileID: 4853431894339555990}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
@@ -580,7 +460,7 @@ Transform:
   m_Children:
   - {fileID: 4585657732951951731}
   m_Father: {fileID: 6245347796040273049}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5193640559843483710
 MonoBehaviour:

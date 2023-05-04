@@ -123,6 +123,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1503514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 513073213}
+    m_Modifications:
+    - target: {fileID: 3658644650381051617, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: description
+      value: The neighbors Mrs. Lindsay said she and her husband heard a commotion
+        last night
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_Name
+      value: pizzashop_ad
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650381051619, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658644650920743387, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+      propertyPath: m_text
+      value: Pizza Delivery
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+--- !u!4 &1503515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
+  m_PrefabInstance: {fileID: 1503514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &12030239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,6 +3021,7 @@ Transform:
   - {fileID: 1739278062}
   - {fileID: 2091942881}
   - {fileID: 326803966}
+  - {fileID: 1503515}
   m_Father: {fileID: 1989955394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6473,11 +6549,11 @@ RectTransform:
   m_Father: {fileID: 1507993905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110.53, y: -19.51004}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
   m_SizeDelta: {x: 300, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1456817548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6779,7 +6855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -922, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1507993906
@@ -9151,7 +9227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8051987, y: -20.187939}
+  m_AnchoredPosition: {x: -1.8052063, y: -20.187939}
   m_SizeDelta: {x: 258.4789, y: 59.624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2123673032
