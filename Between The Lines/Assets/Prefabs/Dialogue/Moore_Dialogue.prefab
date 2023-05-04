@@ -48,10 +48,16 @@ MonoBehaviour:
   prompt: 'Well, there is not much I can do about that unless you have some significant
     evidence. Otherwise, the city can not dip their toes in private business.
 
-    
+
 
 '
-  responses: []
+  responses:
+  - response: '*Hang up*'
+    requiredClue: 
+    nextStage: {fileID: 0}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &987420908445096600
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +226,7 @@ MonoBehaviour:
     can I cultivate trust without speaking directly to the people I work for. That
     aside, How can I help you.
 
-    
+
 
 '
   responses:
@@ -338,7 +344,7 @@ MonoBehaviour:
   prompt: 'Here, Let me check... *Shuffle ....*Shuffle ... Ahh, here we go. I don''t
     know about compass, but there is an 8 pointed star. What is in the wallet?
 
-    
+
 
 '
   responses:
@@ -460,11 +466,11 @@ MonoBehaviour:
   prompt: 'Alright, would you like me to check the lost and found? If so, what is
     the description of the wallet?
 
-    
+
 
     It''s leather with an engraving of
 
-    
+
 
 '
   responses:
@@ -596,7 +602,7 @@ MonoBehaviour:
   treeName: Moore_Dialogue
   prompt: 'Mayor Moore, how can I help you.
 
-    
+
 
 '
   responses:
@@ -678,7 +684,7 @@ MonoBehaviour:
   prompt: 'I did no such thing... You must have spoken to Mr. Forger. The city is
     not liable for any lost property on the premises. I will keep my eye open though.
 
-    
+
 
 '
   responses:

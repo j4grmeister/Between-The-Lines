@@ -2325,7 +2325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: The Carsons
+      value: Dianne Offerton
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3004,19 +3004,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6539702708945826377}
+      objectReference: {fileID: 6539702708945826382}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Expand
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: NotebookMethods, Assembly-CSharp
+      value: NewsArticle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 996156010260375198, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -3147,7 +3147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1839130071992161039, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4121746092904616318, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: m_IsActive
@@ -3167,17 +3167,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
---- !u!1 &6539702708945826377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 996156011077731735, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
-  m_PrefabInstance: {fileID: 6274286594334177246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6539702708945826382 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
   m_PrefabInstance: {fileID: 6274286594334177246}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6539702708945826377}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b9d8e7b2b0cc1479dbd6317e16e2ef, type: 3}

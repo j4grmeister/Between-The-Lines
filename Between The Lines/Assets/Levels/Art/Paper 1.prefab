@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7153288814979225588
 Transform:
   m_ObjectHideFlags: 0
@@ -374,6 +374,7 @@ MonoBehaviour:
   ringClip: {fileID: 8300000, guid: 49c09b6869ab261468bf78cd8bba677e, type: 3}
   interuptTurnNumber: 3
   phoneName: Mrs. Lindsay
+  discover: 1
 --- !u!1 &1945441983048045031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4619907628428205080
 Transform:
   m_ObjectHideFlags: 0
@@ -2611,6 +2612,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
+      propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5423033041208449294}
@@ -2619,11 +2624,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
+      propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DiscoverPhoneNumber
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
       propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookMethods, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
+      propertyPath: onFirstExpand.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: NotebookMethods, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 996156011077731728, guid: 013170a4ffcb2814c831bc9364ceca26, type: 3}
