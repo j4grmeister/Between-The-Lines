@@ -42,4 +42,14 @@ public class NotebookMethods : MonoBehaviour
         string[] split = args.Split(',');
         Notebook.Instance.ChangeDialogueTree(split[0], split[1]);
     }
+
+    public void Win()
+    {
+        NewsManager.Instance.Win();
+    }
+
+    public void OrderPizza()
+    {
+        
+    }
 }

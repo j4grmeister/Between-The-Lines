@@ -105,6 +105,8 @@ public class Newspaper : MonoBehaviour
             pages[pageIndex].onFirstView.Invoke();
             pagesViewed[pageIndex] = true;
         }
+
+        SoundEffectManager.Instance.PlayPaperFlip();
     }
 
     public void PreviousPage()
@@ -127,5 +129,6 @@ public class Newspaper : MonoBehaviour
         }
 
         SetBackground(pages[pageIndex].pageType);
+        SoundEffectManager.Instance.PlayPaperFlip();
     }
 }

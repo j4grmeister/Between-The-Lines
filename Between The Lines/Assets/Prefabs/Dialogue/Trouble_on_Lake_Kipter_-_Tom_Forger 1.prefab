@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 8236409918830475070}
   - component: {fileID: 934848481700619602}
   m_Layer: 0
-  m_Name: Trouble_on_Lake_Kipter_-_Tom_Forger
+  m_Name: Trouble_on_Lake_Kipter_-_Tom_Forger 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

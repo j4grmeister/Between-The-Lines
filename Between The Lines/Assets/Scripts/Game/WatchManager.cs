@@ -16,7 +16,8 @@ public class WatchManager : Singleton<WatchManager>
 
     [SerializeField] private int maxTurns;
 
-    private int turnNumber;
+    [System.NonSerialized]
+    public int turnNumber;
 
     void Start()
     {

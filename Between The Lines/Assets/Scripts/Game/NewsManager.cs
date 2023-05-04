@@ -19,6 +19,11 @@ public class NewsManager : Singleton<NewsManager>
 
     [SerializeField] private FrameAnimator[] animations;
 
+    [SerializeField] private GameObject winParent;
+    [SerializeField] private GameObject loseParent;
+
+    [SerializeField] private AudioClip knockingClip;
+
     private NewsArticle currentArticle;
 
     private NewsArticle[] savedArticles;
@@ -26,7 +31,7 @@ public class NewsManager : Singleton<NewsManager>
     private GameObject currentLevel;
     private int levelIndex;
 
-    void Start()
+    void Awake()
     {
         savedArticles = new NewsArticle[maxSavedArticles];
 
@@ -35,6 +40,12 @@ public class NewsManager : Singleton<NewsManager>
         {
             currentLevel = GameObject.Instantiate(levels[0], levelParent.transform);
         }
+    }
+
+    void Start()
+    {
+        WatchManager.Instance.turnNumber--;
+        Notebook.Instance.Call("BPD");
     }
 
     // TODO: Deprecate this?
@@ -102,7 +113,7 @@ public class NewsManager : Singleton<NewsManager>
         }
         else
         {
-            // TODO: Game over
+            Lose();
         }
     }
 
@@ -114,5 +125,28 @@ public class NewsManager : Singleton<NewsManager>
             savedArticles[i] = null;
         }
         SavedArticleCounter.Instance.SetSavedArticlesCount(0);
+    }
+
+    public void Win()
+    {
+        CameraManager.Instance.GoToPaper();
+        winParent.SetActive(true);
+    }
+
+    public void Lose()
+    {
+        CameraManager.Instance.GoToPaper();
+        loseParent.SetActive(true);
+    }
+    
+    public void OrderPizza()
+    {
+        CallInterupt call = new CallInterupt();
+        call.ringClip = knockingClip;
+        call.interuptTurnNumber = WatchManager.Instance.turnNumber + 1;
+        if (call.interuptTurnNumber == 3) // THIS IS HARDCODED TO NOT INTERFERE WITH THE NEIGHBOR CALL
+        {
+            call.interuptTurnNumber++;
+        }
     }
 }

@@ -48,7 +48,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Uh... like a white one? Small?
 
-    
+
 
 '
   responses:
@@ -118,7 +118,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Oh! Wow! I''m so sorry. Yeah, I can, like, call you if I see it again.
 
-    
+
 
 '
   responses:
@@ -176,7 +176,7 @@ MonoBehaviour:
   prompt: 'Uh... I mean Mr. Angiola knows all the things about the pizza, I just
     deliver them.
 
-    
+
 
 '
   responses:
@@ -234,7 +234,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'I mean, sure, yeah. I think so.
 
-    
+
 
 '
   responses:
@@ -347,7 +347,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Pizza time.
 
-    
+
 
 '
   responses:
@@ -423,7 +423,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Yeah?
 
-    
+
 
 '
   responses:
@@ -482,7 +482,7 @@ MonoBehaviour:
   prompt: 'Uh... I mean Mr. Angiola knows all the things about the pizza, I just
     deliver them.
 
-    
+
 
 '
   responses:
@@ -540,13 +540,19 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Thanks dude, enjoy.
 
-    
+
 
 '
   responses:
   - response: Actually, wait.
     requiredClue: pizzashop_clue
     nextStage: {fileID: 3871894747896477028}
+    onContinue:
+      m_PersistentCalls:
+        m_Calls: []
+  - response: See ya.
+    requiredClue: 
+    nextStage: {fileID: 0}
     onContinue:
       m_PersistentCalls:
         m_Calls: []
@@ -598,7 +604,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Um... sure?
 
-    
+
 
 '
   responses:
@@ -657,7 +663,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Can you pay me so I can go now?
 
-    
+
 
 '
   responses:
@@ -715,7 +721,7 @@ MonoBehaviour:
   treeName: Pizza_Order
   prompt: 'Sure thing. I don''t even know why we are open that late.
 
-    
+
 
 '
   responses:
@@ -774,7 +780,7 @@ MonoBehaviour:
   prompt: 'Uh, I mean I think there was a car running out front, but I think that
     was it.
 
-    
+
 
 '
   responses:

@@ -34,7 +34,7 @@ public class Notebook : Singleton<Notebook>
     private List<GameObject> cluePages = new List<GameObject>();
     private int pageIndex;
 
-    void Start()
+    void Awake()
     {
         allClues = cluesParent.GetComponentsInChildren<Clue>(true);
         foreach (Clue c in allClues)
@@ -61,6 +61,13 @@ public class Notebook : Singleton<Notebook>
         firstCluePage.transform.localPosition = Vector3.zero;
         firstCluePage.SetActive(false);
         cluePages.Add(firstCluePage);
+
+        DiscoverPhoneNumber("BPD");
+    }
+
+    void Start()
+    {
+        
     }
 
     // IMPORTANT: These do not handle non-existent names!!!
@@ -147,6 +154,11 @@ public class Notebook : Singleton<Notebook>
 
     public bool IsClueDiscovered(string clueName)
     {
+        if (clueTable[clueName] == null)
+        {
+            Debug.Log("ERROR: missing clue " + clueName);
+            return false;
+        }
         return ((Clue)clueTable[clueName]).gameObject.activeSelf;
     }
 
@@ -160,6 +172,8 @@ public class Notebook : Singleton<Notebook>
         previousPageButton.SetActive(false);
 
         SetPage(0);
+
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     public void GoToClues()
@@ -169,6 +183,7 @@ public class Notebook : Singleton<Notebook>
         phonebookParent.SetActive(false);
 
         SetPage(0);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     public void GoToPhonebook()
@@ -178,6 +193,7 @@ public class Notebook : Singleton<Notebook>
         phonebookParent.SetActive(true);
 
         SetPage(0);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     void SetPage(int pageIndex)
@@ -244,11 +260,13 @@ public class Notebook : Singleton<Notebook>
     public void NextPage()
     {
         SetPage(pageIndex + 1);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     public void PreviousPage()
     {
         SetPage(pageIndex - 1);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     public void ExpandClue(Clue clue)
@@ -256,11 +274,13 @@ public class Notebook : Singleton<Notebook>
         expandedClueTitle.text = clue.GetName();
         expandedClueDescription.text = clue.GetDescription();
         expandedClueObject.SetActive(true);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     public void ShrinkClue()
     {
         expandedClueObject.SetActive(false);
+        SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
     // Deprecated

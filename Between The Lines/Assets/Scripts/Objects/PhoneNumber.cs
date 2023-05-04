@@ -10,6 +10,8 @@ public class PhoneNumber : MonoBehaviour
 
     [SerializeField] DialogueStage[] dialogueEntries;
 
+    [SerializeField] private bool moveOnWhenDone;
+
     private int dialogueIndex = 0;
 
     public void Call()
@@ -19,6 +21,14 @@ public class PhoneNumber : MonoBehaviour
         DialogueManager.Instance.SetBackground(characterBackground);
         DialogueManager.Instance.TriggerDialogue(dialogueEntries[dialogueIndex]);
         WatchManager.Instance.NextTurn();
+
+        if (moveOnWhenDone)
+        {
+            if (dialogueIndex < dialogueEntries.Length - 1)
+            {
+                dialogueIndex++;
+            }
+        }
     }
 
     public void SetDialogueIndex(int dialogueIndex)

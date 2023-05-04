@@ -9,7 +9,7 @@ public class CameraManager : Singleton<CameraManager>
 
     [SerializeField] private GameObject animationsParent;
 
-    private Vector2 paperPosition;
+    [System.NonSerialized] public Vector2 paperPosition;
 
     private Vector2 lastPosition;
 
