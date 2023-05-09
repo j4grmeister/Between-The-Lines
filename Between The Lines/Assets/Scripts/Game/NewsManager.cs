@@ -24,6 +24,9 @@ public class NewsManager : Singleton<NewsManager>
 
     [SerializeField] private AudioClip knockingClip;
 
+    public GameObject notebookButton1;
+    public GameObject notebookButton2;
+
 
     private NewsArticle currentArticle;
 

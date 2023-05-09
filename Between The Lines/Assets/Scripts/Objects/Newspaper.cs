@@ -30,6 +30,9 @@ public class Newspaper : MonoBehaviour
     [SerializeField] private SpriteRenderer onePageBackground;
     [SerializeField] private SpriteRenderer twoPageBackground;
 
+    [SerializeField] private GameObject notebookButton1;
+    [SerializeField] private GameObject notebookButton2;
+
     private bool[] pagesViewed;
     
     private int pageIndex;
@@ -71,11 +74,15 @@ public class Newspaper : MonoBehaviour
                 onePageBackground.gameObject.SetActive(true);
                 twoPageBackground.gameObject.SetActive(false);
                 WatchManager.Instance.OnePage();
+                NewsManager.Instance.notebookButton1.SetActive(true);
+                NewsManager.Instance.notebookButton2.SetActive(false);
                 break;
             case PageType.TWOPAGE:
                 onePageBackground.gameObject.SetActive(false);
                 twoPageBackground.gameObject.SetActive(true);
                 WatchManager.Instance.TwoPage();
+                NewsManager.Instance.notebookButton1.SetActive(false);
+                NewsManager.Instance.notebookButton2.SetActive(true);
                 break;
         }
     }
