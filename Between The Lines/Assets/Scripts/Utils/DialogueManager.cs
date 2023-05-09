@@ -13,6 +13,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
     [SerializeField] private GameObject paperFromNotebookButton;
     [SerializeField] private GameObject phoneFromNotebookButton;
+    [SerializeField] private Transform responsesParent;
 
     private List<ClickableArea> responseAreas = new List<ClickableArea>();
 
@@ -38,7 +39,8 @@ public class DialogueManager : Singleton<DialogueManager>
                 continue;
             int j = i;
 
-            GameObject responseObject = GameObject.Instantiate(responsePrefab, transform) as GameObject;
+            //GameObject responseObject = GameObject.Instantiate(responsePrefab, transform) as GameObject;
+            GameObject responseObject = GameObject.Instantiate(responsePrefab, responsesParent) as GameObject;
             responseObject.transform.localPosition = topResponsePosition + responseOffset * j;
             ClickableArea responseArea = responseObject.GetComponentInChildren<ClickableArea>();
             TextMeshPro textMesh = responseObject.GetComponentInChildren<TextMeshPro>();
@@ -74,6 +76,11 @@ public class DialogueManager : Singleton<DialogueManager>
 
             responseAreas.Add(responseArea);
         }
+
+        // Begin animation
+        responsesParent.gameObject.SetActive(false);
+        prompt.transform.parent.GetComponentInChildren<TypeTextBehaviour>().StartAnimation();
+
     }
 
     void ResetResponses()

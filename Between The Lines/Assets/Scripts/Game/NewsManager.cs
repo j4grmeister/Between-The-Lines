@@ -23,6 +23,7 @@ public class NewsManager : Singleton<NewsManager>
     [SerializeField] private GameObject loseParent;
 
     [SerializeField] private AudioClip knockingClip;
+    
 
     private NewsArticle currentArticle;
 

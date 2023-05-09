@@ -4999,6 +4999,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a87c71ffc2f020547b4c62fa1c2dee76, type: 3}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 425518652586628830, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5013,11 +5025,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.364
+      value: -3.461
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6014,6 +6026,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3658644650381051618, guid: 7381fedced43fc14dab8143cda99d863, type: 3}
   m_PrefabInstance: {fileID: 1090301443}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1137638079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1137638080}
+  m_Layer: 0
+  m_Name: Responses
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1137638080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137638079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1222164032}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164919391
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,7 +6353,7 @@ GameObject:
   - component: {fileID: 1222164032}
   - component: {fileID: 1222164031}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: Dialogue Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6335,6 +6378,7 @@ MonoBehaviour:
   responseOffset: {x: 0, y: -0.2}
   paperFromNotebookButton: {fileID: 77179132}
   phoneFromNotebookButton: {fileID: 453708163}
+  responsesParent: {fileID: 1137638080}
 --- !u!4 &1222164032
 Transform:
   m_ObjectHideFlags: 0
@@ -6351,6 +6395,7 @@ Transform:
   - {fileID: 1591701121}
   - {fileID: 1663160617}
   - {fileID: 76562917}
+  - {fileID: 1137638080}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7810,6 +7855,7 @@ GameObject:
   - component: {fileID: 1591701121}
   - component: {fileID: 1591701123}
   - component: {fileID: 1591701122}
+  - component: {fileID: 1591701124}
   m_Layer: 0
   m_Name: Prompt
   m_TagString: Untagged
@@ -7972,6 +8018,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1591701124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591701120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1b2964ad118094d8864f604575bd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 1591701122}
+  typeDelay: 0.05
+  onTypingFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1137638079}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1610152655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10525,6 +10600,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a87c71ffc2f020547b4c62fa1c2dee76, type: 3}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425518652586628817, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 425518652586628830, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10539,11 +10626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.076
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 425518653420827076, guid: 770b617faf22152499e971b440f7bf7a, type: 3}
       propertyPath: m_LocalPosition.z
