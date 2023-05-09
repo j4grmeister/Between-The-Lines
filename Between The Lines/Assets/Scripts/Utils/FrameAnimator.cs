@@ -18,6 +18,7 @@ public class FrameAnimator : MonoBehaviour
     public bool playBackwards;
 
     public UnityAction onFinish;
+    [SerializeField] private UnityEvent onAnimationFinished;
 
     private SpriteRenderer spriteRenderer;
 
@@ -54,6 +55,7 @@ public class FrameAnimator : MonoBehaviour
                 if (index >= animationFrames.Length)
                 {
                     gameObject.SetActive(false);
+                    onAnimationFinished.Invoke();
                     if (onFinish != null)
                     {
                         onFinish();

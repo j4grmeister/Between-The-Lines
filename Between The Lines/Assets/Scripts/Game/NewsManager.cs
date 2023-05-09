@@ -50,7 +50,7 @@ public class NewsManager : Singleton<NewsManager>
 
         // Tutorial
         CameraManager.Instance.GoToNotebook();
-        Notebook.Instance.GoToPhonebook();
+        Notebook.Instance.GoToPhonebookQuietly();
     }
 
     // TODO: Deprecate this?

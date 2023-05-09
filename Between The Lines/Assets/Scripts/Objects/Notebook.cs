@@ -226,6 +226,15 @@ public class Notebook : Singleton<Notebook>
         SoundEffectManager.Instance.PlayNotebookFlip();
     }
 
+    public void GoToPhonebookQuietly()
+    {
+        tableOfContentsParent.SetActive(false);
+        cluesParent.SetActive(false);
+        phonebookParent.SetActive(true);
+
+        SetPage(0);
+    }
+
     void SetPage(int pageIndex)
     {
         if (phonebookParent.activeSelf)
