@@ -20,6 +20,12 @@ public class TypeTextBehaviour : MonoBehaviour
     {
         if (!done)
         {
+            if (characterIndex >= fullText.Length)
+            {
+                onTypingFinished.Invoke();
+                done = true;
+                return;
+            }
             if (Time.time - characterTimestamp >= typeDelay)
             {
                 Text.text += fullText[characterIndex];
