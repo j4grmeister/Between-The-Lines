@@ -47,6 +47,10 @@ public class NewsManager : Singleton<NewsManager>
         WatchManager.Instance.turnNumber--;
         //Notebook.Instance.Call("BPD");
         Notebook.Instance.DiscoverPhoneNumberNoNotification("BPD");
+
+        // Tutorial
+        CameraManager.Instance.GoToNotebook();
+        Notebook.Instance.GoToPhonebook();
     }
 
     // TODO: Deprecate this?
