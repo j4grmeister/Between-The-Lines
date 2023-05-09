@@ -50,7 +50,7 @@ MonoBehaviour:
   treeName: Barchester_PD_1
   prompt: 'Hello, this is Barchester Police Department, how may I help you?
 
-    
+
 
 '
   responses:
@@ -126,7 +126,7 @@ MonoBehaviour:
   treeName: Barchester_PD_1
   prompt: 'Well, why not?
 
-    
+
 
 '
   responses:
@@ -186,7 +186,7 @@ MonoBehaviour:
   treeName: Barchester_PD_1
   prompt: 'Well, why don''t you ask her to take you?
 
-    
+
 
 '
   responses:
@@ -244,7 +244,7 @@ MonoBehaviour:
   prompt: 'Well why didn''t you say that earlier? We''ll send some dispacters there
     right away, sir. What''s the address of the break-in?
 
-    
+
 
 '
   responses:
@@ -303,7 +303,7 @@ MonoBehaviour:
   treeName: Barchester_PD_1
   prompt: 'How long has this person been missing?
 
-    
+
 
 '
   responses:
@@ -422,7 +422,7 @@ MonoBehaviour:
   treeName: Barchester_PD_1
   prompt: 'Ok. We''ll have some folks down there shortly.
 
-    
+
 
 '
   responses:
@@ -480,7 +480,7 @@ MonoBehaviour:
   prompt: 'I appreciate the positivity. I''m very sorry for what''s happening right
     now. What address would you want those dispatchers going out to?
 
-    
+
 
 '
   responses:
@@ -540,7 +540,7 @@ MonoBehaviour:
   prompt: 'Ah. I see. Well, I''ll tell you what, we will ask some of our dispacters
     to head on over there and drop of the form for you, how does that sound?
 
-    
+
 
 '
   responses:
@@ -549,13 +549,37 @@ MonoBehaviour:
     nextStage: {fileID: 1607600401044878881}
     onContinue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4461423802691699885}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: introduction 2
+            m_BoolArgument: 0
+          m_CallState: 2
   - response: That would be great.
     requiredClue: 
     nextStage: {fileID: 2054356982649473109}
     onContinue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4461423802691699885}
+          m_TargetAssemblyTypeName: NotebookMethods, Assembly-CSharp
+          m_MethodName: DiscoverClue
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: introduction 2
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7802072501218453074
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +628,7 @@ MonoBehaviour:
   prompt: 'Of course, we''re here to serve. What address would you want those dispatchers
     going out to?
 
-    
+
 
 '
   responses:
@@ -663,7 +687,7 @@ MonoBehaviour:
   prompt: 'Ok, we will send some dispatchers over right away to assess the situation.
     What address did this occur at?
 
-    
+
 
 '
   responses:
@@ -722,7 +746,7 @@ MonoBehaviour:
   prompt: 'Ok, if you''d head on down to the police station we''ll get you set up
     with a missing person''s report to file.
 
-    
+
 
 '
   responses:

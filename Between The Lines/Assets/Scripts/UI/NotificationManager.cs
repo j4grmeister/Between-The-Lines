@@ -11,6 +11,8 @@ public class NotificationManager : Singleton<NotificationManager>
     [SerializeField] private TextMeshProUGUI notificationDescription;
 
     [SerializeField] private float notificationDisplayTime;
+    [SerializeField] private GameObject newPhoneNumber;
+    [SerializeField] private GameObject newClue;
 
 
     float notificationTimestamp;
@@ -28,6 +30,7 @@ public class NotificationManager : Singleton<NotificationManager>
 
     public void NotifyPhoneNumber(PhoneNumber phone)
     {
+        /*
         notificationTimestamp = Time.time;
 
         string visibleName = phone.GetVisibleName();
@@ -43,10 +46,17 @@ public class NotificationManager : Singleton<NotificationManager>
             Notebook.Instance.GoToPhonebook();
             notificationButton.gameObject.SetActive(false);
         });
+        */
+        notificationTimestamp = Time.time;
+        notificationButton.gameObject.SetActive(true);
+        newPhoneNumber.SetActive(true);
+        newPhoneNumber.SetActive(false);
+
     }
 
     public void NotifyClue(Clue clue)
     {
+        /*
         notificationTimestamp = Time.time;
 
         notificationTitle.text = "New Clue Discovered!";
@@ -61,5 +71,10 @@ public class NotificationManager : Singleton<NotificationManager>
             Notebook.Instance.ExpandClue(clue);
             notificationButton.gameObject.SetActive(false);
         });
+        */
+        notificationTimestamp = Time.time;
+        notificationButton.gameObject.SetActive(true);
+        newPhoneNumber.SetActive(false);
+        newPhoneNumber.SetActive(true);
     }
 }

@@ -172,6 +172,28 @@ public class Notebook : Singleton<Notebook>
         }
     }
 
+    public void DiscoverClueNoNotification(string clueName)
+    {
+        Clue clue = (Clue)clueTable[clueName];
+        if (!clue.gameObject.activeSelf)
+        {
+            clue.gameObject.SetActive(true);
+
+            int pageLength = cluePages[cluePages.Count-1].GetComponentsInChildren<Clue>().Length;
+            if (pageLength >= maxCluesPerPage)
+            {
+                GameObject nextCluePage = new GameObject("Page " + cluePages.Count.ToString());
+                nextCluePage.transform.parent = cluesParent.transform;
+                nextCluePage.transform.localPosition = Vector3.zero;
+                nextCluePage.SetActive(false);
+                cluePages.Add(nextCluePage);
+                pageLength = 0;
+            }
+            clue.transform.parent = cluePages[cluePages.Count-1].transform;
+            clue.transform.localPosition = (Vector3)(topCluePosition + clueOffset * pageLength) + Vector3.back * 3;
+        }
+    }
+
     public void UndiscoverClue(string clueName)
     {
         // TODO
@@ -204,6 +226,18 @@ public class Notebook : Singleton<Notebook>
         SetPage(0);
 
         SoundEffectManager.Instance.PlayNotebookFlip();
+    }
+
+    public void GoToContentsQuietly()
+    {
+        tableOfContentsParent.SetActive(true);
+        cluesParent.SetActive(false);
+        phonebookParent.SetActive(false);
+
+        nextPageButton.SetActive(false);
+        previousPageButton.SetActive(false);
+
+        SetPage(0);
     }
 
     public void GoToClues()
@@ -314,12 +348,14 @@ public class Notebook : Singleton<Notebook>
         expandedClueDescription.text = clue.GetDescription();
         expandedClueObject.SetActive(true);
         SoundEffectManager.Instance.PlayNotebookFlip();
+        cluesParent.SetActive(false);
     }
 
     public void ShrinkClue()
     {
         expandedClueObject.SetActive(false);
         SoundEffectManager.Instance.PlayNotebookFlip();
+        cluesParent.SetActive(true);
     }
 
     // Deprecated
@@ -335,7 +371,7 @@ public class Notebook : Singleton<Notebook>
 
     public void DisablePhonebook()
     {
-        GoToContents();
+        GoToContentsQuietly();
         phonebookText.color = disabledColor;
         phonebookText.transform.parent.GetComponentInChildren<Collider2D>(true).gameObject.SetActive(false);
     }
