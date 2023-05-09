@@ -54,6 +54,7 @@ public class DialogueManager : Singleton<DialogueManager>
                     CameraManager.Instance.GoToLast();
                     paperFromNotebookButton.SetActive(true);
                     phoneFromNotebookButton.SetActive(false);
+                    Notebook.Instance.EnablePhonebook();
                 });
             }
             else

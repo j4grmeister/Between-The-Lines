@@ -29,18 +29,21 @@ public class CameraManager : Singleton<CameraManager>
     {
         MoveCamera(paperPosition);
         animationsParent.SetActive(true);
+        MusicPlayer.Instance.PlayDefaultSong();
     }
 
     public void GoToNotebook()
     {
         MoveCamera(notebookPosition);
         animationsParent.SetActive(false);
+        MusicPlayer.Instance.PlayDefaultSong();
     }
 
     public void GoToPhone()
     {
         MoveCamera(phonePosition);
         animationsParent.SetActive(false);
+        MusicPlayer.Instance.PlayMuffledSong();
     }
 
     public void GoToLast()

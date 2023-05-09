@@ -27,6 +27,10 @@ public class Notebook : Singleton<Notebook>
     private Hashtable clueTable = new Hashtable();
     private Hashtable phoneTable = new Hashtable();
 
+
+    [SerializeField] private TextMeshPro phonebookText;
+    private Color phonebookColor;
+    [SerializeField] private Color disabledColor;
     private Clue[] allClues;
     private PhoneNumber[] allPhones;
 
@@ -67,7 +71,7 @@ public class Notebook : Singleton<Notebook>
 
     void Start()
     {
-        
+        phonebookColor = phonebookText.color;
     }
 
     // IMPORTANT: These do not handle non-existent names!!!
@@ -318,5 +322,18 @@ public class Notebook : Singleton<Notebook>
             prefabInstance.GetComponentInChildren<ClickableArea>().onClick.AddListener(() => {Call(p.gameObject.name);});
             prefabInstance.GetComponentInChildren<TextMeshPro>().text = p.gameObject.name;
         }
+    }
+
+    public void DisablePhonebook()
+    {
+        GoToContents();
+        phonebookText.color = disabledColor;
+        phonebookText.transform.parent.GetComponentInChildren<Collider2D>(true).gameObject.SetActive(false);
+    }
+
+    public void EnablePhonebook()
+    {
+        phonebookText.color = phonebookColor;
+        phonebookText.transform.parent.GetComponentInChildren<Collider2D>(true).gameObject.SetActive(true);
     }
 }

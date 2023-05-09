@@ -18,6 +18,7 @@ public class Newspaper : MonoBehaviour
         public GameObject pageObject;
         public PageType pageType;
         public UnityEvent onFirstView;
+        public FrameAnimator flipAnimation;
     }
 
 
@@ -79,6 +80,7 @@ public class Newspaper : MonoBehaviour
         }
     }
 
+    // FLIP ANIMATIONS ARE HARD CODED FOR 3 PAGES
     public void NextPage()
     {
         pages[pageIndex].pageObject.SetActive(false);
@@ -87,6 +89,19 @@ public class Newspaper : MonoBehaviour
         {
             previousPageButtonOnePage.SetActive(true);
             previousPageButtonTwoPage.SetActive(true);
+
+            pages[0].flipAnimation.playBackwards = false;
+            pages[0].flipAnimation.Play();
+        }
+        else
+        {
+            int j = pageIndex + 1;
+            pages[pageIndex].flipAnimation.onFinish = () => {
+                pages[j].flipAnimation.playBackwards = true;
+                pages[j].flipAnimation.Play();
+            };
+            pages[pageIndex].flipAnimation.playBackwards = false;
+            pages[pageIndex].flipAnimation.Play();
         }
 
         pageIndex++;
@@ -117,6 +132,22 @@ public class Newspaper : MonoBehaviour
         {
             nextPageButtonOnePage.SetActive(true);
             nextPageButtonTwoPage.SetActive(true);
+        }
+
+        if (pageIndex == 1)
+        {
+            pages[0].flipAnimation.playBackwards = true;
+            pages[0].flipAnimation.Play();
+        }
+        else
+        {
+            int j = pageIndex - 1;
+            pages[pageIndex].flipAnimation.onFinish = () => {
+                pages[j].flipAnimation.playBackwards = true;
+                pages[j].flipAnimation.Play();
+            };
+            pages[pageIndex].flipAnimation.playBackwards = false;
+            pages[pageIndex].flipAnimation.Play();
         }
 
         pageIndex--;

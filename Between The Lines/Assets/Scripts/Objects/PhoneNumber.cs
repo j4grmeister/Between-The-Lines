@@ -29,6 +29,7 @@ public class PhoneNumber : MonoBehaviour
                 dialogueIndex++;
             }
         }
+        Notebook.Instance.DisablePhonebook();
     }
 
     public void SetDialogueIndex(int dialogueIndex)

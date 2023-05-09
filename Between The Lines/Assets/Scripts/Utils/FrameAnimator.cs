@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class FrameAnimator : MonoBehaviour
@@ -14,6 +15,9 @@ public class FrameAnimator : MonoBehaviour
 
     [SerializeField] private FrameInfo[] animationFrames;
     [SerializeField] private int framerate;
+    public bool playBackwards;
+
+    public UnityAction onFinish;
 
     private SpriteRenderer spriteRenderer;
 
@@ -41,16 +45,24 @@ public class FrameAnimator : MonoBehaviour
         {
             lastFrame -= 1f/framerate;
             nestIndex++;
-            if (nestIndex >= animationFrames[index].numberOfFrames)
+            int numberOfFrames = playBackwards ? animationFrames[animationFrames.Length - index - 1].numberOfFrames : animationFrames[index].numberOfFrames;
+            //if (nestIndex >= animationFrames[index].numberOfFrames)
+            if (nestIndex >= numberOfFrames)
             {
                 nestIndex = 0;
                 index++;
                 if (index >= animationFrames.Length)
                 {
                     gameObject.SetActive(false);
+                    if (onFinish != null)
+                    {
+                        onFinish();
+                        onFinish = null;
+                    }
                     return;
                 }
-                spriteRenderer.sprite = animationFrames[index].sprite;
+                //spriteRenderer.sprite = animationFrames[index].sprite;
+                spriteRenderer.sprite = playBackwards ? animationFrames[animationFrames.Length - index - 1].sprite : animationFrames[index].sprite;
             }
         }
     }
@@ -62,6 +74,12 @@ public class FrameAnimator : MonoBehaviour
         nestIndex = 0;
         lastFrame = 0f;
 
-        spriteRenderer.sprite = animationFrames[0].sprite;
+        if (spriteRenderer == null)
+        {
+            Awake();
+        }
+
+        //spriteRenderer.sprite = animationFrames[0].sprite;
+        spriteRenderer.sprite = playBackwards ? animationFrames[animationFrames.Length - 1].sprite : animationFrames[0].sprite;
     }
 }
