@@ -25,6 +25,8 @@ public class NewsManager : Singleton<NewsManager>
 
     [SerializeField] private AudioClip knockingClip;
 
+    [SerializeField] private FrameAnimator pizzaAnimation;
+
     public GameObject notebookButton1;
     public GameObject notebookButton2;
 
@@ -164,6 +166,7 @@ public class NewsManager : Singleton<NewsManager>
         call.phoneName = "Pizza Order";
         call.discover = false;
         call.interuptTurnNumber = WatchManager.Instance.turnNumber + 1;
+        call.animation = pizzaAnimation;
         if (call.interuptTurnNumber == 3) // THIS IS HARDCODED TO NOT INTERFERE WITH THE NEIGHBOR CALL
         {
             call.interuptTurnNumber++;

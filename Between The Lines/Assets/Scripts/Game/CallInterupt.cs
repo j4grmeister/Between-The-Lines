@@ -7,6 +7,7 @@ public class CallInterupt : MonoBehaviour
     [SerializeField] public AudioClip ringClip;
     [SerializeField] public int interuptTurnNumber;
     [SerializeField] public string phoneName;
+    [SerializeField] public FrameAnimator animation;
     public bool discover = true;
 
     private bool triggered = false;
@@ -38,11 +39,33 @@ public class CallInterupt : MonoBehaviour
             WatchManager.Instance.turnNumber--;
             if (discover)
             {
-                Notebook.Instance.Call(phoneName);
+                //Notebook.Instance.Call(phoneName);
+                if (animation != null)
+                {
+                    animation.onFinish = () =>
+                    {
+                        Notebook.Instance.Call(phoneName);
+                    };
+                    animation.Play();
+                }
+                else {
+                    Notebook.Instance.Call(phoneName);
+                }
             }
             else
             {
-                Notebook.Instance.CallNoDiscover(phoneName);
+                //Notebook.Instance.CallNoDiscover(phoneName);
+                if (animation != null)
+                {
+                    animation.onFinish = () =>
+                    {
+                        Notebook.Instance.CallNoDiscover(phoneName);
+                    };
+                    animation.Play();
+                }
+                else {
+                    Notebook.Instance.CallNoDiscover(phoneName);
+                }
             }
             });
     }
