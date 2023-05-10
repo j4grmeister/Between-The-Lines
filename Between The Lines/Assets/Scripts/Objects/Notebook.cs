@@ -217,14 +217,13 @@ public class Notebook : Singleton<Notebook>
 
     public void GoToContents()
     {
+        SetPage(0);
         tableOfContentsParent.SetActive(true);
         cluesParent.SetActive(false);
         phonebookParent.SetActive(false);
 
         nextPageButton.SetActive(false);
         previousPageButton.SetActive(false);
-
-        SetPage(0);
 
         SoundEffectManager.Instance.PlayNotebookFlip();
     }
