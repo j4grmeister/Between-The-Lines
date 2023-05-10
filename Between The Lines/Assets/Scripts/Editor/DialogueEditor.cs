@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.Events;
 using UnityEngine.Events;
-using SoftCircuits.HtmlMonkey;
+//using SoftCircuits.HtmlMonkey;
 
-[CustomEditor(typeof(DialogueStage))]
+//[CustomEditor(typeof(DialogueStage))]
 public class DialogueEditor : Editor
 {
+    /*
     public override void OnInspectorGUI()
     {
         DialogueStage dialogueEntry = (DialogueStage)target;
@@ -256,15 +257,15 @@ public class DialogueEditor : Editor
                     {
                         continue;
                     }
-                    */
+                    * /
                     //Debug.Log(text);
                     DialogueTreeNode nextNode = (DialogueTreeNode)nodeTable[text];
-                    /*
+                    / *
                     if (nextNode == null)
                     {
                         continue;
                     }
-                    */
+                    * /
                     //Debug.Log(nextNode);
                     //if (nextNode != null)
                     //{
@@ -296,4 +297,5 @@ public class DialogueEditor : Editor
         // TODO: need to do this but it breaks everything else somehow
         //AssetDatabase.RenameAsset("Assets/Prefabs/Dialogue/" + oldAssetName + ".prefab", filename);
     }
+    */
 }
