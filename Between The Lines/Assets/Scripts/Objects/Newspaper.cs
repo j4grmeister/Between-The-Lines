@@ -30,9 +30,6 @@ public class Newspaper : MonoBehaviour
     [SerializeField] private SpriteRenderer onePageBackground;
     [SerializeField] private SpriteRenderer twoPageBackground;
 
-    [SerializeField] private GameObject notebookButton1;
-    [SerializeField] private GameObject notebookButton2;
-
     private bool[] pagesViewed;
     
     private int pageIndex;

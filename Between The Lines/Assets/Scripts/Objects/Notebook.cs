@@ -23,6 +23,7 @@ public class Notebook : Singleton<Notebook>
     [SerializeField] private GameObject expandedClueObject;
     [SerializeField] private TextMeshPro expandedClueTitle;
     [SerializeField] private TextMeshPro expandedClueDescription;
+    [SerializeField] private GameObject buttonParent;
 
     private Hashtable clueTable = new Hashtable();
     private Hashtable phoneTable = new Hashtable();
@@ -349,6 +350,7 @@ public class Notebook : Singleton<Notebook>
         expandedClueObject.SetActive(true);
         SoundEffectManager.Instance.PlayNotebookFlip();
         cluesParent.SetActive(false);
+        buttonParent.SetActive(false);
     }
 
     public void ShrinkClue()
@@ -356,6 +358,7 @@ public class Notebook : Singleton<Notebook>
         expandedClueObject.SetActive(false);
         SoundEffectManager.Instance.PlayNotebookFlip();
         cluesParent.SetActive(true);
+        buttonParent.SetActive(true);
     }
 
     // Deprecated
