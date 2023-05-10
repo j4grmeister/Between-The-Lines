@@ -27,6 +27,11 @@ public class NotebookMethods : MonoBehaviour
         Notebook.Instance.DiscoverClue(clueName);
     }
 
+    public void DiscoverClueNoNotification(string clueName)
+    {
+        Notebook.Instance.DiscoverClueNoNotification(clueName);
+    }
+
     public void UndiscoverClue(string clueName)
     {
         Notebook.Instance.UndiscoverClue(clueName);
@@ -56,5 +61,10 @@ public class NotebookMethods : MonoBehaviour
     public void OrderPizza()
     {
         NewsManager.Instance.OrderPizza();
+    }
+
+    public void GoToPaper()
+    {
+        CameraManager.Instance.GoToPaper();
     }
 }

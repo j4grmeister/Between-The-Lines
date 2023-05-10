@@ -13,13 +13,13 @@ public class MusicPlayer : Singleton<MusicPlayer>
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        playingDefault = true;
     }
 
     void Start()
     {
         audioSource.clip = defaultSong;
         audioSource.Play();
+        playingDefault = true;
     }
 
     void SwitchSong(AudioClip newSong)
