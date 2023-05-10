@@ -20,6 +20,7 @@ public class NewsManager : Singleton<NewsManager>
     [SerializeField] private FrameAnimator[] animations;
 
     [SerializeField] private GameObject winParent;
+    [SerializeField] private GameObject winAltParent;
     [SerializeField] private GameObject loseParent;
 
     [SerializeField] private AudioClip knockingClip;
@@ -141,6 +142,12 @@ public class NewsManager : Singleton<NewsManager>
     {
         CameraManager.Instance.GoToPaper();
         winParent.SetActive(true);
+    }
+
+    public void WinAlt()
+    {
+        CameraManager.Instance.GoToPaper();
+        winAltParent.SetActive(true);
     }
 
     public void Lose()

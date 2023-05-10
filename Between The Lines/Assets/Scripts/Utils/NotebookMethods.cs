@@ -48,6 +48,11 @@ public class NotebookMethods : MonoBehaviour
         NewsManager.Instance.Win();
     }
 
+    public void WinAlt()
+    {
+        NewsManager.Instance.WinAlt();
+    }
+
     public void OrderPizza()
     {
         NewsManager.Instance.OrderPizza();
